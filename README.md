@@ -1,10 +1,10 @@
 # Exam Collection
 
-A collection of LaTeX-based exams for various science courses.
+This repository contains my collection of exams for various subjects.
 
 ## Structure
 
-The exams are organized by course:
+Exams are organized by subject and grade level:
 
 - `Bio1/` - Biology 1
 - `Bio2/` - Biology 2
