@@ -19,22 +19,24 @@ jobs:
       - name: Find all .tex files
         id: find-tex
         run: |
-          # Find all .tex files and save their paths as a JSON array
-          TEX_FILES=$(find . -name "*.tex" -not -path "./.git/*" | jq -R -s -c 'split("\n")[:-1]')
-          echo "::set-output name=files::$TEX_FILES"
+          # Find all .tex files and save their paths as a newline-separated list
+          TEX_FILES=$(find . -name "*.tex" -not -path "./.git/*")
+          echo "TEX_FILES<<EOF" >> $GITHUB_ENV
+          echo "$TEX_FILES" >> $GITHUB_ENV
+          echo "EOF" >> $GITHUB_ENV
 
       - name: Compile all .tex files (without answers)
         run: |
-          for file in ${{ steps.find-tex.outputs.files }}; do
-            file=$(echo $file | tr -d '"')  # Remove quotes from file path
+          # Loop through each .tex file and compile it
+          echo "$TEX_FILES" | while read -r file; do
             echo "Compiling $file without answers..."
             pdflatex -interaction=nonstopmode -output-directory=$(dirname "$file") "$file"
           done
 
       - name: Compile all .tex files (with answers)
         run: |
-          for file in ${{ steps.find-tex.outputs.files }}; do
-            file=$(echo $file | tr -d '"')  # Remove quotes from file path
+          # Loop through each .tex file and compile it with answers
+          echo "$TEX_FILES" | while read -r file; do
             echo "Compiling $file with answers..."
             pdflatex -interaction=nonstopmode -output-directory=$(dirname "$file") -jobname="$(basename "$file" .tex)_answers" "\newcommand{\printanswers}{1} \input{$file}"
           done
