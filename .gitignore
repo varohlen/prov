@@ -17,6 +17,7 @@
 *.synctex.gz
 *.synctex.gz(busy)
 *.pdfsync
+*.pdf
 
 ## Mac OS
 .DS_Store
