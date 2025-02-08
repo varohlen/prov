@@ -18,6 +18,7 @@
 *.synctex.gz(busy)
 *.pdfsync
 *.pdf
+*.code-workspace
 
 ## Mac OS
 .DS_Store

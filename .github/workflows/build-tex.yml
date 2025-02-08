@@ -1,0 +1,45 @@
+name: Build LaTeX Documents with and without Answers
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up TeXLive
+        uses: xu-cheng/texlive-action@v2
+
+      - name: Find all .tex files
+        id: find-tex
+        run: |
+          # Find all .tex files and save their paths as a JSON array
+          TEX_FILES=$(find . -name "*.tex" -not -path "./.git/*" | jq -R -s -c 'split("\n")[:-1]')
+          echo "::set-output name=files::$TEX_FILES"
+
+      - name: Compile all .tex files (without answers)
+        run: |
+          for file in ${{ steps.find-tex.outputs.files }}; do
+            file=$(echo $file | tr -d '"')  # Remove quotes from file path
+            echo "Compiling $file without answers..."
+            pdflatex -interaction=nonstopmode -output-directory=$(dirname "$file") "$file"
+          done
+
+      - name: Compile all .tex files (with answers)
+        run: |
+          for file in ${{ steps.find-tex.outputs.files }}; do
+            file=$(echo $file | tr -d '"')  # Remove quotes from file path
+            echo "Compiling $file with answers..."
+            pdflatex -interaction=nonstopmode -output-directory=$(dirname "$file") -jobname="$(basename "$file" .tex)_answers" "\newcommand{\printanswers}{1} \input{$file}"
+          done
+
+      - name: Commit and push PDFs
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "Auto-generated PDFs from latest commit"
+          git push
