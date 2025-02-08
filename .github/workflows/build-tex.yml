@@ -29,16 +29,50 @@ jobs:
         run: |
           # Loop through each .tex file and compile it
           echo "$TEX_FILES" | while read -r file; do
-            echo "Compiling $file without answers..."
-            pdflatex -interaction=nonstopmode -output-directory=$(dirname "$file") "$file"
+            echo "=== Compiling $file without answers ==="
+            # Log the file being compiled
+            echo "File: $file"
+            # Attempt to compile the file
+            if pdflatex -interaction=nonstopmode -output-directory=$(dirname "$file") "$file"; then
+              echo "Success: $file compiled without errors."
+            else
+              echo "Error: Failed to compile $file. Check the log for details."
+              # Print the last few lines of the log file for debugging
+              LOG_FILE="$(dirname "$file")/$(basename "$file" .tex).log"
+              if [ -f "$LOG_FILE" ]; then
+                echo "=== Log File Snippet ($LOG_FILE) ==="
+                tail -n 20 "$LOG_FILE"
+                echo "=== End of Log File Snippet ==="
+              else
+                echo "No log file found for $file."
+              fi
+            fi
+            echo ""
           done
 
       - name: Compile all .tex files (with answers)
         run: |
           # Loop through each .tex file and compile it with answers
           echo "$TEX_FILES" | while read -r file; do
-            echo "Compiling $file with answers..."
-            pdflatex -interaction=nonstopmode -output-directory=$(dirname "$file") -jobname="$(basename "$file" .tex)_answers" "\newcommand{\printanswers}{1} \input{$file}"
+            echo "=== Compiling $file with answers ==="
+            # Log the file being compiled
+            echo "File: $file"
+            # Attempt to compile the file with answers
+            if pdflatex -interaction=nonstopmode -output-directory=$(dirname "$file") -jobname="$(basename "$file" .tex)_answers" "\newcommand{\printanswers}{1} \input{$file}"; then
+              echo "Success: $file compiled with answers without errors."
+            else
+              echo "Error: Failed to compile $file with answers. Check the log for details."
+              # Print the last few lines of the log file for debugging
+              LOG_FILE="$(dirname "$file")/$(basename "$file" .tex)_answers.log"
+              if [ -f "$LOG_FILE" ]; then
+                echo "=== Log File Snippet ($LOG_FILE) ==="
+                tail -n 20 "$LOG_FILE"
+                echo "=== End of Log File Snippet ==="
+              else
+                echo "No log file found for $file."
+              fi
+            fi
+            echo ""
           done
 
       - name: Commit and push PDFs
