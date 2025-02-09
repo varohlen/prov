@@ -1,0 +1,296 @@
+=== Compiling ./Bio2/Biomolekyler_och_cellens_organeller/Biomolekyler_och_cellens_organeller.tex without answers ===
+Success: ./Bio2/Biomolekyler_och_cellens_organeller/Biomolekyler_och_cellens_organeller.tex compiled without errors.
+=== Compiling ./Bio2/Biomolekyler_och_cellens_organeller/Biomolekyler_och_cellens_organeller.tex with answers (_facit) ===
+Success: ./Bio2/Biomolekyler_och_cellens_organeller/Biomolekyler_och_cellens_organeller.tex compiled with answers (_facit) without errors.
+=== Cleaning up build files for ./Bio2/Biomolekyler_och_cellens_organeller/Biomolekyler_och_cellens_organeller.tex ===
+Deleted: ./Bio2/Biomolekyler_och_cellens_organeller/Biomolekyler_och_cellens_organeller.aux
+Deleted: ./Bio2/Biomolekyler_och_cellens_organeller/Biomolekyler_och_cellens_organeller.log
+Deleted: ./Bio2/Biomolekyler_och_cellens_organeller/Biomolekyler_och_cellens_organeller_facit.aux
+Deleted: ./Bio2/Biomolekyler_och_cellens_organeller/Biomolekyler_och_cellens_organeller_facit.log
+
+=== Compiling ./Nak1a1/Energiproduktion_och_klimatforandringar/Energiproduktion_och_klimatforandringar.tex without answers ===
+Success: ./Nak1a1/Energiproduktion_och_klimatforandringar/Energiproduktion_och_klimatforandringar.tex compiled without errors.
+=== Compiling ./Nak1a1/Energiproduktion_och_klimatforandringar/Energiproduktion_och_klimatforandringar.tex with answers (_facit) ===
+Success: ./Nak1a1/Energiproduktion_och_klimatforandringar/Energiproduktion_och_klimatforandringar.tex compiled with answers (_facit) without errors.
+=== Cleaning up build files for ./Nak1a1/Energiproduktion_och_klimatforandringar/Energiproduktion_och_klimatforandringar.tex ===
+Deleted: ./Nak1a1/Energiproduktion_och_klimatforandringar/Energiproduktion_och_klimatforandringar.aux
+Deleted: ./Nak1a1/Energiproduktion_och_klimatforandringar/Energiproduktion_och_klimatforandringar.log
+Deleted: ./Nak1a1/Energiproduktion_och_klimatforandringar/Energiproduktion_och_klimatforandringar_facit.aux
+Deleted: ./Nak1a1/Energiproduktion_och_klimatforandringar/Energiproduktion_och_klimatforandringar_facit.log
+
+=== Compiling ./Nak1a1/Hallbarhet_och_ekologi_Nak1a1_2024/Hallbarhet_och_ekologi_Nak1a1_2024.tex without answers ===
+Success: ./Nak1a1/Hallbarhet_och_ekologi_Nak1a1_2024/Hallbarhet_och_ekologi_Nak1a1_2024.tex compiled without errors.
+=== Compiling ./Nak1a1/Hallbarhet_och_ekologi_Nak1a1_2024/Hallbarhet_och_ekologi_Nak1a1_2024.tex with answers (_facit) ===
+Success: ./Nak1a1/Hallbarhet_och_ekologi_Nak1a1_2024/Hallbarhet_och_ekologi_Nak1a1_2024.tex compiled with answers (_facit) without errors.
+=== Cleaning up build files for ./Nak1a1/Hallbarhet_och_ekologi_Nak1a1_2024/Hallbarhet_och_ekologi_Nak1a1_2024.tex ===
+Deleted: ./Nak1a1/Hallbarhet_och_ekologi_Nak1a1_2024/Hallbarhet_och_ekologi_Nak1a1_2024.aux
+Deleted: ./Nak1a1/Hallbarhet_och_ekologi_Nak1a1_2024/Hallbarhet_och_ekologi_Nak1a1_2024.log
+Deleted: ./Nak1a1/Hallbarhet_och_ekologi_Nak1a1_2024/Hallbarhet_och_ekologi_Nak1a1_2024_facit.aux
+Deleted: ./Nak1a1/Hallbarhet_och_ekologi_Nak1a1_2024/Hallbarhet_och_ekologi_Nak1a1_2024_facit.log
+
+=== Compiling ./Nak1a1/Hallbarhet_och_ekologi_Nak1a1_2023/Hallbarhet_och_ekologi_Nak1a1_2023.tex without answers ===
+Error: Failed to compile ./Nak1a1/Hallbarhet_och_ekologi_Nak1a1_2023/Hallbarhet_och_ekologi_Nak1a1_2023.tex. Check the log for details.
+=== Log File Snippet (./Nak1a1/Hallbarhet_och_ekologi_Nak1a1_2023/Hallbarhet_och_ekologi_Nak1a1_2023.log) ===
+ 24915 multiletter control sequences out of 15000+600000
+ 559986 words of font info for 42 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 57i,10n,65p,376b,486s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmbxti10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
+i10.pfb>
+Output written on ./Nak1a1/Hallbarhet_och_ekologi_Nak1a1_2023/Hallbarhet_och_ek
+ologi_Nak1a1_2023.pdf (5 pages, 118956 bytes).
+PDF statistics:
+ 56 PDF objects out of 1000 (max. 8388607)
+ 33 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+
+=== End of Log File Snippet ===
+=== Compiling ./Nak1a1/Hallbarhet_och_ekologi_Nak1a1_2023/Hallbarhet_och_ekologi_Nak1a1_2023.tex with answers (_facit) ===
+Error: Failed to compile ./Nak1a1/Hallbarhet_och_ekologi_Nak1a1_2023/Hallbarhet_och_ekologi_Nak1a1_2023.tex with answers (_facit). Check the log for details.
+=== Log File Snippet (./Nak1a1/Hallbarhet_och_ekologi_Nak1a1_2023/Hallbarhet_och_ekologi_Nak1a1_2023_facit.log) ===
+ 24918 multiletter control sequences out of 15000+600000
+ 559986 words of font info for 42 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 61i,10n,68p,414b,486s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmbxti10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
+i10.pfb>
+Output written on ./Nak1a1/Hallbarhet_och_ekologi_Nak1a1_2023/Hallbarhet_och_ek
+ologi_Nak1a1_2023_facit.pdf (5 pages, 118956 bytes).
+PDF statistics:
+ 56 PDF objects out of 1000 (max. 8388607)
+ 33 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+
+=== End of Log File Snippet ===
+=== Cleaning up build files for ./Nak1a1/Hallbarhet_och_ekologi_Nak1a1_2023/Hallbarhet_och_ekologi_Nak1a1_2023.tex ===
+Deleted: ./Nak1a1/Hallbarhet_och_ekologi_Nak1a1_2023/Hallbarhet_och_ekologi_Nak1a1_2023.aux
+Deleted: ./Nak1a1/Hallbarhet_och_ekologi_Nak1a1_2023/Hallbarhet_och_ekologi_Nak1a1_2023.log
+Deleted: ./Nak1a1/Hallbarhet_och_ekologi_Nak1a1_2023/Hallbarhet_och_ekologi_Nak1a1_2023_facit.aux
+Deleted: ./Nak1a1/Hallbarhet_och_ekologi_Nak1a1_2023/Hallbarhet_och_ekologi_Nak1a1_2023_facit.log
+
+=== Compiling ./Nak1a1/Reproduktionsfysiologi/Reproduktionsfysiologi.tex without answers ===
+Success: ./Nak1a1/Reproduktionsfysiologi/Reproduktionsfysiologi.tex compiled without errors.
+=== Compiling ./Nak1a1/Reproduktionsfysiologi/Reproduktionsfysiologi.tex with answers (_facit) ===
+Success: ./Nak1a1/Reproduktionsfysiologi/Reproduktionsfysiologi.tex compiled with answers (_facit) without errors.
+=== Cleaning up build files for ./Nak1a1/Reproduktionsfysiologi/Reproduktionsfysiologi.tex ===
+Deleted: ./Nak1a1/Reproduktionsfysiologi/Reproduktionsfysiologi.aux
+Deleted: ./Nak1a1/Reproduktionsfysiologi/Reproduktionsfysiologi.log
+Deleted: ./Nak1a1/Reproduktionsfysiologi/Reproduktionsfysiologi_facit.aux
+Deleted: ./Nak1a1/Reproduktionsfysiologi/Reproduktionsfysiologi_facit.log
+
+=== Compiling ./Nak2/Grundläggande_kemi/Grundlaggandekemi.tex without answers ===
+Success: ./Nak2/Grundläggande_kemi/Grundlaggandekemi.tex compiled without errors.
+=== Compiling ./Nak2/Grundläggande_kemi/Grundlaggandekemi.tex with answers (_facit) ===
+Success: ./Nak2/Grundläggande_kemi/Grundlaggandekemi.tex compiled with answers (_facit) without errors.
+=== Cleaning up build files for ./Nak2/Grundläggande_kemi/Grundlaggandekemi.tex ===
+Deleted: ./Nak2/Grundläggande_kemi/Grundlaggandekemi.aux
+Deleted: ./Nak2/Grundläggande_kemi/Grundlaggandekemi.log
+Deleted: ./Nak2/Grundläggande_kemi/Grundlaggandekemi_facit.aux
+Deleted: ./Nak2/Grundläggande_kemi/Grundlaggandekemi_facit.log
+
+=== Compiling ./Nak1b/Ekologi_Nak1b_2024/Ekologi_Nak1b_2024.tex without answers ===
+Success: ./Nak1b/Ekologi_Nak1b_2024/Ekologi_Nak1b_2024.tex compiled without errors.
+=== Compiling ./Nak1b/Ekologi_Nak1b_2024/Ekologi_Nak1b_2024.tex with answers (_facit) ===
+Success: ./Nak1b/Ekologi_Nak1b_2024/Ekologi_Nak1b_2024.tex compiled with answers (_facit) without errors.
+=== Cleaning up build files for ./Nak1b/Ekologi_Nak1b_2024/Ekologi_Nak1b_2024.tex ===
+Deleted: ./Nak1b/Ekologi_Nak1b_2024/Ekologi_Nak1b_2024.aux
+Deleted: ./Nak1b/Ekologi_Nak1b_2024/Ekologi_Nak1b_2024.log
+Deleted: ./Nak1b/Ekologi_Nak1b_2024/Ekologi_Nak1b_2024_facit.aux
+Deleted: ./Nak1b/Ekologi_Nak1b_2024/Ekologi_Nak1b_2024_facit.log
+
+=== Compiling ./Nak1b/Kropp_och_hälsa/Kroppochhalsa.tex without answers ===
+Success: ./Nak1b/Kropp_och_hälsa/Kroppochhalsa.tex compiled without errors.
+=== Compiling ./Nak1b/Kropp_och_hälsa/Kroppochhalsa.tex with answers (_facit) ===
+Success: ./Nak1b/Kropp_och_hälsa/Kroppochhalsa.tex compiled with answers (_facit) without errors.
+=== Cleaning up build files for ./Nak1b/Kropp_och_hälsa/Kroppochhalsa.tex ===
+Deleted: ./Nak1b/Kropp_och_hälsa/Kroppochhalsa.aux
+Deleted: ./Nak1b/Kropp_och_hälsa/Kroppochhalsa.log
+Deleted: ./Nak1b/Kropp_och_hälsa/Kroppochhalsa_facit.aux
+Deleted: ./Nak1b/Kropp_och_hälsa/Kroppochhalsa_facit.log
+
+=== Compiling ./Bio1/Celldelning_och_mutationer/Celldelning_och_mutationer.tex without answers ===
+Error: Failed to compile ./Bio1/Celldelning_och_mutationer/Celldelning_och_mutationer.tex. Check the log for details.
+=== Log File Snippet (./Bio1/Celldelning_och_mutationer/Celldelning_och_mutationer.log) ===
+ 39941 string characters out of 5743681
+ 1935187 words of memory out of 5000000
+ 24927 multiletter control sequences out of 15000+600000
+ 559627 words of font info for 41 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 57i,11n,65p,356b,392s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
+usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr
+/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
+local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on ./Bio1/Celldelning_och_mutationer/Celldelning_och_mutationer.
+pdf (5 pages, 135062 bytes).
+PDF statistics:
+ 51 PDF objects out of 1000 (max. 8388607)
+ 30 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+
+=== End of Log File Snippet ===
+=== Compiling ./Bio1/Celldelning_och_mutationer/Celldelning_och_mutationer.tex with answers (_facit) ===
+Error: Failed to compile ./Bio1/Celldelning_och_mutationer/Celldelning_och_mutationer.tex with answers (_facit). Check the log for details.
+=== Log File Snippet (./Bio1/Celldelning_och_mutationer/Celldelning_och_mutationer_facit.log) ===
+ 40226 string characters out of 5743681
+ 1935187 words of memory out of 5000000
+ 24930 multiletter control sequences out of 15000+600000
+ 559627 words of font info for 41 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 61i,11n,68p,394b,392s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
+usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr
+/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
+local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on ./Bio1/Celldelning_och_mutationer/Celldelning_och_mutationer_
+facit.pdf (5 pages, 135062 bytes).
+PDF statistics:
+ 51 PDF objects out of 1000 (max. 8388607)
+ 30 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+
+=== End of Log File Snippet ===
+=== Cleaning up build files for ./Bio1/Celldelning_och_mutationer/Celldelning_och_mutationer.tex ===
+Deleted: ./Bio1/Celldelning_och_mutationer/Celldelning_och_mutationer.aux
+Deleted: ./Bio1/Celldelning_och_mutationer/Celldelning_och_mutationer.log
+Deleted: ./Bio1/Celldelning_och_mutationer/Celldelning_och_mutationer_facit.aux
+Deleted: ./Bio1/Celldelning_och_mutationer/Celldelning_och_mutationer_facit.log
+
+=== Compiling ./Bio1/DNA_och_RNA_funktion_och_uppbyggnad/DNA_och_RNA_funktion_och_uppbyggnad.tex without answers ===
+Success: ./Bio1/DNA_och_RNA_funktion_och_uppbyggnad/DNA_och_RNA_funktion_och_uppbyggnad.tex compiled without errors.
+=== Compiling ./Bio1/DNA_och_RNA_funktion_och_uppbyggnad/DNA_och_RNA_funktion_och_uppbyggnad.tex with answers (_facit) ===
+Success: ./Bio1/DNA_och_RNA_funktion_och_uppbyggnad/DNA_och_RNA_funktion_och_uppbyggnad.tex compiled with answers (_facit) without errors.
+=== Cleaning up build files for ./Bio1/DNA_och_RNA_funktion_och_uppbyggnad/DNA_och_RNA_funktion_och_uppbyggnad.tex ===
+Deleted: ./Bio1/DNA_och_RNA_funktion_och_uppbyggnad/DNA_och_RNA_funktion_och_uppbyggnad.aux
+Deleted: ./Bio1/DNA_och_RNA_funktion_och_uppbyggnad/DNA_och_RNA_funktion_och_uppbyggnad.log
+Deleted: ./Bio1/DNA_och_RNA_funktion_och_uppbyggnad/DNA_och_RNA_funktion_och_uppbyggnad_facit.aux
+Deleted: ./Bio1/DNA_och_RNA_funktion_och_uppbyggnad/DNA_och_RNA_funktion_och_uppbyggnad_facit.log
+
+=== Compiling ./Bio1/Evolution_NA23/Evolution_NA23.tex without answers ===
+Success: ./Bio1/Evolution_NA23/Evolution_NA23.tex compiled without errors.
+=== Compiling ./Bio1/Evolution_NA23/Evolution_NA23.tex with answers (_facit) ===
+Success: ./Bio1/Evolution_NA23/Evolution_NA23.tex compiled with answers (_facit) without errors.
+=== Cleaning up build files for ./Bio1/Evolution_NA23/Evolution_NA23.tex ===
+Deleted: ./Bio1/Evolution_NA23/Evolution_NA23.aux
+Deleted: ./Bio1/Evolution_NA23/Evolution_NA23.log
+Deleted: ./Bio1/Evolution_NA23/Evolution_NA23_facit.aux
+Deleted: ./Bio1/Evolution_NA23/Evolution_NA23_facit.log
+
+=== Compiling ./Bio1/Systematik/Systematik.tex without answers ===
+Success: ./Bio1/Systematik/Systematik.tex compiled without errors.
+=== Compiling ./Bio1/Systematik/Systematik.tex with answers (_facit) ===
+Success: ./Bio1/Systematik/Systematik.tex compiled with answers (_facit) without errors.
+=== Cleaning up build files for ./Bio1/Systematik/Systematik.tex ===
+Deleted: ./Bio1/Systematik/Systematik.aux
+Deleted: ./Bio1/Systematik/Systematik.log
+Deleted: ./Bio1/Systematik/Systematik_facit.aux
+Deleted: ./Bio1/Systematik/Systematik_facit.log
+
+=== Compiling ./Bio1/Evolution/Evolution.tex without answers ===
+Success: ./Bio1/Evolution/Evolution.tex compiled without errors.
+=== Compiling ./Bio1/Evolution/Evolution.tex with answers (_facit) ===
+Success: ./Bio1/Evolution/Evolution.tex compiled with answers (_facit) without errors.
+=== Cleaning up build files for ./Bio1/Evolution/Evolution.tex ===
+Deleted: ./Bio1/Evolution/Evolution.aux
+Deleted: ./Bio1/Evolution/Evolution.log
+Deleted: ./Bio1/Evolution/Evolution_facit.aux
+Deleted: ./Bio1/Evolution/Evolution_facit.log
+
+=== Compiling ./Bio1/Laxforhor_Liv_och_celler/Laxforhor_Liv_och_celler.tex without answers ===
+Success: ./Bio1/Laxforhor_Liv_och_celler/Laxforhor_Liv_och_celler.tex compiled without errors.
+=== Compiling ./Bio1/Laxforhor_Liv_och_celler/Laxforhor_Liv_och_celler.tex with answers (_facit) ===
+Success: ./Bio1/Laxforhor_Liv_och_celler/Laxforhor_Liv_och_celler.tex compiled with answers (_facit) without errors.
+=== Cleaning up build files for ./Bio1/Laxforhor_Liv_och_celler/Laxforhor_Liv_och_celler.tex ===
+Deleted: ./Bio1/Laxforhor_Liv_och_celler/Laxforhor_Liv_och_celler.aux
+Deleted: ./Bio1/Laxforhor_Liv_och_celler/Laxforhor_Liv_och_celler.log
+Deleted: ./Bio1/Laxforhor_Liv_och_celler/Laxforhor_Liv_och_celler_facit.aux
+Deleted: ./Bio1/Laxforhor_Liv_och_celler/Laxforhor_Liv_och_celler_facit.log
+
+=== Compiling ./Milj1/Prov_Hallbar/Prov_Hallbar.tex without answers ===
+Success: ./Milj1/Prov_Hallbar/Prov_Hallbar.tex compiled without errors.
+=== Compiling ./Milj1/Prov_Hallbar/Prov_Hallbar.tex with answers (_facit) ===
+Success: ./Milj1/Prov_Hallbar/Prov_Hallbar.tex compiled with answers (_facit) without errors.
+=== Cleaning up build files for ./Milj1/Prov_Hallbar/Prov_Hallbar.tex ===
+Deleted: ./Milj1/Prov_Hallbar/Prov_Hallbar.aux
+Deleted: ./Milj1/Prov_Hallbar/Prov_Hallbar.log
+Deleted: ./Milj1/Prov_Hallbar/Prov_Hallbar_facit.aux
+Deleted: ./Milj1/Prov_Hallbar/Prov_Hallbar_facit.log
+
+=== Compiling ./Milj1/Miljöproblem/Milj1-Miljöproblem-svar.tex without answers ===
+Success: ./Milj1/Miljöproblem/Milj1-Miljöproblem-svar.tex compiled without errors.
+=== Compiling ./Milj1/Miljöproblem/Milj1-Miljöproblem-svar.tex with answers (_facit) ===
+Success: ./Milj1/Miljöproblem/Milj1-Miljöproblem-svar.tex compiled with answers (_facit) without errors.
+=== Cleaning up build files for ./Milj1/Miljöproblem/Milj1-Miljöproblem-svar.tex ===
+Deleted: ./Milj1/Miljöproblem/Milj1-Miljöproblem-svar.aux
+Deleted: ./Milj1/Miljöproblem/Milj1-Miljöproblem-svar.log
+Deleted: ./Milj1/Miljöproblem/Milj1-Miljöproblem-svar_facit.aux
+Deleted: ./Milj1/Miljöproblem/Milj1-Miljöproblem-svar_facit.log
+
+=== Compiling ./Milj1/Miljöproblem/Miljöproblem.tex without answers ===
+Success: ./Milj1/Miljöproblem/Miljöproblem.tex compiled without errors.
+=== Compiling ./Milj1/Miljöproblem/Miljöproblem.tex with answers (_facit) ===
+Success: ./Milj1/Miljöproblem/Miljöproblem.tex compiled with answers (_facit) without errors.
+=== Cleaning up build files for ./Milj1/Miljöproblem/Miljöproblem.tex ===
+Deleted: ./Milj1/Miljöproblem/Miljöproblem.aux
+Deleted: ./Milj1/Miljöproblem/Miljöproblem.log
+Deleted: ./Milj1/Miljöproblem/Miljöproblem_facit.aux
+Deleted: ./Milj1/Miljöproblem/Miljöproblem_facit.log
+
+=== Compilation Summary ===
+Successful compilations:
+Success: ./Bio2/Biomolekyler_och_cellens_organeller/Biomolekyler_och_cellens_organeller.tex compiled without errors.
+Success: ./Bio2/Biomolekyler_och_cellens_organeller/Biomolekyler_och_cellens_organeller.tex compiled with answers (_facit) without errors.
+Success: ./Nak1a1/Energiproduktion_och_klimatforandringar/Energiproduktion_och_klimatforandringar.tex compiled without errors.
+Success: ./Nak1a1/Energiproduktion_och_klimatforandringar/Energiproduktion_och_klimatforandringar.tex compiled with answers (_facit) without errors.
+Success: ./Nak1a1/Hallbarhet_och_ekologi_Nak1a1_2024/Hallbarhet_och_ekologi_Nak1a1_2024.tex compiled without errors.
+Success: ./Nak1a1/Hallbarhet_och_ekologi_Nak1a1_2024/Hallbarhet_och_ekologi_Nak1a1_2024.tex compiled with answers (_facit) without errors.
+Success: ./Nak1a1/Reproduktionsfysiologi/Reproduktionsfysiologi.tex compiled without errors.
+Success: ./Nak1a1/Reproduktionsfysiologi/Reproduktionsfysiologi.tex compiled with answers (_facit) without errors.
+Success: ./Nak2/Grundläggande_kemi/Grundlaggandekemi.tex compiled without errors.
+Success: ./Nak2/Grundläggande_kemi/Grundlaggandekemi.tex compiled with answers (_facit) without errors.
+Success: ./Nak1b/Ekologi_Nak1b_2024/Ekologi_Nak1b_2024.tex compiled without errors.
+Success: ./Nak1b/Ekologi_Nak1b_2024/Ekologi_Nak1b_2024.tex compiled with answers (_facit) without errors.
+Success: ./Nak1b/Kropp_och_hälsa/Kroppochhalsa.tex compiled without errors.
+Success: ./Nak1b/Kropp_och_hälsa/Kroppochhalsa.tex compiled with answers (_facit) without errors.
+Success: ./Bio1/DNA_och_RNA_funktion_och_uppbyggnad/DNA_och_RNA_funktion_och_uppbyggnad.tex compiled without errors.
+Success: ./Bio1/DNA_och_RNA_funktion_och_uppbyggnad/DNA_och_RNA_funktion_och_uppbyggnad.tex compiled with answers (_facit) without errors.
+Success: ./Bio1/Evolution_NA23/Evolution_NA23.tex compiled without errors.
+Success: ./Bio1/Evolution_NA23/Evolution_NA23.tex compiled with answers (_facit) without errors.
+Success: ./Bio1/Systematik/Systematik.tex compiled without errors.
+Success: ./Bio1/Systematik/Systematik.tex compiled with answers (_facit) without errors.
+Success: ./Bio1/Evolution/Evolution.tex compiled without errors.
+Success: ./Bio1/Evolution/Evolution.tex compiled with answers (_facit) without errors.
+Success: ./Bio1/Laxforhor_Liv_och_celler/Laxforhor_Liv_och_celler.tex compiled without errors.
+Success: ./Bio1/Laxforhor_Liv_och_celler/Laxforhor_Liv_och_celler.tex compiled with answers (_facit) without errors.
+Success: ./Milj1/Prov_Hallbar/Prov_Hallbar.tex compiled without errors.
+Success: ./Milj1/Prov_Hallbar/Prov_Hallbar.tex compiled with answers (_facit) without errors.
+Success: ./Milj1/Miljöproblem/Milj1-Miljöproblem-svar.tex compiled without errors.
+Success: ./Milj1/Miljöproblem/Milj1-Miljöproblem-svar.tex compiled with answers (_facit) without errors.
+Success: ./Milj1/Miljöproblem/Miljöproblem.tex compiled without errors.
+Success: ./Milj1/Miljöproblem/Miljöproblem.tex compiled with answers (_facit) without errors.
+
+Failed compilations:
+Error: Failed to compile ./Nak1a1/Hallbarhet_och_ekologi_Nak1a1_2023/Hallbarhet_och_ekologi_Nak1a1_2023.tex. Check the log for details.
+Error: Failed to compile ./Nak1a1/Hallbarhet_och_ekologi_Nak1a1_2023/Hallbarhet_och_ekologi_Nak1a1_2023.tex with answers (_facit). Check the log for details.
+Error: Failed to compile ./Bio1/Celldelning_och_mutationer/Celldelning_och_mutationer.tex. Check the log for details.
+Error: Failed to compile ./Bio1/Celldelning_och_mutationer/Celldelning_och_mutationer.tex with answers (_facit). Check the log for details.
