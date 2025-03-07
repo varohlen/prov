@@ -92,6 +92,16 @@ Deleted: ./Nak1a1/Reproduktionsfysiologi/Reproduktionsfysiologi.log
 Deleted: ./Nak1a1/Reproduktionsfysiologi/Reproduktionsfysiologi_facit.aux
 Deleted: ./Nak1a1/Reproduktionsfysiologi/Reproduktionsfysiologi_facit.log
 
+=== Compiling ./Nak1a1/Energiproduktion_och_klimatforandringar25/Energiproduktion_klimatforandringar25.tex without answers ===
+Success: ./Nak1a1/Energiproduktion_och_klimatforandringar25/Energiproduktion_klimatforandringar25.tex compiled without errors.
+=== Compiling ./Nak1a1/Energiproduktion_och_klimatforandringar25/Energiproduktion_klimatforandringar25.tex with answers (_facit) ===
+Success: ./Nak1a1/Energiproduktion_och_klimatforandringar25/Energiproduktion_klimatforandringar25.tex compiled with answers (_facit) without errors.
+=== Cleaning up build files for ./Nak1a1/Energiproduktion_och_klimatforandringar25/Energiproduktion_klimatforandringar25.tex ===
+Deleted: ./Nak1a1/Energiproduktion_och_klimatforandringar25/Energiproduktion_klimatforandringar25.aux
+Deleted: ./Nak1a1/Energiproduktion_och_klimatforandringar25/Energiproduktion_klimatforandringar25.log
+Deleted: ./Nak1a1/Energiproduktion_och_klimatforandringar25/Energiproduktion_klimatforandringar25_facit.aux
+Deleted: ./Nak1a1/Energiproduktion_och_klimatforandringar25/Energiproduktion_klimatforandringar25_facit.log
+
 === Compiling ./Nak2/Grundläggande_kemi/Grundlaggandekemi.tex without answers ===
 Success: ./Nak2/Grundläggande_kemi/Grundlaggandekemi.tex compiled without errors.
 === Compiling ./Nak2/Grundläggande_kemi/Grundlaggandekemi.tex with answers (_facit) ===
@@ -121,6 +131,18 @@ Deleted: ./Nak1b/Kropp_och_hälsa/Kroppochhalsa.aux
 Deleted: ./Nak1b/Kropp_och_hälsa/Kroppochhalsa.log
 Deleted: ./Nak1b/Kropp_och_hälsa/Kroppochhalsa_facit.aux
 Deleted: ./Nak1b/Kropp_och_hälsa/Kroppochhalsa_facit.log
+
+=== Compiling ./AI/laboration.tex without answers ===
+Success: ./AI/laboration.tex compiled without errors.
+=== Compiling ./AI/laboration.tex with answers (_facit) ===
+Success: ./AI/laboration.tex compiled with answers (_facit) without errors.
+=== Cleaning up build files for ./AI/laboration.tex ===
+Deleted: ./AI/laboration.aux
+Deleted: ./AI/laboration.log
+Deleted: ./AI/laboration.out
+Deleted: ./AI/laboration_facit.aux
+Deleted: ./AI/laboration_facit.log
+Deleted: ./AI/laboration_facit.out
 
 === Compiling ./Bio1/Celldelning_och_mutationer/Celldelning_och_mutationer.tex without answers ===
 Error: Failed to compile ./Bio1/Celldelning_och_mutationer/Celldelning_och_mutationer.tex. Check the log for details.
@@ -176,15 +198,25 @@ Deleted: ./Bio1/Celldelning_och_mutationer/Celldelning_och_mutationer.log
 Deleted: ./Bio1/Celldelning_och_mutationer/Celldelning_och_mutationer_facit.aux
 Deleted: ./Bio1/Celldelning_och_mutationer/Celldelning_och_mutationer_facit.log
 
-=== Compiling ./Bio1/DNA_och_RNA_funktion_och_uppbyggnad/DNA_och_RNA_funktion_och_uppbyggnad.tex without answers ===
-Success: ./Bio1/DNA_och_RNA_funktion_och_uppbyggnad/DNA_och_RNA_funktion_och_uppbyggnad.tex compiled without errors.
-=== Compiling ./Bio1/DNA_och_RNA_funktion_och_uppbyggnad/DNA_och_RNA_funktion_och_uppbyggnad.tex with answers (_facit) ===
-Success: ./Bio1/DNA_och_RNA_funktion_och_uppbyggnad/DNA_och_RNA_funktion_och_uppbyggnad.tex compiled with answers (_facit) without errors.
-=== Cleaning up build files for ./Bio1/DNA_och_RNA_funktion_och_uppbyggnad/DNA_och_RNA_funktion_och_uppbyggnad.tex ===
-Deleted: ./Bio1/DNA_och_RNA_funktion_och_uppbyggnad/DNA_och_RNA_funktion_och_uppbyggnad.aux
-Deleted: ./Bio1/DNA_och_RNA_funktion_och_uppbyggnad/DNA_och_RNA_funktion_och_uppbyggnad.log
-Deleted: ./Bio1/DNA_och_RNA_funktion_och_uppbyggnad/DNA_och_RNA_funktion_och_uppbyggnad_facit.aux
-Deleted: ./Bio1/DNA_och_RNA_funktion_och_uppbyggnad/DNA_och_RNA_funktion_och_uppbyggnad_facit.log
+=== Compiling ./Bio1/DNA_och_RNA/DNA_och_RNA.tex without answers ===
+Success: ./Bio1/DNA_och_RNA/DNA_och_RNA.tex compiled without errors.
+=== Compiling ./Bio1/DNA_och_RNA/DNA_och_RNA.tex with answers (_facit) ===
+Success: ./Bio1/DNA_och_RNA/DNA_och_RNA.tex compiled with answers (_facit) without errors.
+=== Cleaning up build files for ./Bio1/DNA_och_RNA/DNA_och_RNA.tex ===
+Deleted: ./Bio1/DNA_och_RNA/DNA_och_RNA.aux
+Deleted: ./Bio1/DNA_och_RNA/DNA_och_RNA.log
+Deleted: ./Bio1/DNA_och_RNA/DNA_och_RNA_facit.aux
+Deleted: ./Bio1/DNA_och_RNA/DNA_och_RNA_facit.log
+
+=== Compiling ./Bio1/DNA_och_RNA2025/DNA_och_RNA2025.tex without answers ===
+Success: ./Bio1/DNA_och_RNA2025/DNA_och_RNA2025.tex compiled without errors.
+=== Compiling ./Bio1/DNA_och_RNA2025/DNA_och_RNA2025.tex with answers (_facit) ===
+Success: ./Bio1/DNA_och_RNA2025/DNA_och_RNA2025.tex compiled with answers (_facit) without errors.
+=== Cleaning up build files for ./Bio1/DNA_och_RNA2025/DNA_och_RNA2025.tex ===
+Deleted: ./Bio1/DNA_och_RNA2025/DNA_och_RNA2025.aux
+Deleted: ./Bio1/DNA_och_RNA2025/DNA_och_RNA2025.log
+Deleted: ./Bio1/DNA_och_RNA2025/DNA_och_RNA2025_facit.aux
+Deleted: ./Bio1/DNA_och_RNA2025/DNA_och_RNA2025_facit.log
 
 === Compiling ./Bio1/Evolution_NA23/Evolution_NA23.tex without answers ===
 Success: ./Bio1/Evolution_NA23/Evolution_NA23.tex compiled without errors.
@@ -266,14 +298,20 @@ Success: ./Nak1a1/Hallbarhet_och_ekologi_Nak1a1_2024/Hallbarhet_och_ekologi_Nak1
 Success: ./Nak1a1/Hallbarhet_och_ekologi_Nak1a1_2024/Hallbarhet_och_ekologi_Nak1a1_2024.tex compiled with answers (_facit) without errors.
 Success: ./Nak1a1/Reproduktionsfysiologi/Reproduktionsfysiologi.tex compiled without errors.
 Success: ./Nak1a1/Reproduktionsfysiologi/Reproduktionsfysiologi.tex compiled with answers (_facit) without errors.
+Success: ./Nak1a1/Energiproduktion_och_klimatforandringar25/Energiproduktion_klimatforandringar25.tex compiled without errors.
+Success: ./Nak1a1/Energiproduktion_och_klimatforandringar25/Energiproduktion_klimatforandringar25.tex compiled with answers (_facit) without errors.
 Success: ./Nak2/Grundläggande_kemi/Grundlaggandekemi.tex compiled without errors.
 Success: ./Nak2/Grundläggande_kemi/Grundlaggandekemi.tex compiled with answers (_facit) without errors.
 Success: ./Nak1b/Ekologi_Nak1b_2024/Ekologi_Nak1b_2024.tex compiled without errors.
 Success: ./Nak1b/Ekologi_Nak1b_2024/Ekologi_Nak1b_2024.tex compiled with answers (_facit) without errors.
 Success: ./Nak1b/Kropp_och_hälsa/Kroppochhalsa.tex compiled without errors.
 Success: ./Nak1b/Kropp_och_hälsa/Kroppochhalsa.tex compiled with answers (_facit) without errors.
-Success: ./Bio1/DNA_och_RNA_funktion_och_uppbyggnad/DNA_och_RNA_funktion_och_uppbyggnad.tex compiled without errors.
-Success: ./Bio1/DNA_och_RNA_funktion_och_uppbyggnad/DNA_och_RNA_funktion_och_uppbyggnad.tex compiled with answers (_facit) without errors.
+Success: ./AI/laboration.tex compiled without errors.
+Success: ./AI/laboration.tex compiled with answers (_facit) without errors.
+Success: ./Bio1/DNA_och_RNA/DNA_och_RNA.tex compiled without errors.
+Success: ./Bio1/DNA_och_RNA/DNA_och_RNA.tex compiled with answers (_facit) without errors.
+Success: ./Bio1/DNA_och_RNA2025/DNA_och_RNA2025.tex compiled without errors.
+Success: ./Bio1/DNA_och_RNA2025/DNA_och_RNA2025.tex compiled with answers (_facit) without errors.
 Success: ./Bio1/Evolution_NA23/Evolution_NA23.tex compiled without errors.
 Success: ./Bio1/Evolution_NA23/Evolution_NA23.tex compiled with answers (_facit) without errors.
 Success: ./Bio1/Systematik/Systematik.tex compiled without errors.

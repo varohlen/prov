@@ -7,6 +7,6 @@ curriculum: GY11
 class: NA24
 author: Viktor Arohlén
 assessment: poäng
-type: kortsvar, frisvar
+type: kryssfrågor, kortsvar
 tags: liv, celler, naturvetenskapligt arbetssätt, autotrof, heterotrof, eukaryot, prokaryot, morfologiskt perspektiv, organisk kemi
 ---

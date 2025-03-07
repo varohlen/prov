@@ -1,7 +1,7 @@
 ---
 title: Systematik
 subject: BIOBIO1
-date: 2024-03-13, 2024-11-25
+date: 2024-03-13
 exam: prov
 curriculum: GY11
 class: NA23, NA24

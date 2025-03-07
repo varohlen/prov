@@ -1,0 +1,365 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[swedish]{babel}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue]{hyperref}
+
+% Fix UTF-8 encoding in listings
+\lstset{
+    inputencoding=utf8,
+    extendedchars=true,
+    literate={å}{{\aa}}1 {ä}{{\"a}}1 {ö}{{\"o}}1 {Å}{{\AA}}1 {Ä}{{\"A}}1 {Ö}{{\"O}}1,
+    basicstyle=\ttfamily\small,
+    breaklines=true,
+    postbreak={},
+    breakatwhitespace=true,
+    numbers=none,
+    numberstyle=\tiny\color{gray},
+    numbersep=10pt,
+    showstringspaces=false,
+    frame=none,
+    tabsize=4,
+    texcl=true
+}
+
+% Definiera en box för terminalkommandon
+\newtcblisting{terminalbox}{
+    listing engine=listings,
+    breakable,
+    colback=black!85,
+    coltext=white,
+    colframe=black!85,
+    boxrule=0.5mm,
+    arc=0mm,
+    listing only,
+    listing options={
+        language=bash,
+        basicstyle=\ttfamily\small\color{white},
+        breaklines=true,
+        breakatwhitespace=true,
+        showstringspaces=false,
+        postbreak={},
+        inputencoding=utf8,
+        extendedchars=true,
+        literate={å}{{\aa}}1 {ä}{{\"a}}1 {ö}{{\"o}}1
+    },
+    left=2mm,
+    right=2mm,
+    top=2mm,
+    bottom=2mm,
+    sharp corners
+}
+
+% Definiera en box för kod
+\newtcblisting{codebox}{
+    listing engine=listings,
+    breakable,
+    colback=gray!10,
+    colframe=gray!50,
+    boxrule=0.5mm,
+    arc=0mm,
+    listing only,
+    listing options={
+        language=Python,
+        basicstyle=\ttfamily\small\color{black},
+        breaklines=true,
+        breakatwhitespace=true,
+        showstringspaces=false,
+        postbreak={},
+        inputencoding=utf8,
+        extendedchars=true,
+        literate={å}{{\aa}}1 {ä}{{\"a}}1 {ö}{{\"o}}1
+    },
+    left=2mm,
+    right=2mm,
+    top=2mm,
+    bottom=2mm,
+    sharp corners
+}
+
+\title{Laboration i Artificiell Intelligens Nivå 1 \\ \large Partille Gymnasium}
+\author{Viktor Arohlén}
+\date{Datum}
+
+
+\begin{document}
+
+\maketitle
+
+\section*{Introduktion}
+Denna laboration består av två delar som utförs under två separata tillfällen. Den första delen fokuserar på att förstå hur algoritmer som Word2Vec kan identifiera mönster i skrivet språk. Den andra delen introducerar konceptet prompt engineering och hur man kan förbättra interaktionen med AI-modeller.
+Slutligen skrivs en avslutande reflektion av hur Word2Vec och prompt engineering kan användas tillsammans för att förstå och förbättra interaktionen med AI-modeller.
+\\ \\ Lärarkommentarer i sista avsnittet.
+
+
+\section{Tillfälle 1: Word2Vec och mönster i språk}
+
+\subsection{Syfte}
+Att förstå hur Word2Vec-algoritmen kan användas för att identifiera och representera mönster i skrivet språk, samt utforska hur den kan hitta liknande ord baserat på deras betydelse.
+
+\subsection{Material}
+\begin{itemize}
+    \item Dator med Python installerat (eller Chromebook med tillgång till webben)
+    \item Gensim-biblioteket för Word2Vec (för Python-användare)
+    \item En text att analysera (ex. en nyhetsartikel, en låt eller utdrag från en bok)
+    \item Webbaserat alternativ: \url{https://remykarem.github.io/word2vec-demo/}
+\end{itemize}
+\break
+\subsection{Instruktioner}
+
+\subsubsection{För Python-användare}
+\begin{enumerate}
+    \item Installera Gensim-biblioteket genom att köra följande kommando i terminalen:
+    
+    \begin{terminalbox}
+pip install gensim
+    \end{terminalbox}
+    
+    \item Ladda ner eller skapa en text som du vill analysera. Du kan använda en enkel textfil med några meningar som exempel.
+    
+    \item Skriv ett Python-skript som använder Word2Vec för att träna en modell på din text. Här är ett exempel:
+    \begin{codebox}
+from gensim.models import Word2Vec
+from gensim.utils import simple_preprocess
+
+# Ladda textkorpus
+with open('din_korpus.txt', 'r', encoding='utf-8') as f:
+    text = f.read()
+
+# Förbearbeta texten
+sentences = [simple_preprocess(text)]
+
+# Träna Word2Vec-modellen
+model = Word2Vec(sentences, vector_size=100, window=5, min_count=1, workers=4)
+
+# Spara modellen
+model.save("word2vec.model")
+    \end{codebox}
+
+    \item Använd antingen kodexemplet ovan och testa att justera parametrarna, alternativt sätt dig in mer i Gensim genom dess \href{https://radimrehurek.com/gensim/auto_examples/index.html}{dokumentation}
+    \item Nedan följer en förklaring av de olika parametrarna:
+    
+    \begin{itemize}
+        \item \textbf{vector\_size}:
+            \begin{itemize}
+                \item \textbf{Vad det är}: Storleken på vektorerna som representerar varje ord.
+                \item \textbf{Hur man kan ändra}: Öka för mer detaljerade representationer (t.ex. 200), minska för snabbare träning (t.ex. 50).
+                \item \textbf{Effekt}: Högre värden ger mer detaljerade ordrepresentationer men kräver mer minne.
+            \end{itemize}
+        \break
+        \item \textbf{window}:
+            \begin{itemize}
+                \item \textbf{Vad det är}: Antalet ord före och efter ett ord som modellen tar hänsyn till.
+                \item \textbf{Hur man kan ändra}: Öka för bredare kontext (t.ex. 10), minska för smalare kontext (t.ex. 2).
+                \item \textbf{Effekt}: Högre värden ger en bredare kontext, men kan göra träningen långsammare.
+            \end{itemize}
+        
+        \item \textbf{min\_count}:
+            \begin{itemize}
+                \item \textbf{Vad det är}: Det minsta antalet gånger ett ord måste förekomma för att inkluderas i modellen.
+                \item \textbf{Hur man kan ändra}: Öka för att utesluta sällsynta ord (t.ex. 5), minska för att inkludera alla ord (t.ex. 1).
+                \item \textbf{Effekt}: Högre värden förbättrar modellens kvalitet genom att fokusera på vanliga ord.
+            \end{itemize}
+        
+        \item \textbf{workers}:
+            \begin{itemize}
+                \item \textbf{Vad det är}: Antalet trådar som används för att träna modellen.
+                \item \textbf{Hur man kan ändra}: Öka för snabbare träning på flerkärniga datorer (t.ex. 8), minska för att spara resurser (t.ex. 1).
+                \item \textbf{Effekt}: Högre värden snabbar upp träningen om datorn har tillräckligt med kärnor.
+            \end{itemize}
+    \end{itemize}
+    
+    \item Analysera modellen genom att utforska ordvektorer och hitta liknande ord. Till exempel:
+    \begin{codebox}
+# Ladda modellen
+model = Word2Vec.load("word2vec.model")
+
+# Hitta ord som är lika ‘kung’
+similar_words = model.wv.most_similar("kung")
+print(similar_words)
+    \end{codebox}
+
+    Modellen kommer presentera värden mellan 0 till 1 för att rangordna hur \textit{lika} orden är.
+    
+    \item \textbf{Uppgift:} Testa att hitta liknande ord för minst tre olika ord (t.ex. ‘bil’, ‘skola’, ‘musik’). Dokumentera resultaten och fundera över hur Word2Vec bestämmer vilka ord som är \textit{lika}.
+\end{enumerate}
+
+\break
+
+\subsubsection{För Chromebook-användare (Webbbaserat alternativ)}
+\begin{enumerate}
+    \item Öppna webbläsaren och gå till: \url{https://remykarem.github.io/word2vec-demo/}.
+    
+    \item Kopiera in din text eller börja att experimentera med den förvalda demotexten (Hey there, Delilah!).
+    
+    \item \textbf{Vilken modell ska ni använda?}
+    \noindent \\
+I det webbaserade Word2Vec-verktyget finns två alternativ: \textbf{CBOW} (Continuous Bag of Words) och \textbf{Skip-gram}. Här är en förklaring av skillnaderna och vilken modell som rekommenderas:
+
+\begin{itemize}
+    \item \textbf{CBOW}:
+        \begin{itemize}
+            \item Förutsäger ett målord baserat på dess kontextord.
+            \item Snabbare att träna men kanske inte lika bra för sällsynta ord.
+        \end{itemize}
+    \item \textbf{Skip-gram}:
+        \begin{itemize}
+            \item Förutsäger kontextord baserat på ett målord.
+            \item Bättre för sällsynta ord och ger ofta bättre resultat för större datamängder.
+        \end{itemize}
+\end{itemize}
+
+\noindent
+\textbf{Rekommendation}: Eftersom Python-biblioteket Gensim använder Skip-gram som standard, bör du välja \textbf{Skip-gram} i det webbaserade verktyget för att få resultat som är mest lika Python-modellen. Experimenta gärna med båda modellerna om du har tid.
+ 
+\item \textbf{Inställningar för att träna modellen}
+
+För att få resultat som är så lika som möjligt med Python-skriptet (Gensim), rekommenderas följande inställningar i det webbaserade verktyget:
+
+\begin{itemize}
+    \item \textbf{Window size}: 5 (samma som \texttt{window=5} i Gensim).
+    \item \textbf{Embedding size}: 100 (samma som \texttt{vector\_size=100} i Gensim).
+    \item \textbf{Optimiser}: SGD (Stochastic Gradient Descent).
+    \item \textbf{Learning rate}: 0.03 (liknande Gensims standardvärde \texttt{alpha=0.025}).
+    \item \textbf{Epochs}: 10 (samma som \texttt{epochs=10} i Gensim).
+\end{itemize}
+
+\noindent
+Dessa inställningar säkerställer att modellen tränas på ett sätt som är konsekvent med Python-skriptet och ger jämförbara resultat.
+
+\item \textbf{Inställning för t-SNE simulering}
+För att visualisera Word2Vec-vektorer med t-SNE rekommenderas följande inställningar:
+
+\begin{itemize}
+    \item \textbf{Learning rate}: 200 (hur snabbt algoritmen konvergerar mot en lösning)
+    \item \textbf{Perplexity}: 30 (hur nära orden algoritmen arbetar (se window))
+    \item \textbf{Iterations}: 500 (hur många gånger algoritmen körs)
+\end{itemize}
+
+\noindent
+Dessa inställningar ger en meningsfull visualisering av hur ord är relaterade till varandra i vektorrummet. Experimentera gärna med olika värden för att se hur det påverkar resultatet!
+
+
+    \item \textbf{Uppgift:} Undersök med hjälp av de olika inställningarna hur nära ord hamnar varandra. Dokumentera resultaten och fundera över hur Word2Vec bestämmer vilka ord som är \textit{lika}.
+\end{enumerate}
+
+\subsection{Jämförande av modellerna}
+För den som använt sig av båda modellerna för Word2vec eller som jämfört med en klasskamrat förklaras här likheterna och skillnaderna i resultatet.
+
+\begin{itemize}
+    \item \textbf{Liknande ord}:
+        \begin{itemize}
+            \item I Python-skriptet får vi en lista av ord som är mest lika ett visst ord (t.ex. "kung").
+            \item I t-SNE-visualiseringen kan vi leta upp samma ord och se om de ligger nära varandra i 2D-rummet.
+        \end{itemize}
+    
+    \item \textbf{Kluster av ord}:
+        \begin{itemize}
+            \item I t-SNE-visualiseringen kan vi identifiera kluster av ord som har liknande betydelser.
+            \item I Python-skriptet kan vi bekräfta detta genom att kontrollera om dessa ord också har höga likhetsscore med varandra.
+        \end{itemize}
+    
+    \item \textbf{Avvikande ord}:
+        \begin{itemize}
+            \item Om ett ord ligger långt ifrån andra ord i t-SNE-visualiseringen, kan vi använda Python-skriptet för att kontrollera om det har låga likhetsscore med andra ord.
+        \end{itemize}
+\end{itemize}
+
+\noindent
+Genom att jämföra resultaten på detta sätt kan vi bekräfta att t-SNE-visualiseringen och Python-skriptet ger konsekventa resultat.
+
+\break
+
+\section{Tillfälle 2: Prompt Engineering}
+
+\subsection{Syfte}
+Att förstå och tillämpa prompt engineering för att förbättra interaktionen med en AI-modell.
+
+\subsection{Material}
+\begin{itemize}
+    \item Tillgång till en AI-modell (t.ex. ChatGPT eller annan språkmodell)
+    \item Resultat från Tillfälle 1 (Word2Vec-modellen)
+\end{itemize}
+
+\subsection{Instruktioner}
+\begin{enumerate}
+    \item Börja med att skapa ett grundläggande prompt för att interagera med AI-modellen. Till exempel:
+    \begin{codebox}
+        "Beskriv hur Word2Vec fungerar."
+    \end{codebox}
+    
+    \item Testa ditt prompt och notera svaret från AI-modellen.
+    
+    \item Förbättra ditt prompt genom att lägga till mer kontext eller specifika instruktioner. Till exempel:
+    \begin{codebox}
+        "Beskriv hur Word2Vec fungerar och ge ett exempel på hur det kan användas för att hitta liknande ord i en text."
+    \end{codebox}
+    
+    \item \textbf{Uppgift:} Jämför svaren från AI-modellen med ditt förbättrade prompt. Skriv ner hur svaren förändras och reflektera över hur prompt engineering kan påverka kvaliteten på svaren.
+    
+    \item \textbf{Uppgift:} Skapa ett eget exempel där du använder prompt engineering för att få AI-modellen att förklara ett annat koncept relaterat till AI (t.ex. ‘neuronnät’ eller ‘maskininlärning’). Dokumentera ditt prompt och resultatet.
+\end{enumerate}
+\break
+
+\section{Reflekterande uppgift}
+Efter att ha utforskat Word2Vec och prompt engineering i denna laboration är det dags att reflektera över vad du har lärt dig och hur det hänger ihop med större frågor om artificiell intelligens. Svara på följande frågor utifrån dina erfarenheter och den dokumentation du har skapat under laborationen.
+
+\subsection*{1. Word2Vec och språkförståelse}
+\begin{itemize}
+    \item Beskriv hur Word2Vec fungerar för att hitta liknande ord. Använd dina resultat från laborationen som exempel.
+    \item Vilka fördelar och begränsningar ser du med Word2Vec? Tänk på hur väl det fungerade för att hitta liknande ord i din text.
+    \item Jämför hur Word2Vec hittar liknande ord med hur du själv skulle göra det. Är det på samma sätt eller annorlunda?
+\end{itemize}
+
+\subsection*{2. Prompt engineering och interaktion med AI}
+\begin{itemize}
+    \item Beskriv hur du använde prompt engineering för att förbättra resultatet från en AI-modell. Ge exempel från laborationen.
+    \item Vilka utmaningar stötte du på när du skapade prompts? 
+    \item Hur kan prompt engineering påverka hur vi använder AI i framtiden? (Både positiva och negativa konsekvenser)
+\end{itemize}
+
+\subsection*{3. AI och mänsklig intelligens}
+\begin{itemize}
+    \item Jämför hur Word2Vec och prompt engineering fungerar med hur människor förstår och använder språk. Vad är AI bra på, och vad är människor fortfarande bättre på?
+    \item Finns det situationer där du tycker att AI är överlägset människan? Ge exempel från laborationen eller från dina egna erfarenheter.
+\end{itemize}
+
+\break
+
+\section*{Lärarkommentar}
+
+Laborationen är en omarbetad version av 3.2 (Foundation models - Laborera) från kursen TIG133. Den andra delen föjer till stort sätt samma struktur, men är något förenklad. Valet gjordes eftersom jag själv upplevde laborationen lärorik och dessutom utforskade fler Word2Vec modeller och fann dem intressanta.
+\\ \\
+Den största skillnaden hittas i den första delen av laborationen, där eleverna får möjligheten att arbeta med Python-biblioteket Gensim för arbeta med en lokal Word2Vec modell. Instruktionerna här är även tänkta at vara så pass detaljerade att elever även utan programmeringsvana, men viss datorvana enkelt kan kopiera instruktioner och skript.
+\\ \\
+Att inkludera två olika Word2Vec modeller ger även möjlihet att jämföra och utveckla en mer fördjupad kunskap om hur de fungerar.
+\\ \\
+Laborationen är tänkt att uföras över 2-3 tillfällen.
+\begin{itemize}
+\item \textbf{Tidsåtgång}:
+\begin{itemize}
+    \item Tillfälle 1 (Word2Vec): Cirka 60–90 minuter.
+    \item Tillfälle 2 (Prompt Engineering): Cirka 60 minuter.
+    \item Tillfälle 3 (Reflekterande uppgift); Cirka 60 minuter eller eventuell hemuppgift.
+\end{itemize}
+
+\item \textbf{Centralt innehåll}: De praktiska laborationerna tar delvis upp följande centrala innehåll:
+\begin{itemize}
+    \item Vikten av data, datakvalitet för AI och val av data.
+    \item Översikt av tekniker för AI, däribland sökning, klassificering och objektigenkänning.
+    \item Enklare typ av problemlösning med hjälp av AI, till exempel klassificering, objektigenkänning, prediktion, tolkning och bearbetning av naturligt språk (NLP), enklare maskininlärning och användning av spelagent.
+    \item Metoder för enklare träning av AI.
+\end{itemize}
+\item \textbf{Reflekterande uppgift}: uppgiften bedöms frămst i form av den reflekterande uppgiften som ska ta vara på dokumentationen från de båda laborationstillfällena. Den reflekterande uppgiften täcker även följande centrala innehåll:
+\begin{itemize}
+    \item Jämförelse mellan hur enklare lösningar med AI fungerar och hur en människa löser samma problem.
+    \item Några situationer där AI är överlägsen människan och tvärtom.
+\end{itemize}
+\end{itemize}
+\end{document}
