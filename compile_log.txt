@@ -8,6 +8,88 @@ Deleted: ./Bio2/Biomolekyler_och_cellens_organeller/Biomolekyler_och_cellens_org
 Deleted: ./Bio2/Biomolekyler_och_cellens_organeller/Biomolekyler_och_cellens_organeller_facit.aux
 Deleted: ./Bio2/Biomolekyler_och_cellens_organeller/Biomolekyler_och_cellens_organeller_facit.log
 
+=== Compiling ./Bio2/Fysiologi1/Fysiologi1.tex without answers ===
+Success: ./Bio2/Fysiologi1/Fysiologi1.tex compiled without errors.
+=== Compiling ./Bio2/Fysiologi1/Fysiologi1.tex with answers (_facit) ===
+Success: ./Bio2/Fysiologi1/Fysiologi1.tex compiled with answers (_facit) without errors.
+=== Cleaning up build files for ./Bio2/Fysiologi1/Fysiologi1.tex ===
+Deleted: ./Bio2/Fysiologi1/Fysiologi1.aux
+Deleted: ./Bio2/Fysiologi1/Fysiologi1.log
+Deleted: ./Bio2/Fysiologi1/Fysiologi1_facit.aux
+Deleted: ./Bio2/Fysiologi1/Fysiologi1_facit.log
+
+=== Compiling ./Bio2/Fysiologi1/modern_style.tex without answers ===
+Success: ./Bio2/Fysiologi1/modern_style.tex compiled without errors.
+=== Compiling ./Bio2/Fysiologi1/modern_style.tex with answers (_facit) ===
+Success: ./Bio2/Fysiologi1/modern_style.tex compiled with answers (_facit) without errors.
+=== Cleaning up build files for ./Bio2/Fysiologi1/modern_style.tex ===
+Deleted: ./Bio2/Fysiologi1/modern_style.aux
+Deleted: ./Bio2/Fysiologi1/modern_style.log
+Deleted: ./Bio2/Fysiologi1/modern_style_facit.aux
+Deleted: ./Bio2/Fysiologi1/modern_style_facit.log
+
+=== Compiling ./Bio2/Fysiologi1/classic_style.tex without answers ===
+Success: ./Bio2/Fysiologi1/classic_style.tex compiled without errors.
+=== Compiling ./Bio2/Fysiologi1/classic_style.tex with answers (_facit) ===
+Success: ./Bio2/Fysiologi1/classic_style.tex compiled with answers (_facit) without errors.
+=== Cleaning up build files for ./Bio2/Fysiologi1/classic_style.tex ===
+Deleted: ./Bio2/Fysiologi1/classic_style.aux
+Deleted: ./Bio2/Fysiologi1/classic_style.log
+Deleted: ./Bio2/Fysiologi1/classic_style_facit.aux
+Deleted: ./Bio2/Fysiologi1/classic_style_facit.log
+
+=== Compiling ./Bio2/Fysiologi1/minimal_style.tex without answers ===
+Error: Failed to compile ./Bio2/Fysiologi1/minimal_style.tex. Check the log for details.
+=== Log File Snippet (./Bio2/Fysiologi1/minimal_style.log) ===
+
+
+
+! Emergency stop.
+<read *> 
+         
+l.95 \msg_fatal:nn {fontspec} {cannot-use-pdftex}
+                                                 
+*** (cannot \read from terminal in nonstop modes)
+
+ 
+Here is how much of TeX's memory you used:
+ 2574 strings out of 474116
+ 42605 string characters out of 5743681
+ 1925187 words of memory out of 5000000
+ 24983 multiletter control sequences out of 15000+600000
+ 558367 words of font info for 37 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 79i,0n,93p,254b,42s stack positions out of 10000i,1000n,20000p,200000b,200000s
+!  ==> Fatal error occurred, no output PDF file produced!
+=== End of Log File Snippet ===
+=== Compiling ./Bio2/Fysiologi1/minimal_style.tex with answers (_facit) ===
+Error: Failed to compile ./Bio2/Fysiologi1/minimal_style.tex with answers (_facit). Check the log for details.
+=== Log File Snippet (./Bio2/Fysiologi1/minimal_style_facit.log) ===
+
+
+
+! Emergency stop.
+<read *> 
+         
+l.95 \msg_fatal:nn {fontspec} {cannot-use-pdftex}
+                                                 
+*** (cannot \read from terminal in nonstop modes)
+
+ 
+Here is how much of TeX's memory you used:
+ 2578 strings out of 474116
+ 42760 string characters out of 5743681
+ 1925187 words of memory out of 5000000
+ 24986 multiletter control sequences out of 15000+600000
+ 558367 words of font info for 37 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 83i,0n,96p,292b,42s stack positions out of 10000i,1000n,20000p,200000b,200000s
+!  ==> Fatal error occurred, no output PDF file produced!
+=== End of Log File Snippet ===
+=== Cleaning up build files for ./Bio2/Fysiologi1/minimal_style.tex ===
+Deleted: ./Bio2/Fysiologi1/minimal_style.log
+Deleted: ./Bio2/Fysiologi1/minimal_style_facit.log
+
 === Compiling ./Nak1a1/Energiproduktion_och_klimatforandringar/Energiproduktion_och_klimatforandringar.tex without answers ===
 Success: ./Nak1a1/Energiproduktion_och_klimatforandringar/Energiproduktion_och_klimatforandringar.tex compiled without errors.
 === Compiling ./Nak1a1/Energiproduktion_och_klimatforandringar/Energiproduktion_och_klimatforandringar.tex with answers (_facit) ===
@@ -292,6 +374,12 @@ Deleted: ./Milj1/Miljöproblem/Miljöproblem_facit.log
 Successful compilations:
 Success: ./Bio2/Biomolekyler_och_cellens_organeller/Biomolekyler_och_cellens_organeller.tex compiled without errors.
 Success: ./Bio2/Biomolekyler_och_cellens_organeller/Biomolekyler_och_cellens_organeller.tex compiled with answers (_facit) without errors.
+Success: ./Bio2/Fysiologi1/Fysiologi1.tex compiled without errors.
+Success: ./Bio2/Fysiologi1/Fysiologi1.tex compiled with answers (_facit) without errors.
+Success: ./Bio2/Fysiologi1/modern_style.tex compiled without errors.
+Success: ./Bio2/Fysiologi1/modern_style.tex compiled with answers (_facit) without errors.
+Success: ./Bio2/Fysiologi1/classic_style.tex compiled without errors.
+Success: ./Bio2/Fysiologi1/classic_style.tex compiled with answers (_facit) without errors.
 Success: ./Nak1a1/Energiproduktion_och_klimatforandringar/Energiproduktion_och_klimatforandringar.tex compiled without errors.
 Success: ./Nak1a1/Energiproduktion_och_klimatforandringar/Energiproduktion_och_klimatforandringar.tex compiled with answers (_facit) without errors.
 Success: ./Nak1a1/Hallbarhet_och_ekologi_Nak1a1_2024/Hallbarhet_och_ekologi_Nak1a1_2024.tex compiled without errors.
@@ -328,6 +416,8 @@ Success: ./Milj1/Miljöproblem/Miljöproblem.tex compiled without errors.
 Success: ./Milj1/Miljöproblem/Miljöproblem.tex compiled with answers (_facit) without errors.
 
 Failed compilations:
+Error: Failed to compile ./Bio2/Fysiologi1/minimal_style.tex. Check the log for details.
+Error: Failed to compile ./Bio2/Fysiologi1/minimal_style.tex with answers (_facit). Check the log for details.
 Error: Failed to compile ./Nak1a1/Hallbarhet_och_ekologi_Nak1a1_2023/Hallbarhet_och_ekologi_Nak1a1_2023.tex. Check the log for details.
 Error: Failed to compile ./Nak1a1/Hallbarhet_och_ekologi_Nak1a1_2023/Hallbarhet_och_ekologi_Nak1a1_2023.tex with answers (_facit). Check the log for details.
 Error: Failed to compile ./Bio1/Celldelning_och_mutationer/Celldelning_och_mutationer.tex. Check the log for details.
