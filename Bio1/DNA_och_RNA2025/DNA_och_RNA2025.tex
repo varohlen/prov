@@ -1,6 +1,11 @@
 \documentclass{exam}
 \usepackage{graphicx} 
 
+% Enable solutions and customize solution name
+\printanswers
+\pointpoints{poäng}{poäng}
+\pointformat{\textbf{\thepoints}}
+\renewcommand{\solutiontitle}{\noindent\textbf{Lösningsförslag:}\enspace}
 
 %Format Header and footer
 \pagestyle{headandfoot}
@@ -8,9 +13,7 @@
 \headrule
 \footrule
 \setlength{\columnsep}{0.25cm}
-%\setlength{\columnseprule}{1pt}
 \footer{}{Sida \thepage}{}
-%\extrafootheight{-2cm}
 
 \begin{document}
 \section*{Instruktioner}
@@ -21,13 +24,13 @@ Provet består av två delar \\
 \subsection*{Poäng}
 Antalet poäng är markerat för varje fråga. Totalt \textbf{19 frågor} och \textbf{27 poäng}.\\ \textit{För godkänt resultat krävs 11 poäng.}
 
-\vspace{5mm} %5mm vertical space
+\vspace{5mm}
 \begin{center}
 \fbox{\fbox{\parbox{6in}{\centering
 \textbf{15 kryssfrågor}: markera endast ett alternativ, om inget annat anges. (\textbf{15 poäng})
 }}}
 \end{center}
-\vspace{5mm} %5mm vertical space
+\vspace{5mm}
 
 \begin{questions}
 
@@ -38,6 +41,9 @@ Antalet poäng är markerat för varje fråga. Totalt \textbf{19 frågor} och \t
     \correctchoice Replikation
     \choice Splicing
 \end{checkboxes}
+\begin{solution}
+Replikation är processen där DNA kopieras inför celldelning, medan proteinsyntesen involverar transkription (DNA till mRNA), splicing (modifiering av pre-mRNA) och translation (mRNA till protein).
+\end{solution}
 
 \vspace{5mm}
 \hrule
@@ -50,10 +56,13 @@ Antalet poäng är markerat för varje fråga. Totalt \textbf{19 frågor} och \t
    \choice Deoxiribos, ribos och fosfatgrupper(er)
    \correctchoice Kvävebas, sockermolekyl (ribos eller deoxiribos) och fosfatgrupp(er)
 \end{checkboxes} 
+\begin{solution}
+En nukleotid är byggstenen i DNA/RNA och består av tre delar: en kvävebas, en sockermolekyl (ribos i RNA, deoxiribos i DNA), och en eller flera fosfatgrupper.
+\end{solution}
 
 \vspace{5mm}
 \hrule
-\vspace{5mm} 
+\vspace{5mm}
 
 \question Vilken av följande är en funktion av \textbf{tRNA}?
 \begin{checkboxes}
@@ -62,10 +71,13 @@ Antalet poäng är markerat för varje fråga. Totalt \textbf{19 frågor} och \t
 \choice Att bilda ribosomernas struktur
 \choice Att katalysera kemiska reaktioner
 \end{checkboxes}
+\begin{solution}
+tRNA (transfer-RNA) fungerar som en "adapter" som bär aminosyror till ribosomen under translationen. Det har en antikodon som matchar mRNA:s kodon och bär samtidigt rätt aminosyra.
+\end{solution}
 
-\vspace{5mm} %5mm vertical space
+\vspace{5mm}
 \hrule
-\vspace{5mm} %5mm vertical space
+\vspace{5mm}
 
 \question Vilken av följande processer sker i \textbf{cellkärnan}?
 \begin{checkboxes}
@@ -74,8 +86,13 @@ Antalet poäng är markerat för varje fråga. Totalt \textbf{19 frågor} och \t
 \choice Proteinsyntes
 \choice Aminosyraaktivering
 \end{checkboxes}
+\begin{solution}
+Transkription sker i cellkärnan där DNA används som mall för att skapa mRNA. Translation och proteinsyntes sker däremot i cytoplasman vid ribosomerna.
+\end{solution}
 
-\break
+\vspace{5mm}
+\hrule
+\vspace{5mm}
 
 \question Vilka av följande är kvävebaspar i \textbf{DNA} (\textit{Flera alternativ kan vara korrekta}):
 \begin{checkboxes}
@@ -88,10 +105,13 @@ Antalet poäng är markerat för varje fråga. Totalt \textbf{19 frågor} och \t
 \choice Adenin - Uracil
 \choice Tymin - Cytosin
 \end{checkboxes}
+\begin{solution}
+I DNA finns två korrekta baspar: Adenin-Tymin (A-T) som binds med två vätebindningar, och Guanin-Cytosin (G-C) som binds med tre vätebindningar. Uracil förekommer endast i RNA.
+\end{solution}
 
-\vspace{5mm} %5mm vertical space
+\vspace{5mm}
 \hrule
-\vspace{5mm} %5mm vertical space
+\vspace{5mm}
 
 \question Vad av följande \textbf{stemmmer} för \textbf{RNA}:
 \begin{checkboxes}
@@ -100,10 +120,14 @@ Antalet poäng är markerat för varje fråga. Totalt \textbf{19 frågor} och \t
    \choice Innehåller kvävebasen tymin
    \choice Består av en dubbelsträng (dubbelhelix)
 \end{checkboxes}
+\begin{solution}
+RNA innehåller uracil istället för tymin, har ribos (inte deoxiribos) som sockermolekyl, och är oftast enkelsträngat (inte dubbelhelix som DNA).
+\end{solution}
 
-\vspace{5mm} %5mm vertical space
-\hrule 
-\vspace{5mm} %5mm vertical space
+\vspace{5mm}
+\hrule
+\vspace{5mm}
+
 \question Hur \textbf{binder} aminosyror till varandra?
 \begin{checkboxes}
    \choice Vätebindningar
@@ -111,22 +135,29 @@ Antalet poäng är markerat för varje fråga. Totalt \textbf{19 frågor} och \t
    \correctchoice Peptidbindning
    \choice Kemisk bindning
 \end{checkboxes}
+\begin{solution}
+Aminosyror binds till varandra genom peptidbindningar, som bildas mellan karboxylgruppen (-COOH) på en aminosyra och aminogruppen (-NH2) på nästa aminosyra.
+\end{solution}
 
-\vspace{5mm} %5mm vertical space
-\hrule 
-\vspace{5mm} %5mm vertical space
-
+\vspace{5mm}
+\hrule
+\vspace{5mm}
 
 \question \textbf{Proteiners} funktion och egenskap avgörs av deras struktur. \textbf{Primärstruktur} syftar till:  
 \begin{checkboxes}
    \choice vilken form proteinet har
    \choice vilka aminosyror som ingår
-   \correctchoice vilka aminosyrosyror som ingår och vilken ordning de är bundna
+   \correctchoice vilka aminosyror som ingår och vilken ordning de är bundna
    \choice hur proteinet binder till andra proteiner
 \end{checkboxes}
-\vspace{5mm} %5mm vertical space
-\hrule 
-\vspace{5mm} %5mm vertical space
+\begin{solution}
+Primärstrukturen är den linjära sekvensen av aminosyror i ett protein. Den bestäms direkt av DNA-sekvensen och är grunden för proteinets övriga strukturnivåer.
+\end{solution}
+
+\vspace{5mm}
+\hrule
+\vspace{5mm}
+
 \question Ett \textbf{enzym} är en typ av protein. Vad gör ett enzym?  
 \begin{checkboxes}
    \choice agerar byggstenar i organismer
@@ -134,8 +165,13 @@ Antalet poäng är markerat för varje fråga. Totalt \textbf{19 frågor} och \t
    \correctchoice ökar eller minskar hastigheten på kemiska processer
    \choice utgör organismers immunförsvar
 \end{checkboxes}
+\begin{solution}
+Enzymer är biologiska katalysatorer som ökar hastigheten på kemiska reaktioner i cellen utan att själva förbrukas. De är specifika för sina substrat och essentiella för cellens metabolism.
+\end{solution}
 
-\break
+\vspace{5mm}
+\hrule
+\vspace{5mm}
 
 \question En \textbf{gen} är:  
 \begin{checkboxes}
@@ -144,91 +180,163 @@ Antalet poäng är markerat för varje fråga. Totalt \textbf{19 frågor} och \t
    \choice en modell för hur egenskaper ärvs
    \correctchoice ett DNA-segment som kodar för ett specifikt protein
 \end{checkboxes}
+\begin{solution}
+En gen är en specifik sekvens av DNA som innehåller information för att producera ett protein eller RNA-molekyl. Den inkluderar både kodande (exoner) och icke-kodande (introner) regioner.
+\end{solution}
 
-\vspace{5mm} %5mm vertical space
-\hrule 
-\vspace{5mm} %5mm vertical space
-\question  I vilken organell sker \textbf{translationen}?
+\vspace{5mm}
+\hrule
+\vspace{5mm}
+
+\question I vilken organell sker \textbf{translationen}?
 \begin{checkboxes}
    \correctchoice Ribosom
    \choice Endoplasmatiskt retikulum
    \choice Mitokondrie
    \choice Cellkärna 
 \end{checkboxes}
+\begin{solution}
+Translation sker i ribosomer, som kan vara fria i cytoplasman eller bundna till det endoplasmatiska retikulumet. Här översätts mRNA:s genetiska kod till en aminosyrasekvens.
+\end{solution}
 
-\vspace{5mm} %5mm vertical space
+\vspace{5mm}
 \hrule
-\vspace{5mm} %5mm vertical space
+\vspace{5mm}
 
-\question  \textbf{Helikas} är ett enzym, vad är dess funktion?
+\question \textbf{Helikas} är ett enzym, vad är dess funktion?
 \begin{checkboxes}
    \choice Kopiera DNA
    \choice Transportera mRNA
    \correctchoice Öppna upp DNA's dubbelhelix
    \choice Bygga upp nukleotidkedjor 
 \end{checkboxes}
+\begin{solution}
+Helikas är ett enzym som bryter vätebindningarna mellan DNA-strängarna och "öppnar upp" dubbelhelixen. Detta är nödvändigt för både replikation och transkription.
+\end{solution}
 
-\vspace{5mm} %5mm vertical space
-\hrule 
-\vspace{5mm} %5mm vertical space
+\vspace{5mm}
+\hrule
+\vspace{5mm}
 
-\question  Den \textbf{kodande delen} av en gen kallas:
+\question Den \textbf{kodande delen} av en gen kallas:
 \begin{checkboxes}
    \correctchoice Exon
    \choice Intron
    \choice Trombon
    \choice Dexom 
 \end{checkboxes}
+\begin{solution}
+Exoner är de kodande delarna av en gen som behålls i det mogna mRNA och används för att koda för protein. Introner klipps bort under RNA-splicing.
+\end{solution}
 
-\vspace{5mm} %5mm vertical space
-\hrule 
-\vspace{5mm} %5mm vertical space
+\vspace{5mm}
+\hrule
+\vspace{5mm}
 
-\question  Vad innebär \textbf{celldifferentiering}?
+\question Vad innebär \textbf{celldifferentiering}?
 \begin{checkboxes}
    \choice Att det finns olika typer av celler
    \correctchoice Att en stamcell kan utvecklas till flera olika typer av celler
    \choice Att flera olika typer av celler kan bli en stamcell
    \choice Att en banan och en människas celler skiljer sig åt 
 \end{checkboxes}
+\begin{solution}
+Celldifferentiering är processen där stamceller utvecklas till specialiserade celltyper. Detta sker genom selektiv genaktivering och inaktivering, styrt av både interna och externa signaler.
+\end{solution}
 
-\vspace{5mm} %5mm vertical space
-\hrule 
-\vspace{5mm} %5mm vertical space
-\question  Ett \textbf{protein} är \textbf{102 aminosyror} långt. Hur många kvävebaser krävs för att lagra informationen om proteinets uppbyggnad?
+\vspace{5mm}
+\hrule
+\vspace{5mm}
+
+\question Ett \textbf{protein} är \textbf{102 aminosyror} långt. Hur många kvävebaser krävs för att lagra informationen om proteinets uppbyggnad?
 \begin{checkboxes}
    \choice 310
    \choice 204
    \correctchoice 306
    \choice 299
 \end{checkboxes}
+\begin{solution}
+Varje aminosyra kodas av tre kvävebaser (en kodon). Därför krävs 102 × 3 = 306 kvävebaser för att koda för ett protein med 102 aminosyror.
+\end{solution}
 
-\break
+\vspace{5mm}
+\hrule
+\vspace{5mm}
 
-\vspace{5mm} %5mm vertical space
+\newpage
+
 \begin{center}
 \fbox{\fbox{\parbox{6in}{\centering
 \textbf{Fördjupande frågor}: svara mer utförligt (\textbf{12 poäng})
 }}}
 \end{center}
+\vspace{5mm}
 
 \question \textbf{Epigenetik} syftar till regleringen av gener som inte beror på förändringar i DNA-sekvens. Utifrån dina kunskaper, varför är det viktigt? Ge exempel. (\textbf{4 poäng})
-\vspace{90mm}
+\begin{solution}
+\textbf{Epigenetik är viktigt av flera anledningar:}
+\begin{itemize}
+    \item \textbf{Cellspecialisering:} Möjliggör att olika celltyper kan utvecklas från samma DNA genom att aktivera/inaktivera olika gener
+    \item \textbf{Anpassning till miljön:} Organismer kan reagera på miljöförändringar utan att ändra DNA-sekvensen
+    \item \textbf{Utveckling:} Styr vilka gener som ska vara aktiva under olika utvecklingsstadier
+    \item \textbf{Ärftlighet:} Vissa epigenetiska markörer kan ärvas mellan generationer
+\end{itemize}
+
+\end{solution}
+
+\newpage
 
 \question DNA är till strukturen format som en \textbf{dubbelhelix}. Vad har det fördelar och nackdelar? Hur påverkar det \textit{transkriptionen} och \textit{replikationen}? (\textbf{4 poäng})
-\break
+\begin{solution}
+\textbf{Fördelar med dubbelhelix-strukturen:}
+\begin{itemize}
+    \item \textbf{Stabilitet:} Vätebindningar mellan baspar och stackning av baser ger stabilitet
+    \item \textbf{Skydd:} Genetisk information lagras redundant på båda strängarna
+    \item \textbf{Replikation:} Möjliggör semi-konservativ replikation där varje sträng fungerar som mall
+    \item \textbf{Reparation:} Skador kan repareras genom att använda den oskadade strängen som mall
+\end{itemize}
 
-\break
-\vspace{10mm} %5mm vertical space
+\textbf{Påverkan på processer:}\\
+\textbf{Replikation:}
+\begin{itemize}
+    \item Helikas måste först öppna upp dubbelhelixen
+    \item Båda strängarna kan användas som mall samtidigt
+    \item Leading och lagging strand bildas olika p.g.a. DNA:s riktning
+\end{itemize}
+
+\textbf{Transkription:}
+\begin{itemize}
+    \item Endast en sträng används som mall
+    \item Kräver också att helixen öppnas upp temporärt
+    \item RNA-polymeras läser bara template-strängen
+\end{itemize}
+
+\textbf{Nackdelar:}
+\begin{itemize}
+    \item Energikrävande att öppna upp strukturen
+    \item Kan bli supercoiled vid processer
+    \item Mer komplex replikation/transkription än för enkelsträngat DNA
+\end{itemize}
+\end{solution}
+
+\newpage
+
 \question 
-Vad är det som sker i bilden ovan? \textbf{Beskriv processen} utifrån bilden och använd följande ord: \textit{ribosom, aminosyra, kodon, antikodon, mRNA, och tRNA}. Markera även gärna orden på bilden.
-\begin{figure}
-    \centering
-    \includegraphics[width=0.5\linewidth]{Screenshot 2023-10-05 23.14.36.png}
-    
-    
-\end{figure}
+Vad är det som sker i bilden ovan? \textbf{Beskriv processen} utifrån bilden och använd följande ord: \textit{ribosom, aminosyra, kodon, antikodon, mRNA, och tRNA}. Markera även gärna orden på bilden. (\textbf{4 poäng})
+\begin{solution}
+\textbf{Bilden visar translationsprocessen där genetisk information översätts till protein:}
 
+\begin{enumerate}
+    \item \textbf{mRNA} binder till \textbf{ribosomen} som läser av den genetiska koden
+    \item Varje \textbf{kodon} (tre baser) på mRNA matchas med ett komplementärt \textbf{antikodon} på \textbf{tRNA}
+    \item \textbf{tRNA} bär med sig specifika \textbf{aminosyror} som motsvarar dess antikodon
+    \item \textbf{Ribosomen} katalyserar bildandet av peptidbindningar mellan aminosyrorna
+    \item När ribosomen möter ett stoppkodon släpps den färdiga polypeptidkedjan
+\end{enumerate}
+
+\vspace{2mm}
+Processen fortsätter tills hela mRNA-sekvensen har lästs av och proteinet är färdigt.
+\end{solution}
 
 \end{questions}
 \end{document}
