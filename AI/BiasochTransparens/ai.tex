@@ -1,0 +1,282 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{colortbl}
+\usepackage{longtable}
+\usepackage{csquotes}
+\usepackage[style=apa, backend=biber, sorting=ynt]{biblatex}
+\DeclareLanguageMapping{swedish}{swedish-apa}
+\addbibresource{references.bib}
+\geometry{a4paper, margin=2.5cm}
+
+\title{Lektionsplanering: Artificiell Intelligens 1}
+\author{Viktor Arohlén}
+\date{28 maj 2025}
+
+\begin{document}
+
+\maketitle
+
+\section*{Tema: AI och rättvisa – Vem får jobbet?}
+
+\section*{Syfte och bakgrund}
+
+Syftet med denna lektion är att introducera och problematisera etiska aspekter av 
+artificiell intelligens (AI) utifrån konkreta exempel som är relevanta för elevernas 
+vardag och framtida samhällsengagemang.
+\\\\
+Lektionen är en del av kursen \textit{Artificiell intelligens 1}, som ges som 
+individuellt val och är öppen för elever från såväl samhällsvetenskapsprogrammet som 
+naturvetenskapsprogrammet.
+\\\\
+Eftersom inga särskilda tekniska förkunskaper krävs för kursen — utöver grundläggande 
+matematik — är undervisningen utformad för att vara tillgänglig för alla elever oavsett 
+tidigare erfarenhet av teknik eller programmering. 
+\\\\
+Lektionsinnehållet anknyter till det centrala innehållet i kursen, särskilt punkterna:
+\begin{itemize}
+    \item Etiska dilemman med användandet av AI, däribland transparens.
+    \item Demokratiska, sociala, ekonomiska, miljömässiga och säkerhetsmässiga 
+          möjligheter och risker med AI-användning samt dess konsekvenser för samhället.
+\end{itemize}
+Genom att utgå från exempel som AI-användning vid rekrytering får eleverna möjlighet 
+att koppla abstrakta begrepp som \textit{algoritmisk bias}, \textit{transparens} och 
+\textit{ansvar} till konkreta situationer de kan relatera till. 
+\\\\
+Momenten som beskrivs i planeringen kan också fördjupas och tas vidare framförallt med hjälp av verkliga
+exempel så som \citeyear{dastin2018amazon} när \citeauthor{dastin2018amazon} hittade bias mot kvinnor. Det går även att ta
+vidare momenten genom att titta på den andra delen av rekryteringsperspektiv ur ett etik och AI-perspektiv: generering
+av personligt brev och CV.
+
+\break
+
+\section*{Lektion 1 (70 minuter)}
+
+% Använder färgad tabell med tydligare struktur
+\renewcommand{\arraystretch}{1.3} % Ökar radavståndet i tabellen
+
+\begin{table}[h!]
+\centering
+\begin{tabularx}{\textwidth}{|p{2cm}|p{4cm}|p{3cm}|X|}
+\hline
+\rowcolor{gray!20} \textbf{Tid} & \textbf{Aktivitet} & \textbf{Arbetsform} & \textbf{Beskrivning} \\
+\hline
+0--5 min & \textbf{Introduktion} & Lärargenomgång &Kort presentation av lektionens mål och koppling till kursens centrala innehåll.  \\
+\hline
+\rowcolor{gray!10} 5--10 min & \textbf{Gruppuppdelning och jobbannons} & Smågrupper (3--4 elever) & Eleverna delas upp i grupper och granskar en jobbannons (Bilaga 1). \\
+\hline
+5-10 min & \textbf{Granska kandidater} & Smågrupper (3--4 elever) & Eleverna granskar kandidaterna (Bilaga 2) och bedömmer vem som är mest lämpad för tjänsten. \\
+\hline
+\rowcolor{gray!10} 5--10 min & \textbf{AI-bedömning av kandidater 1} & Smågrupper (3--4 elever) & Eleverna granskar AI poängbedömning av kandidaterna (Bilaga 3) och bedömmer återigen vem som är mest lämpad för tjänsten. \\
+\hline
+5--10 min & \textbf{AI-bedömning av kandidater 2} & Smågrupper (3--4 elever) & Eleverna granskar förklaringen till AIs bedömning (Bilaga 4). Diskuterar åteigen vilken kandidat som är lämpligast. \\
+\hline
+\rowcolor{gray!10} 10--15 min & \textbf{Gemensam diskussion} & Helklass & Eleverna diskuterar i helklass vem som är den rimligaste kandidaten och hur AIs bedömningar påverkade dem. \\
+\hline
+5--10 min & \textbf{Exit ticket} & Individuell & Kort utvärdering kring vad de tar med sig kring uppgiften. \\
+\hline
+\end{tabularx}
+\end{table}
+\break
+
+\section*{Lektion 2 (70 minuter)}
+
+\begin{table}[h!]
+    \centering
+    \begin{tabularx}{\textwidth}{|p{2cm}|p{4cm}|p{3cm}|X|}
+    \hline
+    \rowcolor{gray!20} \textbf{Tid} & \textbf{Aktivitet} & \textbf{Arbetsform} & \textbf{Beskrivning} \\
+    \hline
+    5 min & \textbf{Introduktion och repetition} & Lärargenomgång &Kort repetition om  tidigare lektion och information om vad som görs idag.  \\
+    \hline
+    \rowcolor{gray!10} 10-20 min & \textbf{Video} & Helklass & Tittar på video gemensamt som tar upp bias och AI vid rekrytering (se material och resurser). \\
+    \hline
+    5-10 min & \textbf{Parvis reflektion} & Parvis & Elever reflekterar över användning av AI vid rekrytering och dess konsekvener. \\
+    \hline
+    \rowcolor{gray!10} 5--10 min & \textbf{Klassreflektion} & Helklass & Gemensam reflektion utifrån samtal (ej obligatorisk) \\
+    \hline
+    30--40 min & \textbf{Genomgång av begrepp och teorier} & Helklass & Genomgång av relevanta begrepp för bias och AI, så som bias, transparens, algoritm etc. (kan knyta an till tidigare lektioner) \\
+    \hline
+    \end{tabularx}
+    \end{table}
+    
+
+\subsection*{Material och resurser}
+
+\begin{table}[h!]
+\centering
+\begin{tabularx}{\textwidth}{|p{4cm}|X|}
+\hline
+\rowcolor{gray!20} \textbf{Resurs} & \textbf{Beskrivning} \\
+\hline
+\rowcolor{gray!10} Nyhetsklipp från CBS & https://www.youtube.com/watch?v=TP8X-YW1Jr8 \\
+\hline
+Bias och AI från Google & https://youtu.be/59bMh59JQDo?si=fsG1Joj1NYTQfhmk \\
+\hline
+\rowcolor{gray!10} Tidningsartikel om Amazons AI & https://www.reuters.com/article/us-amazon-com-jobs-automation-insight-idUSKCN1MK08G \\
+\hline
+Jobbannons, kandidater och AI-bedömning & Se bilagor för material till lektionen \\
+\hline
+\end{tabularx}
+\end{table}
+
+\break
+\subsection*{Kommentarer till lektionsmoment}
+
+Lektionerna syftar som ett avstamp i diskussioner kring etik, bias, och kontroll gällande AI. Tanken är att lektionerna ligger
+efter grundläggande begrepp har gåtts genom, men relevanta begrepp bör också repeteras. Den främsta tanken är att ställa elever mot
+etiska dilemman de kan relatera till. Framförallt genom att ge dem en uppgift helt utan AI och sedan långsamt inkorporera AI
+i uppgiften är tanken att de ska få nya insikter.
+\\ \\
+Den första lektionen är tänk att enbart utgå från det här laborativa arbetssättet och eftersom jag heller inte haft möjlighet att genomföra momentet
+finns det säkert flertalet fallgropar som missats. Utifrån seminariet fick jag dock positiv feedback från mina studiekamrater gällande att jobba med rollspel
+och att inte utgå från AI först, utan att istället jobba med människor och sedan ta in AI.
+\\ \\
+Det andra tillfället syftar istället till att problematisera de etiska dilemman med AI och rekrytering genom att titta på verkliga exempel. Således kan de knyta an
+de rollspelsövningar vi gjort till verkligheten och inse att vi arbetat med något som faktiskt är aktuellt idag. Överlag är det här en mer teoretisk lektion där fokus ligger
+på förståelse för begrepp så som bias, etik och autonoma agenter.
+\\ \\
+När det gäller att ta vidare planeringen beror det till stor del på elevunderlaget. Under etikföreläsningarna med Johan tog han upp både statistiska metoder för att upptäcka bias,
+men också hur filosofiska teorier kan användas för att identifiera orättvisor. Beroende på hur mycket eleverna har kunskaper om antingen statistiska metoder eller filosofi kan man därför ta det
+i två olika riktningar när det kommer till att identifera problemen med AI. Där exempelvis naturelever får fördjupa sig inom de statistiska metoder och hur man kan upptäcka bias,
+medan samhällslever kan ta en filosofiskt perspektiv och titta på hur man kan identifiera orättvisor i AI-system.
+\\ \\
+Vidare hade ännu fler verkliga exempel kunnat användas och exempelvis hade fler verkliga etiska dilemman kunnat introduceras. Närmast till hands ligger troligtvis
+självkörande bilar där exempelvis \textcite{moralmachine} hade kunnat användas och skapa diskussioner i ämnet.
+\\ \\
+Utöver det finns också möjlighet att helt stanna kvar i rekryteringsbias och kanske även anspela på andra skolämnen. Algoritmisk bias är ett stort område och ännu mer exempel och material hade kunnat hämtats från \textcite{barocas2023fairness}
+beroende på tidsutrymme, elevgrupp och mer erfarenhet.
+
+\break
+\subsection*{AI-användning i examinationsuppgiften}
+
+I denna lektionsplanering har AI använts som ett stödjande verktyg på flera sätt. Jag har använt AI både i form av chattbottar och som integrerad funktion i utvecklingsmiljön Windsurf (en fork av VSCode). 
+
+AI har främst använts för att:
+\begin{itemize}
+  \item Hjälpa till med formatering och strukturering av LaTeX-dokumentet
+  \item Generera material för bilagorna (jobbannons, kandidatprofiler och AI-bedömningar)
+  \item Stötta med implementering av APA-referenssystemet
+\end{itemize}
+
+Det är värt att notera att all löpande text i lektionsplaneringen är skriven av mig, medan AI har fungerat som ett verktyg för att effektivisera arbetsprocessen och förbättra den tekniska kvaliteten på dokumentet.
+
+\printbibliography[title=Referenser]
+
+\appendix
+\break
+\section*{Bilagor}
+
+\subsection*{Bilaga 1: Rekryteringsfall: Vem får jobbet?}
+
+\begin{minipage}{\textwidth}
+\textbf{Tjänst:} Kundkoordinator på Evenemangsgruppen AB
+
+\textbf{Företagsbeskrivning:}\\  
+Evenemangsgruppen AB är ett mellanstort företag som arbetar med att organisera och koordinera kultur- och idrottsevenemang runtom i Sverige. Företaget söker nu en ny kundkoordinator som ska hantera kontakter med kunder, bokningar och enklare projektledning.
+\\ \\
+\textbf{Önskad profil:}  
+\begin{itemize}[leftmargin=*,noitemsep]
+\item God kommunikationsförmåga
+\item Erfarenhet av att arbeta i team
+\item Grundläggande datakunskaper (t.ex. e-post, kalkylprogram)
+\item Initiativtagande och lösningsorienterad
+\end{itemize}
+\end{minipage}
+
+\begin{minipage}{\textwidth}
+\vspace{10mm}
+\textbf{Uppgift till eleverna:}
+Läs om kandidaterna på nästa sida. Välj vem du tycker ska få jobbet – utan att ta hänsyn till AI:s bedömning.
+\end{minipage}
+
+\break
+
+\subsection*{Bilaga 2: Kandidater (Steg 1)}
+
+\begin{minipage}{\textwidth}
+\textbf{Instruktion:} Läs igenom kandidaternas profiler nedan och bedöm vem som är mest lämpad för tjänsten.
+\end{minipage}
+
+\vspace{0.5em}
+
+\begin{longtable}{>{\bfseries}p{2.8cm} p{9cm}}
+
+Namn: & \textbf{Sara Andersson} \\
+Ålder: & 28 år \\
+Utbildning: & Kandidat i beteendevetenskap \\
+Arbetslivserfarenhet: & \begin{minipage}[t]{9cm}Tre års erfarenhet som receptionist på ett gym, där hon även ansvarade för bokningar och kundkontakt.\end{minipage} \\
+Övrigt: & Arbetat ideellt på ungdomsgård. Pratar svenska, engelska och arabiska. \\[1.2em]
+
+Namn: & \textbf{Jonas Björk} \\
+Ålder: & 24 år \\
+Utbildning: & Gymnasieexamen i ekonomi \\
+Arbetslivserfarenhet: & \begin{minipage}[t]{9cm}Har jobbat två somrar som administrativ assistent på ett mindre företag.\end{minipage} \\
+Övrigt: & Aktiv i föreningslivet. Gillar att planera resor och evenemang i privatlivet. \\[1.2em]
+
+Namn: & \textbf{Fatima Choudhury} \\
+Ålder: & 34 år \\
+Utbildning: & Omskolad via Komvux till administratör \\
+Arbetslivserfarenhet: & \begin{minipage}[t]{9cm}Tidigare undersköterska. Nu praktik och extrajobb inom administration på en skola.\end{minipage} \\
+Övrigt: & Tvåbarnsmamma. Har hållit i skolaktiviteter och föräldramöten. \\[1.2em]
+
+Namn: & \textbf{Erik Dahl} \\
+Ålder: & 30 år \\
+Utbildning: & Kandidat i medie- och kommunikationsvetenskap \\
+Arbetslivserfarenhet: & \begin{minipage}[t]{9cm}Jobbat på kundtjänst i fem år, där han också coachat nya medarbetare.\end{minipage} \\
+Övrigt: & Gillar struktur och har god datavana. \\
+
+\end{longtable}
+
+\break
+
+\subsection*{Bilaga 3: AI-poängsättning (Steg 2)}
+
+\begin{minipage}{\textwidth}
+\textbf{Instruktion till eleverna:}\\  
+AI-systemet har analyserat CV:n och fotografier för varje kandidat. Här är systemets poängsättning från 0 till 100. Fundera på om du vill omvärdera ditt val.
+\end{minipage}
+
+\vspace{0.5em}
+
+\begin{longtable}{>{\bfseries}p{5cm} p{3cm}}
+
+Sara Andersson & 72 \\ 
+Jonas Björk & 80 \\
+Fatima Choudhury & 60 \\
+Erik Dahl & 85 \\
+
+\end{longtable}
+
+\break
+
+\subsection*{Bilaga 4: AI:s bedömningsgrunder (Steg 3)}
+
+\begin{minipage}{\textwidth}
+\textbf{Instruktion till eleverna:}\\  
+Nedan följer AI-systemets tolkning av varför varje kandidat fick sin poäng. Diskutera: Håller du med? Är det rimligt att ett AI-system fattar sådana beslut?
+\end{minipage}
+
+\vspace{0.5em}
+
+\begin{longtable}{>{\bfseries}p{3cm} p{10cm}}
+
+Sara Andersson & God erfarenhet av kundkontakt, men AI rankade hennes erfarenhet från gymbranschen något lägre än kontorsmiljö. Bonuspoäng för flerspråkighet. \\[0.7em]
+
+Jonas Björk & Trots begränsad erfarenhet matchade hans intressen och tidigare roller väl med AI-modellens data om lyckade anställningar. \\[0.7em]
+
+Fatima Choudhury & AI nedvärderade hennes erfarenhet utanför kontorsmiljö och hade få referensfall i modellen på liknande karriärvägar. \\[0.7em]
+
+Erik Dahl & Fick hög poäng för lång erfarenhet inom kundservice samt att ha coachat andra, vilket tolkas som ledarskapspotential. \\
+
+\end{longtable}
+
+\end{document}
+

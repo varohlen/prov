@@ -1,0 +1,245 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{ynt/apasortcite//global/global}
+    \entry{moralmachine}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=043cf8c7ed234b0de54ceb196c07246b}{%
+           family={{MIT Media Lab}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{043cf8c7ed234b0de54ceb196c07246b}
+      \strng{fullhash}{043cf8c7ed234b0de54ceb196c07246b}
+      \strng{bibnamehash}{043cf8c7ed234b0de54ceb196c07246b}
+      \strng{authorbibnamehash}{043cf8c7ed234b0de54ceb196c07246b}
+      \strng{authornamehash}{043cf8c7ed234b0de54ceb196c07246b}
+      \strng{authorfullhash}{043cf8c7ed234b0de54ceb196c07246b}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Moral Machine}
+      \field{urlday}{28}
+      \field{urlmonth}{5}
+      \field{urlyear}{2025}
+      \field{year}{2016}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.moralmachine.net/
+      \endverb
+      \verb{url}
+      \verb https://www.moralmachine.net/
+      \endverb
+    \endentry
+    \entry{dastin2018amazon}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fe0a91ed503170165d701447b4c6fbdf}{%
+           family={Dastin},
+           familyi={D\bibinitperiod},
+           given={Jeffrey},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{fe0a91ed503170165d701447b4c6fbdf}
+      \strng{fullhash}{fe0a91ed503170165d701447b4c6fbdf}
+      \strng{bibnamehash}{fe0a91ed503170165d701447b4c6fbdf}
+      \strng{authorbibnamehash}{fe0a91ed503170165d701447b4c6fbdf}
+      \strng{authornamehash}{fe0a91ed503170165d701447b4c6fbdf}
+      \strng{authorfullhash}{fe0a91ed503170165d701447b4c6fbdf}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Reuters}
+      \field{month}{10}
+      \field{title}{Amazon scraps secret AI recruiting tool that showed bias against women}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://www.reuters.com/article/us-amazon-com-jobs-automation-insight-idUSKCN1MK08G
+      \endverb
+      \verb{url}
+      \verb https://www.reuters.com/article/us-amazon-com-jobs-automation-insight-idUSKCN1MK08G
+      \endverb
+    \endentry
+    \entry{barocas2023fairness}{book}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=cb55e045fbd37698b0b60a60b567ab83}{%
+           family={Barocas},
+           familyi={B\bibinitperiod},
+           given={Solon},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e771760b6d0d33f8b4dfd907d8d57ac2}{%
+           family={Hardt},
+           familyi={H\bibinitperiod},
+           given={Moritz},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=95dc795a2be14c50fb6a924acc135ff8}{%
+           family={Narayanan},
+           familyi={N\bibinitperiod},
+           given={Arvind},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c5026f35a79417f51945b4e62c88f53a}
+      \strng{fullhash}{f6daa5fbad9e518e58da0fbc508936ba}
+      \strng{bibnamehash}{f6daa5fbad9e518e58da0fbc508936ba}
+      \strng{authorbibnamehash}{f6daa5fbad9e518e58da0fbc508936ba}
+      \strng{authornamehash}{c5026f35a79417f51945b4e62c88f53a}
+      \strng{authorfullhash}{f6daa5fbad9e518e58da0fbc508936ba}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Online book}
+      \field{title}{Fairness and Machine Learning: Limitations and Opportunities}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://fairmlbook.org/
+      \endverb
+      \verb{url}
+      \verb https://fairmlbook.org/
+      \endverb
+    \endentry
+  \enddatalist
+  \datalist[entry]{ynt/global//global/global}
+    \entry{moralmachine}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=043cf8c7ed234b0de54ceb196c07246b}{%
+           family={{MIT Media Lab}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{043cf8c7ed234b0de54ceb196c07246b}
+      \strng{fullhash}{043cf8c7ed234b0de54ceb196c07246b}
+      \strng{bibnamehash}{043cf8c7ed234b0de54ceb196c07246b}
+      \strng{authorbibnamehash}{043cf8c7ed234b0de54ceb196c07246b}
+      \strng{authornamehash}{043cf8c7ed234b0de54ceb196c07246b}
+      \strng{authorfullhash}{043cf8c7ed234b0de54ceb196c07246b}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Moral Machine}
+      \field{urlday}{28}
+      \field{urlmonth}{5}
+      \field{urlyear}{2025}
+      \field{year}{2016}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.moralmachine.net/
+      \endverb
+      \verb{url}
+      \verb https://www.moralmachine.net/
+      \endverb
+    \endentry
+    \entry{dastin2018amazon}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fe0a91ed503170165d701447b4c6fbdf}{%
+           family={Dastin},
+           familyi={D\bibinitperiod},
+           given={Jeffrey},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{fe0a91ed503170165d701447b4c6fbdf}
+      \strng{fullhash}{fe0a91ed503170165d701447b4c6fbdf}
+      \strng{bibnamehash}{fe0a91ed503170165d701447b4c6fbdf}
+      \strng{authorbibnamehash}{fe0a91ed503170165d701447b4c6fbdf}
+      \strng{authornamehash}{fe0a91ed503170165d701447b4c6fbdf}
+      \strng{authorfullhash}{fe0a91ed503170165d701447b4c6fbdf}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Reuters}
+      \field{month}{10}
+      \field{title}{Amazon scraps secret AI recruiting tool that showed bias against women}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://www.reuters.com/article/us-amazon-com-jobs-automation-insight-idUSKCN1MK08G
+      \endverb
+      \verb{url}
+      \verb https://www.reuters.com/article/us-amazon-com-jobs-automation-insight-idUSKCN1MK08G
+      \endverb
+    \endentry
+    \entry{barocas2023fairness}{book}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=cb55e045fbd37698b0b60a60b567ab83}{%
+           family={Barocas},
+           familyi={B\bibinitperiod},
+           given={Solon},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e771760b6d0d33f8b4dfd907d8d57ac2}{%
+           family={Hardt},
+           familyi={H\bibinitperiod},
+           given={Moritz},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=95dc795a2be14c50fb6a924acc135ff8}{%
+           family={Narayanan},
+           familyi={N\bibinitperiod},
+           given={Arvind},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c5026f35a79417f51945b4e62c88f53a}
+      \strng{fullhash}{f6daa5fbad9e518e58da0fbc508936ba}
+      \strng{bibnamehash}{f6daa5fbad9e518e58da0fbc508936ba}
+      \strng{authorbibnamehash}{f6daa5fbad9e518e58da0fbc508936ba}
+      \strng{authornamehash}{c5026f35a79417f51945b4e62c88f53a}
+      \strng{authorfullhash}{f6daa5fbad9e518e58da0fbc508936ba}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Online book}
+      \field{title}{Fairness and Machine Learning: Limitations and Opportunities}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://fairmlbook.org/
+      \endverb
+      \verb{url}
+      \verb https://fairmlbook.org/
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

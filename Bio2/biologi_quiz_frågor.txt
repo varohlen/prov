@@ -1,0 +1,210 @@
+# Kryssfrågor för avslutningsquiz i biologi
+
+## Frågor från Bio1 kursprov
+
+1. En nukleotid består av:
+   A) Aminosyra, kvävebas och deoxiribos
+   B) Kvävebas, ribos och en fosfatgrupp
+   C) Deoxiribos, ribos och fosfatgrupper(er)
+   D) Kvävebas, sockermolekyl (ribos eller deoxiribos) och fosfatgrupp(er)
+
+2. Vilken av följande processer är inte en del av proteinsyntesen?
+   A) Transkription
+   B) Translation
+   C) Replikation
+   D) Splicing
+
+3. Vilken av följande är en funktion av tRNA?
+   A) Att bära genetisk information från DNA till ribosomen
+   B) Att bära aminosyror till ribosomen
+   C) Att bilda ribosomernas struktur
+   D) Att katalysera kemiska reaktioner
+
+## Frågor från Bio2 - Fysiologi
+
+1. Vad av följande är inte en vitamin eller mineral?
+   A) Biotin
+   B) Zink
+   C) Askorbinsyra
+   D) Omega-3
+
+2. Vad av följande stämmer för ett djur som lever i sötvatten?
+   A) De måste ta upp mer salt från omgivningen
+   B) De har en koncentrerad urin för att behålla saltbalansen
+   C) De har en utspädd urin för att behålla saltbalansen
+   D) Deras omgivning har högre saltkoncentration än dem
+
+3. Vad av följande reglerar den automatiska andningen i första hand?
+   A) Syrekoncentrationen
+   B) Hjärtats retledningssystem
+   C) Blodets pH
+   D) Blodtrycket i njuren
+
+## Frågor från Bio2 - Biomolekyler och cellens organeller
+
+1. Vilket av följande påståenden om kolesterol är sant?
+   A) Kolesterol är en fosfolipid som bygger upp cellmembranet
+   B) Kolesterol är en steroid som fungerar som förstadium till vissa hormoner
+   C) Kolesterol fungerar endast som energireserv i kroppen
+   D) Kolesterol är inte närvarande i djurceller
+
+2. Vilken molekyl fungerar som energilager hos djur?
+   A) Cellulosa
+   B) Stärkelse
+   C) Glykogen
+   D) Laktos
+
+3. Vilket påstående beskriver bäst fosfolipiders roll i cellmembranet?
+   A) De fungerar som enzymer som bryter ned näringsämnen
+   B) De skapar en hydrofob barriär som separerar cellens inre från dess omgivning
+   C) De hjälper till att transportera joner in och ut ur cellen
+   D) De fungerar som energireserv för cellen
+
+## Frågor från Bio1 - Celldelning
+
+1. Vad är syftet med mitos?
+   A) Bilda könsceller
+   B) Skapa två genetiskt identiska celler
+   C) Minska antalet kromosomer
+   D) Producera energi
+
+2. Vad är en genmutation?
+   A) En förändring i antalet kromosomer
+   B) En förändring i enskilda kvävebaser i DNA
+   C) En fördubbling av arvsmassan
+   D) En celldelning utan cytokines
+
+3. Vad händer med kromosomantalet i cellerna efter meios?
+   A) Det fördubblas
+   B) Det är oförändrat
+   C) Det halveras
+   D) Det tredubblas
+
+## Frågor från Bio1 - DNA och RNA
+
+1. Vilken av följande processer sker i cellkärnan?
+   A) Translation
+   B) Transkription
+   C) Proteinsyntes
+   D) Aminosyraaktivering
+
+2. Proteiners funktion och egenskap avgörs av deras struktur. Primärstruktur syftar till:
+   A) Vilken form proteinet har
+   B) Vilka aminosyror som ingår
+   C) Vilka aminosyror som ingår och vilken ordning de är bundna
+   D) Hur proteinet binder till andra proteiner
+
+3. En gen är:
+   A) Ett annat namn för DNA
+   B) En typ av RNA
+   C) En modell för hur egenskaper ärvs
+   D) Ett DNA-segment som kodar för ett specifikt protein
+
+## Frågor från Bio1 - Evolution
+
+1. Vilket av följande begrepp beskriver situationen där en fjärils färgmorf (färgvariant) är mer attraktiv för en partner, vilket leder till att färgmorfen blir vanligare i populationen?
+   A) Sexuell selektion
+   B) Genetisk drift
+   C) Flaskhalseffekt
+   D) Naturligt urval
+
+2. Vilket av följande alternativ förklarar bäst begreppet samevolution?
+   A) En egenskap hos en art förs vidare trots att den egentligen inte fyller någon funktion
+   B) Liknande egenskaper hos arter som inte har en gemensam föregångare (förfader) som har denna egenskap
+   C) En art utvecklar på nytt en egenskap som försvunnit i ett tidigare skede av artens evolution
+   D) En arts egenskaper utvecklas i samspel med en annan art
+
+3. Vad är homologa organ?
+   A) Organ som har samma funktion men olika ursprung
+   B) Organ som har samma ursprung men kan ha olika funktion
+   C) Organ som har samma funktion och samma ursprung
+   D) Organ som har olika funktion och olika ursprung
+
+4. Vilket av följande är ett exempel på konvergent evolution?
+   A) Vingar hos fladdermus och fåglar
+   B) Framben hos häst och människa
+   C) Gälar hos fisk och amfibie
+   D) Blad hos olika växtarter
+
+5. Vad menas med hybridisering inom evolutionsbiologin?
+   A) När två olika arter korsar sig och bildar avkomma
+   B) När en art utvecklar nya egenskaper genom mutation
+   C) När en art anpassar sig till en ny miljö
+   D) När en art splittras i två olika populationer
+
+## Frågor från Bio1 - Liv och celler
+
+1. Vilka av följande meningar är en prövbar hypotes?
+   A) Finns det liv i rymden?
+   B) Luktärt växer snabbare i en varmare miljö
+   C) Alla som heter Kim är kvinnor
+   D) Det finns fler än ett universum
+
+2. Vad innebär det morfologiska perspektivet gällande artbegreppet?
+   A) Att man studerar utseende och beteende hos en individ för att avgöra vilken art det tillhör
+   B) Att man studerar en individs DNA för att avgöra vilken art den tillhör
+   C) Att man skiljer på arter genom deras geografiska position och miljö
+   D) Att individer som kan få avkomma som är fertil är samma art
+
+3. Vilka av följande arter har eukaryota celler?
+   A) Homo sapiens (Människa)
+   B) Yersinia pestis (Bakterie)
+   C) Canthareluus cibarius (Kantarell)
+   D) Helianthus anuus (Solros)
+
+## Frågor från Bio2 - FYS-R-N-E (Nervsystemet, rörelseapparaten och endokrina organsystemet)
+
+1. Vad av följande stämmer om nervsystemet?
+   A) Parasympatiska nervsystemet aktiveras vid fysisk ansträngning
+   B) Sympatiska nervsystemet sänker hjärtfrekvensen
+   C) Somatiska nervsystemet styr viljestyrda rörelser
+   D) Autonoma nervsystemet kontrollerar skelettmuskulatur
+
+2. Vad av följande stämmer om skelettet?
+   A) Skelettet skyddar inre organ
+   B) Alla ben i kroppen är ihåliga
+   C) Skelettet består bara av död vävnad
+   D) Skelettet producerar hormoner som insulin
+
+## Facit
+
+### Bio1 kursprov
+1. D) Kvävebas, sockermolekyl (ribos eller deoxiribos) och fosfatgrupp(er)
+2. C) Replikation
+3. B) Att bära aminosyror till ribosomen
+
+### Bio1 - Celldelning
+1. B) Skapa två genetiskt identiska celler
+2. B) En förändring i enskilda kvävebaser i DNA
+3. C) Det halveras
+
+### Bio1 - DNA och RNA
+1. B) Transkription
+2. C) Vilka aminosyror som ingår och vilken ordning de är bundna
+3. D) Ett DNA-segment som kodar för ett specifikt protein
+
+### Bio1 - Evolution
+1. A) Sexuell selektion
+2. D) En arts egenskaper utvecklas i samspel med en annan art
+3. B) Organ som har samma ursprung men kan ha olika funktion
+4. A) Vingar hos fladdermus och fåglar
+5. A) När två olika arter korsar sig och bildar avkomma
+
+### Bio1 - Liv och celler
+1. B) Luktärt växer snabbare i en varmare miljö
+2. A) Att man studerar utseende och beteende hos en individ för att avgöra vilken art det tillhör
+3. A) Homo sapiens (Människa), C) Canthareluus cibarius (Kantarell), D) Helianthus anuus (Solros)
+
+### Bio2 - Fysiologi
+1. D) Omega-3
+2. C) De har en utspädd urin för att behålla saltbalansen
+3. C) Blodets pH
+
+### Bio2 - Biomolekyler och cellens organeller
+1. B) Kolesterol är en steroid som fungerar som förstadium till vissa hormoner
+2. C) Glykogen
+3. B) De skapar en hydrofob barriär som separerar cellens inre från dess omgivning
+
+### Bio2 - FYS-R-N-E
+1. C) Somatiska nervsystemet styr viljestyrda rörelser
+2. A) Skelettet skyddar inre organ
