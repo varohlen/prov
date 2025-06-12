@@ -1,0 +1,80 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[swedish]{babel}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+
+\title{Facit: Repetitionsuppgifter -- Matematik 2b}
+\author{Matilda Svanlund}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Enkla andragradsekvationer}
+\begin{enumerate}[label=\textbf{\arabic*.}]
+    \item $x = \pm 4$
+    \item $x = \pm 3$
+    \item $x = \pm 3$
+    \item $x = \pm 2$
+    \item $x = 2 \pm 3 = -1$ eller $x = 5$
+\end{enumerate}
+
+\section{Andragradsekvationer med nollproduktsmetoden}
+\begin{enumerate}[label=\textbf{\arabic*.}]
+    \item $x = 0$ eller $x = 5$
+    \item $x = 3$ eller $x = -2$
+    \item $x = 0$ eller $x = 7$
+    \item $x = -\frac{1}{2}$ eller $x = 4$
+\end{enumerate}
+
+\section{Andragradsekvationer med lösningsformel (pq-formel)}
+\begin{enumerate}[label=\textbf{\arabic*.}]
+    \item $x = \frac{6 \pm \sqrt{36-32}}{2} = \frac{6 \pm \sqrt{4}}{2} = \frac{6 \pm 2}{2}$, dvs $x = 4$ eller $x = 2$
+    \item $x = \frac{-2 \pm \sqrt{4+32}}{2} = \frac{-2 \pm \sqrt{36}}{2} = \frac{-2 \pm 6}{2}$, dvs $x = 2$ eller $x = -4$
+    \item $x = \frac{4 \pm \sqrt{16-16}}{2} = \frac{4 \pm 0}{2} = 2$
+    \item $2x^2 - 7x + 3 = 0 \Rightarrow x^2 - \frac{7}{2}x + \frac{3}{2} = 0 \Rightarrow x = \frac{7 \pm \sqrt{49-24}}{4} = \frac{7 \pm \sqrt{25}}{4} = \frac{7 \pm 5}{4}$, dvs $x = 3$ eller $x = \frac{1}{2}$
+    \item $3x^2 + 6x - 9 = 0 \Rightarrow x^2 + 2x - 3 = 0 \Rightarrow x = \frac{-2 \pm \sqrt{4+12}}{2} = \frac{-2 \pm \sqrt{16}}{2} = \frac{-2 \pm 4}{2}$, dvs $x = 1$ eller $x = -3$
+    \item $5x^2 - 10 = 15x \Rightarrow 5x^2 - 15x - 10 = 0 \Rightarrow x^2 - 3x - 2 = 0 \Rightarrow x = \frac{3 \pm \sqrt{9+8}}{2} = \frac{3 \pm \sqrt{17}}{2}$
+\end{enumerate}
+
+\section{Logaritmer}
+\begin{enumerate}[label=\textbf{\arabic*.}]
+    \item $\lg(100 \cdot 1000) = \lg 100000 = \lg 10^5 = 5$ eller $\lg(100 \cdot 1000) = \lg 100 + \lg 1000 = 2 + 3 = 5$
+    \item $\lg\left(\frac{100}{0,1}\right) = \lg 1000 = 3$ eller $\lg\left(\frac{100}{0,1}\right) = \lg 100 - \lg 0,1 = 2 - (-1) = 3$
+    \item $\lg 5 + \lg 20 = \lg(5 \cdot 20) = \lg 100 = 2$
+    \item $\lg 50 - \lg 2 = \lg\left(\frac{50}{2}\right) = \lg 25 = \lg 5^2 = 2 \lg 5 \approx 2 \cdot 0,699 \approx 1,398$
+    \item $\lg x = 2,5 \Rightarrow x = 10^{2,5} = 10^2 \cdot 10^{0,5} = 100 \cdot \sqrt{10} \approx 100 \cdot 3,16 \approx 316$
+    \item $\lg x + \lg (x-9) = 1 \Rightarrow \lg[x(x-9)] = 1 \Rightarrow x(x-9) = 10 \Rightarrow x^2 - 9x = 10 \Rightarrow x^2 - 9x - 10 = 0$. Lösning med pq-formeln: $x = \frac{9 \pm \sqrt{81+40}}{2} = \frac{9 \pm \sqrt{121}}{2} = \frac{9 \pm 11}{2}$, dvs $x = 10$ eller $x = -1$. Men $x = -1$ ger $\lg(-1)$ som inte är definierat, och $x = 10$ ger $\lg(1)=0$ vilket inte stämmer med ekvationen. Kontrollera $x = 10$: $\lg 10 + \lg 1 = 1 + 0 = 1$. Lösningen är $x = 10$.
+    \item $2^x = 32 \Rightarrow 2^x = 2^5 \Rightarrow x = 5$
+    \item $3^{x-1} = 27 \Rightarrow 3^{x-1} = 3^3 \Rightarrow x-1 = 3 \Rightarrow x = 4$
+\end{enumerate}
+
+\section{Enkla ekvationssystem}
+\begin{enumerate}[label=\textbf{\arabic*.}]
+    \item Från andra ekvationen: $x = 4 + y$. Insättning i första ekvationen: $3(4+y) + 2y = 7 \Rightarrow 12 + 3y + 2y = 7 \Rightarrow 12 + 5y = 7 \Rightarrow 5y = -5 \Rightarrow y = -1$. Då är $x = 4 + (-1) = 3$. Lösningen är $(x,y) = (3,-1)$.
+    
+    \item Från andra ekvationen: $y = 8 - 2x$. Insättning i första ekvationen: $4x - 3(8-2x) = 10 \Rightarrow 4x - 24 + 6x = 10 \Rightarrow 10x - 24 = 10 \Rightarrow 10x = 34 \Rightarrow x = 3,4$. Då är $y = 8 - 2 \cdot 3,4 = 8 - 6,8 = 1,2$. Lösningen är $(x,y) = (3,4; 1,2)$.
+    
+    \item Från andra ekvationen: $y = 3x - 4$. Insättning i första ekvationen: $x + 2(3x-4) = 5 \Rightarrow x + 6x - 8 = 5 \Rightarrow 7x - 8 = 5 \Rightarrow 7x = 13 \Rightarrow x = \frac{13}{7}$. Då är $y = 3 \cdot \frac{13}{7} - 4 = \frac{39}{7} - 4 = \frac{39-28}{7} = \frac{11}{7}$. Lösningen är $(x,y) = (\frac{13}{7}, \frac{11}{7})$.
+\end{enumerate}
+
+\section{Blandade uppgifter}
+\begin{enumerate}[label=\textbf{\arabic*.}]
+    \item $x = \pm 5$
+    \item $x = 1$ eller $x = -6$
+    \item $x = \frac{3 \pm \sqrt{9+16}}{2} = \frac{3 \pm \sqrt{25}}{2} = \frac{3 \pm 5}{2}$, dvs $x = 4$ eller $x = -1$
+    \item Från andra ekvationen: $x = 2 + y$. Insättning i första ekvationen: $2(2+y) + 3y = 12 \Rightarrow 4 + 2y + 3y = 12 \Rightarrow 4 + 5y = 12 \Rightarrow 5y = 8 \Rightarrow y = \frac{8}{5}$. Då är $x = 2 + \frac{8}{5} = \frac{10+8}{5} = \frac{18}{5}$. Lösningen är $(x,y) = (\frac{18}{5}, \frac{8}{5})$.
+    \item $\lg (2x) = 2 \Rightarrow 2x = 10^2 = 100 \Rightarrow x = 50$
+    \item $3x^2 = 27 \Rightarrow x^2 = 9 \Rightarrow x = \pm 3$
+    \item $x = \frac{1}{2}$ eller $x = -3$
+    \item Från första ekvationen: $y = 6 - x$. Insättning i andra ekvationen: $2x - 3(6-x) = -3 \Rightarrow 2x - 18 + 3x = -3 \Rightarrow 5x - 18 = -3 \Rightarrow 5x = 15 \Rightarrow x = 3$. Då är $y = 6 - 3 = 3$. Lösningen är $(x,y) = (3,3)$.
+    \item $10^{x-1} = 100 = 10^2 \Rightarrow x-1 = 2 \Rightarrow x = 3$
+\end{enumerate}
+
+\end{document}

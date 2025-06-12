@@ -1,0 +1,136 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[swedish]{babel}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{xcolor}
+\geometry{margin=2.5cm}
+
+\title{Facit och bedömningsanvisningar: Kompletteringsuppgifter Matematik 1b}
+\author{Viktor Arohlén}
+\date{2025}
+
+\newcommand{\points}[1]{\textcolor{blue}{[#1 p]}}
+
+\begin{document}
+
+\maketitle
+
+\section*{Facit och bedömningsanvisningar}
+
+\begin{enumerate}[label=\textbf{\arabic*.}]
+    \item Vilket uttryck ska stå i den tomma parentesen för att likheten ska gälla?
+        $2(\underline{\hspace{1.5cm}}) = x (4x + 10)$
+        
+        \textbf{Svar:} $2x + 5$ \points{2}
+        
+        \textbf{Bedömningsanvisning:}
+        \begin{itemize}
+            \item Utvecklar högerledet: $x(4x + 10) = 4x^2 + 10x$ \points{1}
+            \item Löser ut vad som ska stå i parentesen: $2(\text{uttryck}) = 4x^2 + 10x \Rightarrow \text{uttryck} = 2x + 5$ \points{1}
+        \end{itemize}
+    
+    \item Faktorisera $27x^3y - 9x^2y^3 + 3xy$ fullständigt.
+    
+        \textbf{Svar:} $3xy(9x^2 - 3xy^2 + 1)$ \points{3}
+        
+        \textbf{Bedömningsanvisning:}
+        \begin{itemize}
+            \item Identifierar gemensam faktor $3xy$ \points{1}
+            \item Faktoriserar ut $3xy$: $3xy(9x^2 - 3xy^2 + 1)$ \points{2}
+        \end{itemize}
+    
+    \item Utveckla och förenkla uttrycket $(x + 2)(x + 3)$ och förenkla så långt som möjligt.
+    
+        \textbf{Svar:} $x^2 + 5x + 6$ \points{2}
+        
+        \textbf{Bedömningsanvisning:}
+        \begin{itemize}
+            \item Använder distributiva lagen korrekt \points{1}
+            \item Förenklar till $x^2 + 5x + 6$ \points{1}
+        \end{itemize}
+    
+    \item Linjen L1 har ekvationen $y = 3x + 19$
+        \begin{enumerate}[label=\textbf{\alph*)}]
+            \item Visa att punkten $(10,49)$ ligger på linjen L1
+            
+                \textbf{Svar:} Punkten $(10,49)$ ligger på linjen eftersom $49 = 3 \cdot 10 + 19$ \points{2}
+                
+                \textbf{Bedömningsanvisning:}
+                \begin{itemize}
+                    \item Sätter in $x = 10$ i linjens ekvation \points{1}
+                    \item Visar att $y = 3 \cdot 10 + 19 = 30 + 19 = 49$ \points{1}
+                \end{itemize}
+                
+            \item Linjen L2 är parallell med linjen L1. Punkten $(7,11)$ ligger på linjen L2. Bestäm ekvationen för linjen L2.
+            
+                \textbf{Svar:} $y = 3x - 10$ \points{3}
+                
+                \textbf{Bedömningsanvisning:}
+                \begin{itemize}
+                    \item Identifierar att L2 har samma lutning som L1, dvs $k = 3$ \points{1}
+                    \item Använder punkten $(7,11)$ för att bestämma $m$: $11 = 3 \cdot 7 + m \Rightarrow m = 11 - 21 = -10$ \points{1}
+                    \item Skriver ekvationen för L2: $y = 3x - 10$ \points{1}
+                \end{itemize}
+        \end{enumerate}
+
+    \item Om 20 år kommer Khaleb att vara lika gammal som Erika är idag. Om 10 år kommer Erika att vara dubbelt så gammal som Khaleb är vid den tidpunkten. Hur gamla är de två idag?
+    
+        \textbf{Svar:} Khaleb är 5 år och Erika är 25 år. \points{4}
+        
+        \textbf{Bedömningsanvisning:}
+        \begin{itemize}
+            \item Ställer upp ekvationer: Låt $K$ vara Khalebs ålder och $E$ vara Erikas ålder idag. \points{1}
+            \item Första villkoret: $K + 20 = E$ \points{1}
+            \item Andra villkoret: $E + 10 = 2(K + 10)$ \points{1}
+            \item Löser ekvationssystemet: 
+                \begin{align*}
+                K + 20 &= E\\
+                E + 10 &= 2(K + 10)\\
+                E + 10 &= 2K + 20\\
+                K + 20 + 10 &= 2K + 20\\
+                K + 30 &= 2K + 20\\
+                30 - 20 &= 2K - K\\
+                10 &= K
+                \end{align*}
+                Vilket ger $K = 5$ och $E = 25$ \points{1}
+        \end{itemize}
+    
+    \item I ett provrör finns det bakterier. Varje dag fördubblas antalet. Efter 12 dagar finns det $2^{18}$ bakterier i provröret. Hur många bakterier fanns det i provröret när det hade gått 10 dagar?
+    
+        \textbf{Svar:} $2^{16}$ bakterier \points{3}
+        
+        \textbf{Bedömningsanvisning:}
+        \begin{itemize}
+            \item Identifierar att antalet bakterier följer mönstret $\text{antal} = \text{startantal} \cdot 2^{\text{dagar}}$ \points{1}
+            \item Ställer upp ekvationen: $\text{startantal} \cdot 2^{12} = 2^{18}$ \points{1}
+            \item Löser för startantalet: $\text{startantal} = 2^{18-12} = 2^6$
+            \item Beräknar antalet efter 10 dagar: $2^6 \cdot 2^{10} = 2^{16}$ \points{1}
+        \end{itemize}
+
+\end{enumerate}
+
+\section*{Poängsammanställning}
+\begin{itemize}
+    \item Uppgift 1: 2 poäng
+    \item Uppgift 2: 3 poäng
+    \item Uppgift 3: 2 poäng
+    \item Uppgift 4: 5 poäng (2 + 3)
+    \item Uppgift 5: 4 poäng
+    \item Uppgift 6: 3 poäng
+    \item \textbf{Totalt: 19 poäng}
+\end{itemize}
+
+\section*{Betygsgränser}
+\begin{itemize}
+    \item E: 8-10 poäng
+    \item D: 11-13 poäng
+    \item C: 14-15 poäng
+    \item B: 16-17 poäng
+    \item A: 18-19 poäng
+\end{itemize}
+
+\end{document}
