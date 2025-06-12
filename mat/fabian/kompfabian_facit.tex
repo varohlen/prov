@@ -1,4 +1,3 @@
-
 \documentclass[a4paper,11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -7,9 +6,10 @@
 \usepackage{graphicx}
 \usepackage{enumitem}
 \usepackage{geometry}
+\usepackage{tikz}
 \geometry{margin=2.5cm}
 
-\title{Facit: Repetitionsuppgifter -- Matematik 2b}
+\title{Repetitionsuppgifter -- Matematik 2b (Facit)}
 \author{Fabian Tingstrand}
 \date{\today}
 
@@ -22,163 +22,45 @@
 \begin{enumerate}[label=\textbf{\arabic*.}]
     \item För funktionen $f(x) = x^2 - 6x + 5$:
     \begin{enumerate}[label=\alph*)]
-        \item Nollställen: $f(x) = 0 \Rightarrow x^2 - 6x + 5 = 0$. 
-        
-        Använd pq-formeln: $x = \frac{6 \pm \sqrt{36-20}}{2} = \frac{6 \pm \sqrt{16}}{2} = \frac{6 \pm 4}{2}$
-        
-        Nollställena är $x = 5$ och $x = 1$.
-        
-        \item Symmetrilinjen: $x = \frac{-b}{2a} = \frac{-(-6)}{2 \cdot 1} = \frac{6}{2} = 3$
-        
-        \item Extrempunkten: $(3, f(3)) = (3, 9 - 18 + 5) = (3, -4)$
-        
-        Eftersom $a = 1 > 0$ är detta ett minimum.
+        \item Bestäm funktionens nollställen
+        \\ \textbf{Facit:} $x^2 - 6x + 5 = 0 \Rightarrow (x-1)(x-5)=0 \Rightarrow x=1$ eller $x=5$
+        \item Bestäm symmetrilinjen
+        \\ \textbf{Facit:} $x=\frac{6}{2}=3$
+        \item Bestäm extrempunkten och avgör om det är ett maximum eller minimum
+        \\ \textbf{Facit:} Extrempunkt i $(3, -4)$. Det är ett minimum (a>0).
     \end{enumerate}
     
-    \item Grafen till andragradsfunktionen:
+    \item Nedan visas grafen till en andragradsfunktion $f(x) = ax^2 + bx + c$:
+    
+    % Tikz-bild här
+    
     \begin{enumerate}[label=\alph*)]
-        \item Nollställen: Från grafen kan vi avläsa att funktionen skär $x$-axeln i ungefär $x \approx -1,3$ och $x \approx 3,3$.
-        
-        \item Symmetrilinjen: Eftersom grafen har sitt maximum ungefär vid $x = 1$, är symmetrilinjen $x = 1$.
-        
-        \item Funktionsuttrycket: Vi kan se att grafen har formen av en nedåtvänd parabel, så $a < 0$. 
-        
-        Symmetrilinjen är $x = 1$, vilket ger $\frac{-b}{2a} = 1 \Rightarrow b = -2a$.
-        
-        Grafen går genom punkten $(0, 3)$, så $f(0) = c = 3$.
-        
-        Grafen går också genom punkten $(1, 4)$, så $f(1) = a + b + c = 4$. Med $b = -2a$ och $c = 3$ får vi:
-        
-        $a - 2a + 3 = 4 \Rightarrow -a = 1 \Rightarrow a = -1$
-        
-        Därmed är $b = -2a = -2 \cdot (-1) = 2$ och $c = 3$.
-        
-        Funktionsuttrycket är $f(x) = -x^2 + 2x + 3$.
+        \item Bestäm funktionens nollställen
+        \\ \textbf{Facit:} $x=3$ eller $x=-1$
+        \item Bestäm symmetrilinjen
+        \\ \textbf{Facit:} $x=1$
+        \item Bestäm funktionsuttrycket $f(x) = ax^2 + bx + c$
+        \\ \textbf{Facit:} $f(x) = -x^2 + 2x + 3$
     \end{enumerate}
 
     \item För funktionen $f(x) = 3x^2 + 6x - 2$:
     \begin{enumerate}[label=\alph*)]
-        \item Nollställen: $f(x) = 0 \Rightarrow 3x^2 + 6x - 2 = 0$
-        
-        Dividera med 3: $x^2 + 2x - \frac{2}{3} = 0$
-        
-        Använd pq-formeln: $x = \frac{-2 \pm \sqrt{4+\frac{8}{3}}}{2} = \frac{-2 \pm \sqrt{\frac{12+8}{3}}}{2} = \frac{-2 \pm \sqrt{\frac{20}{3}}}{2}$
-        
-        $x \approx -1,63$ eller $x \approx 0,41$
-        
-        \item Symmetrilinjen: $x = \frac{-b}{2a} = \frac{-6}{2 \cdot 3} = \frac{-6}{6} = -1$
-        
-        \item Extrempunkten: $(-1, f(-1)) = (-1, 3 - 6 - 2) = (-1, -5)$
-        
-        Eftersom $a = 3 > 0$ är detta ett minimum.
+        \item Bestäm funktionens nollställen
+        \\ \textbf{Facit:} $x = \frac{-3 \pm \sqrt{15}}{3}$
+        \item Bestäm symmetrilinjen
+        \\ \textbf{Facit:} $x=-1$
+        \item Bestäm extrempunkten och avgör om det är ett maximum eller minimum
+        \\ \textbf{Facit:} $(-1, -5)$, minimum (a>0)
     \end{enumerate}
     
     \item För funktionen $f(x) = -x^2 + 4x + 5$:
     \begin{enumerate}[label=\alph*)]
-        \item Nollställen: $f(x) = 0 \Rightarrow -x^2 + 4x + 5 = 0 \Rightarrow x^2 - 4x - 5 = 0$
-        
-        Använd pq-formeln: $x = \frac{4 \pm \sqrt{16+20}}{2} = \frac{4 \pm \sqrt{36}}{2} = \frac{4 \pm 6}{2}$
-        
-        Nollställena är $x = 5$ och $x = -1$
-        
-        \item Symmetrilinjen: $x = \frac{-b}{2a} = \frac{-4}{2 \cdot (-1)} = \frac{-4}{-2} = 2$
-        
-        \item Extrempunkten: $(2, f(2)) = (2, -4 + 8 + 5) = (2, 9)$
-        
-        Eftersom $a = -1 < 0$ är detta ett maximum.
-    \end{enumerate}
-    
-    \item Grafen till andragradsfunktionen:
-    \begin{enumerate}[label=\alph*)]
-        \item Nollställen: Från grafen kan vi avläsa att funktionen skär $x$-axeln i ungefär $x = 1$ och $x = 3$.
-        
-        \item Symmetrilinjen: Eftersom grafen har sitt minimum ungefär vid $x = 2$, är symmetrilinjen $x = 2$.
-        
-        \item Funktionsuttrycket: Vi kan se att grafen har formen av en uppåtvänd parabel, så $a > 0$. 
-        
-        Symmetrilinjen är $x = 2$, vilket ger $\frac{-b}{2a} = 2 \Rightarrow b = -4a$.
-        
-        Grafen går genom punkten $(0, 3)$, så $f(0) = c = 3$.
-        
-        Grafen går också genom punkten $(1, 0)$, så $f(1) = a - 4a + 3 = 0 \Rightarrow -3a + 3 = 0 \Rightarrow a = 1$.
-        
-        Därmed är $b = -4a = -4$ och $c = 3$.
-        
-        Funktionsuttrycket är $f(x) = x^2 - 4x + 3$.
-    \end{enumerate}
-    
-    \item För andragradsfunktionen med nollställena $x = -2$ och $x = 3$ samt $f(0) = -6$:
-    \begin{enumerate}[label=\alph*)]
-        \item Funktionsuttrycket: Vi vet att $f(x) = a(x-(-2))(x-3) = a(x+2)(x-3)$
-        
-        Utveckla: $f(x) = a(x^2 - 3x + 2x - 6) = a(x^2 - x - 6)$
-        
-        Vi vet att $f(0) = -6$, så $f(0) = a(0^2 - 0 - 6) = -6a = -6 \Rightarrow a = 1$
-        
-        Funktionsuttrycket är $f(x) = x^2 - x - 6$
-        
-        \item Symmetrilinjen: $x = \frac{-b}{2a} = \frac{-(-1)}{2 \cdot 1} = \frac{1}{2} = 0,5$
-        
-        \item Extrempunkten: $(0,5, f(0,5)) = (0,5, 0,25 - 0,5 - 6) = (0,5, -6,25)$
-        
-        Eftersom $a = 1 > 0$ är detta ett minimum.
-    \end{enumerate}
-    
-    \item För andragradsfunktionen med extrempunkt i $(1, -4)$ och $f(0) = 2$:
-    \begin{enumerate}[label=\alph*)]
-        \item Funktionsuttrycket: Eftersom extrempunkten är $(1, -4)$ är symmetrilinjen $x = 1$.
-        
-        Detta ger $\frac{-b}{2a} = 1 \Rightarrow b = -2a$
-        
-        Vi vet att $f(1) = -4$, så $f(1) = a \cdot 1^2 + b \cdot 1 + c = a + b + c = -4$
-        
-        Vi vet också att $f(0) = 2$, så $f(0) = c = 2$
-        
-        Från $a + b + c = -4$ och $b = -2a$ får vi: $a - 2a + 2 = -4 \Rightarrow -a = -6 \Rightarrow a = 6$
-        
-        Därmed är $b = -2a = -12$ och $c = 2$
-        
-        Funktionsuttrycket är $f(x) = 6x^2 - 12x + 2$
-        
-        \item Nollställen: $f(x) = 0 \Rightarrow 6x^2 - 12x + 2 = 0 \Rightarrow 3x^2 - 6x + 1 = 0$
-        
-        Använd pq-formeln: $x = \frac{6 \pm \sqrt{36-12}}{6} = \frac{6 \pm \sqrt{24}}{6} = \frac{6 \pm 2\sqrt{6}}{6} = 1 \pm \frac{\sqrt{6}}{3}$
-        
-        Nollställena är $x \approx 0,18$ och $x \approx 1,82$
-        
-        \item Symmetrilinjen: $x = 1$ (som vi redan bestämt)
-    \end{enumerate}
-\end{enumerate}
-
-\section{Problemlösning med andragradsfunktioner}
-
-\begin{enumerate}[label=\textbf{\arabic*.}]
-    \item För bollen som kastas uppåt med funktionen $h(t) = 20t - 5t^2$:
-    \begin{enumerate}[label=\alph*)]
-        \item Bollen når sin högsta höjd när $h'(t) = 0 \Rightarrow 20 - 10t = 0 \Rightarrow t = 2$ sekunder.
-        
-        \item Höjden blir då $h(2) = 20 \cdot 2 - 5 \cdot 2^2 = 40 - 20 = 20$ meter.
-        
-        \item Bollen träffar marken när $h(t) = 0 \Rightarrow 20t - 5t^2 = 0 \Rightarrow 5t(4 - t) = 0$
-        
-        Detta ger $t = 0$ eller $t = 4$. Eftersom $t = 0$ är starttiden, träffar bollen marken efter $t = 4$ sekunder.
-    \end{enumerate}
-    
-    \item För rektangeln med omkrets $24$ cm:
-    \begin{enumerate}[label=\alph*)]
-        \item Omkretsen är $2x + 2y = 24$, där $x$ är bredden och $y$ är längden.
-        
-        Löser ut $y$: $y = \frac{24 - 2x}{2} = 12 - x$
-        
-        \item Arean är $A(x) = x \cdot y = x(12 - x) = 12x - x^2$
-        
-        \item Eftersom både $x$ och $y$ måste vara positiva, gäller $x > 0$ och $12 - x > 0 \Rightarrow x < 12$.
-        
-        Alltså kan $x$ anta värdena $0 < x < 12$.
-        
-        \item Arean är maximal när $A'(x) = 0 \Rightarrow 12 - 2x = 0 \Rightarrow x = 6$ cm.
-        
-        \item Den maximala arean är $A(6) = 12 \cdot 6 - 6^2 = 72 - 36 = 36$ cm$^2$.
+        \item Bestäm funktionens nollställen
+        \\ \textbf{Facit:} $x=5$ eller $x=-1$
+        \item Bestäm symmetrilinjen
+        \\ \textbf{Facit:} $x=2$
+        \item Bestäm extrempunkten och avgör om det är ett maximum eller minimum
+        \\ \textbf{Facit:} $(2,9)$, maximum (a<0)
     \end{enumerate}
 \end{enumerate}
 
