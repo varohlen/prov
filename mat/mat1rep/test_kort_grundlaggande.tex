@@ -1,0 +1,105 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[swedish]{babel}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{tikz}
+\usepackage{enumitem}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+
+\title{Kort Test: Grundläggande matematik}
+\author{Viktor Arohlén}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section*{Uppgifter}
+\begin{enumerate}[label=\textbf{\arabic*.}]
+    % Grafanalysuppgift
+    \item Nedan visas grafen till funktionen $f(x)$. Bestäm:
+    \begin{enumerate}[label=\alph*)]
+        \item $f(0)$
+        \item Alla $x$ där $f(x) = 0$
+    \end{enumerate}
+    \begin{center}
+    \begin{tikzpicture}[scale=0.9]
+      \draw[->] (-1,0) -- (5,0) node[right] {$x$};
+      \draw[->] (0,-2) -- (0,5) node[above] {$y$};
+      \foreach \x in {0,1,2,3,4}
+        \draw (\x,0.1) -- (\x,-0.1) node[below] {$\x$};
+      \foreach \y in {-1,1,2,3,4}
+        \draw (0.1,\y) -- (-0.1,\y) node[left] {$\y$};
+      % Tydlig andragradsfunktion med heltalslösningar: f(x) = (x-1)(x-3)
+      \draw[thick,blue,domain=0:4,smooth,samples=100] plot (\x,{(\x-1)*(\x-3)});
+    \end{tikzpicture}
+    \end{center}
+    \item Lös ekvationen: $4x - 7 = 9$
+    \item Lös ekvationen: $3y + 5 = 2y + 13$
+    \item Lös ekvationen: $\frac{z}{5} - 2 = 1$
+    \item Lös olikheten: $2y - 5 < 7$
+    \item Vad är lutningen för linjen $y = -x + 4$?
+    \item Vad är $y$-värdet när $x = 0$ för linjen $y = 3x - 5$?
+    \item Bestäm räta linjens ekvation som går genom punkten $(0,3)$ och har lutningen $k=2$.
+    \newpage
+    \item Nedan visas grafen till en linje. Svara på frågorna.
+    \begin{center}
+    \begin{tikzpicture}[scale=0.8]
+      \draw[->] (-1,0) -- (5,0) node[right] {$x$};
+      \draw[->] (0,-1) -- (0,5) node[above] {$y$};
+      \foreach \x in {0,1,2,3,4}
+        \draw (\x,0.1) -- (\x,-0.1) node[below] {$\x$};
+      \foreach \y in {0,1,2,3,4}
+        \draw (0.1,\y) -- (-0.1,\y) node[left] {$\y$};
+      \draw[thick,blue] (0,1) -- (4,5);
+    \end{tikzpicture}
+    \end{center}
+    a) Vad är linjens lutning? \\
+    b) Vad är linjens ekvation? \\
+    c) Var skär linjen $y$-axeln? \\
+    \item För funktionen $f(x) = 2x - 1$, beräkna $f(3)$.
+    \item För funktionen $g(x) = 4^x$, beräkna $g(2)$.
+    \item En vara kostar 600 kr. Under en rea sänks priset med 30\%. Efter rean höjs priset med 40\%.
+    \begin{enumerate}[label=\alph*)]
+        \item Vad blir det slutliga priset?
+        \item Hur många procent har priset totalt förändrats med?
+        \item Vilken förändringsfaktor motsvarar den totala prisförändringen?
+    \end{enumerate}
+    \item En cykelbutik hyr ut cyklar för 90 kr per dag plus en fast avgift på 40 kr. Skriv en funktion $H(x)$ för hyran av $x$ dagar. Vad kostar det att hyra i 5 dagar?
+    \item En kortlek innehåller 52 kort. Beräkna sannolikheten att dra:
+    \begin{enumerate}[label=\alph*)]
+        \item Ett hjärterkort
+        \item Ett ess
+    \end{enumerate}
+    \item En bakteriekultur tredubblas varje timme och startar med 5 bakterier. Hur många bakterier finns efter 3 timmar?
+    \item En vanlig tärning kastas en gång. Vad är sannolikheten att få ett jämnt tal?
+\end{enumerate}
+
+\newpage
+\section*{Facit}
+\begin{enumerate}[label=\textbf{\arabic*.}]
+    % Facit till grafanalysuppgift
+    \item a) $f(0) = (0-1)(0-3) = (-1)\cdot(-3) = 3$
+    \\b) $f(x) = 0$ för $x = 1$ och $x = 3$ (nollställen syns tydligt i grafen)
+
+    \item $3x + 2 = 8 \Rightarrow 3x = 6 \Rightarrow x = 2$
+    \item $4x - 7 = 9 \Rightarrow 4x = 16 \Rightarrow x = 4$
+    \item $\frac{z}{5} - 2 = 1 \Rightarrow \frac{z}{5} = 3 \Rightarrow z = 15$
+    \item $2y - 5 < 7 \Rightarrow 2y < 12 \Rightarrow y < 6$
+    \item $5y - 3 \geq 2y + 6 \Rightarrow 3y \geq 9 \Rightarrow y \geq 3$
+    \item $k = -1$
+    \item $y$-värdet är $-5$
+    \item $y = 2x + 3$
+    \item $f(3) = 2 \cdot 3 - 1 = 5$
+    \item $g(2) = 4^2 = 16$
+    \item $3 \cdot 120 = 360$ kr
+    \item $90 \cdot 5 + 40 = 490$ kr
+    \item $\frac{100-80}{80} = 0.25 = 25\%$
+    \item $\frac{200-150}{200} = 0.25 = 25\%$
+    \item $5 \cdot 3^3 = 135$
+    \item $\frac{3}{6} = 0.5$
+\end{enumerate}
+
+\end{document}

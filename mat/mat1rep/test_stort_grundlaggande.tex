@@ -1,0 +1,152 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[swedish]{babel}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{tikz}
+\usepackage{enumitem}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+
+\title{Stort Test: Grundläggande matematik}
+\author{Viktor Arohlén}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section*{Uppgifter}
+
+% Ekvationslösning och olikheter
+\subsection*{Ekvationslösning och olikheter}
+\begin{enumerate}[label=\textbf{1.\arabic*.}]
+    \item Lös ekvationen: $4x - 7 = 9$
+    \item Lös ekvationen: $3y + 5 = 2y + 13$
+    \item Lös ekvationen: $\frac{z}{5} - 2 = 1$
+    \item Lös olikheten: $2x + 1 < 7$
+    \item Lös olikheten: $5y - 3 \geq 2y + 6$
+\end{enumerate}
+
+% Linjära funktioner och räta linjen (från extra_linjara_funktioner.tex)
+\subsection*{Linjär funktion och räta linjen}
+\begin{enumerate}[label=\textbf{2.\arabic*.}]
+    \item Vad är lutningen för linjen $y = -2x + 4$?
+    \item Vad är $y$-värdet när $x = 0$ för linjen $y = 3x - 5$?
+    \item Bestäm räta linjens ekvation som går genom punkten $(0,3)$ och har lutningen $k=2$.
+    \item Bestäm räta linjens ekvation som går genom punkterna $(2,1)$ och $(4,5)$.
+    \item För linjen $y = x - 2$, bestäm $x$ när $y = 0$.
+    \item Grafanalys: Nedan visas grafen till en linje. Svara på frågorna.
+    \begin{center}
+    \begin{tikzpicture}[scale=0.8]
+      \draw[->] (-1,0) -- (5,0) node[right] {$x$};
+      \draw[->] (0,-1) -- (0,5) node[above] {$y$};
+      \foreach \x in {0,1,2,3,4}
+        \draw (\x,0.1) -- (\x,-0.1) node[below] {$\x$};
+      \foreach \y in {0,1,2,3,4}
+        \draw (0.1,\y) -- (-0.1,\y) node[left] {$\y$};
+      \draw[thick,blue] (0,1) -- (4,5);
+    \end{tikzpicture}
+    \end{center}
+    a) Vad är linjens lutning?
+    b) Vad är linjens ekvation?
+    c) Var skär linjen $y$-axeln?
+\end{enumerate}
+
+% Linjära funktioner och problemlösning
+\subsection*{Linjär funktion och problemlösning}
+\begin{enumerate}[label=\textbf{3.\arabic*.}]
+    \item För funktionen $f(x) = 3x + 2$, beräkna $f(0)$, $f(2)$ och $f(-1)$.
+    \item För funktionen $g(x) = -2x + 5$, bestäm $x$ då $g(x) = 1$.
+    \item För vilka $x$ gäller $f(x) = g(x)$ om $f(x) = 3x + 2$ och $g(x) = -2x + 5$?
+    \item En biobiljett kostar 100 kr. Skriv en funktion $C(x)$ som beskriver totalkostnaden för $x$ biljetter. Vad kostar 4 biljetter?
+    \item En cykelbutik hyr ut cyklar för 90 kr per dag plus en fast avgift på 40 kr. Skriv en funktion $H(x)$ för hyran av $x$ dagar. Vad kostar det att hyra i 5 dagar?
+\end{enumerate}
+
+% Exponentialfunktioner
+\subsection*{Exponentialfunktioner}
+\begin{enumerate}[label=\textbf{4.\arabic*.}]
+    \item För funktionen $f(x) = 3^x$, beräkna $f(0)$, $f(1)$, $f(2)$.
+    \item En bakteriekultur tredubblas varje timme och startar med 5 bakterier. Skriv en funktion $N(t)$ som beskriver antalet bakterier efter $t$ timmar. Hur många bakterier finns efter 3 timmar?
+\end{enumerate}
+
+% Procent och övriga grundläggande områden
+\subsection*{Procent och övrigt}
+\begin{enumerate}[label=\textbf{5.\arabic*.}]
+    \item Priset på en vara höjs från 80 kr till 100 kr. Hur många procent har priset ökat?
+    \item En tröja kostar 400 kr, men säljs med 25\% rabatt. Vad blir priset?
+    \item En rektangel har omkretsen 30 cm. Längden är 2 cm längre än bredden. Bestäm rektangelns mått.
+\end{enumerate}
+
+% Sannolikhet
+\subsection*{Sannolikhet}
+\begin{enumerate}[label=\textbf{6.\arabic*.}]
+    \item En vanlig tärning kastas en gång. Beräkna sannolikheten för att:
+    \begin{enumerate}[label=\alph*)]
+        \item Få en 5:a
+        \item Få ett udda tal
+    \end{enumerate}
+    \item En kortlek innehåller 52 kort. Beräkna sannolikheten att dra:
+    \begin{enumerate}[label=\alph*)]
+        \item Ett hjärterkort
+        \item Ett ess
+    \end{enumerate}
+\end{enumerate}
+
+\newpage
+\section*{Facit}
+
+% Facit för ekvationslösning och olikheter
+\subsection*{Ekvationslösning och olikheter}
+\begin{enumerate}[label=\textbf{1.\roman*.}]
+    \item $4x - 7 = 9 \Rightarrow 4x = 16 \Rightarrow x = 4$
+    \item $3y + 5 = 2y + 13 \Rightarrow y = 8$
+    \item $\frac{z}{5} - 2 = 1 \Rightarrow \frac{z}{5} = 3 \Rightarrow z = 15$
+    \item $2x + 1 < 7 \Rightarrow 2x < 6 \Rightarrow x < 3$
+    \item $5y - 3 \geq 2y + 6 \Rightarrow 3y \geq 9 \Rightarrow y \geq 3$
+\end{enumerate}
+
+% Facit för linjära funktioner och räta linjen
+\subsection*{Linjär funktion och räta linjen}
+\begin{enumerate}[label=\textbf{2.\arabic*.}]
+    \item $k = -2$
+    \item $y$-värdet är $-5$
+    \item $y = 2x + 3$
+    \item Lutning: $k = \frac{5-1}{4-2} = 2$, $y = 2x - 3$
+    \item $0 = x - 2 \Rightarrow x = 2$
+    \item a) Lutning $k = 1$, b) $y = x + 1$, c) $y$-axeln skärs i $1$
+\end{enumerate}
+
+% Facit för linjära funktioner och problemlösning
+\subsection*{Linjär funktion och problemlösning}
+\begin{enumerate}[label=\textbf{3.\arabic*.}]
+    \item $f(0) = 2$, $f(2) = 8$, $f(-1) = -1$
+    \item $-2x + 5 = 1 \Rightarrow -2x = -4 \Rightarrow x = 2$
+    \item $3x + 2 = -2x + 5 \Rightarrow 5x = 3 \Rightarrow x = 0.6$
+    \item $C(x) = 100x$, $C(4) = 400$
+    \item $H(x) = 90x + 40$, $H(5) = 490$
+\end{enumerate}
+
+% Facit för exponentialfunktioner
+\subsection*{Exponentialfunktioner}
+\begin{enumerate}[label=\textbf{4.\arabic*.}]
+    \item $f(0) = 1$, $f(1) = 3$, $f(2) = 9$
+    \item $N(t) = 5 \cdot 3^t$, $N(3) = 135$
+\end{enumerate}
+
+% Facit för procent och övrigt
+\subsection*{Procent och övrigt}
+\begin{enumerate}[label=\textbf{5.\arabic*.}]
+    \item $\frac{100-80}{80} = 0.25 = 25\%$
+    \item $400 \cdot 0.75 = 300$ kr
+    \item Omkrets: $2x + 2(x+2) = 30 \Rightarrow 4x + 4 = 30 \Rightarrow 4x = 26 \Rightarrow x = 6.5$, längd $= 8.5$
+\end{enumerate}
+
+% Facit för sannolikhet
+\subsection*{Sannolikhet}
+\begin{enumerate}[label=\textbf{6.\arabic*.}]
+    \item a) $\frac{1}{6}$, b) $\frac{3}{6} = 0.5$
+    \item a) $\frac{13}{52} = 0.25$, b) $\frac{4}{52} = \frac{1}{13}$
+\end{enumerate}
+
+\end{document}
