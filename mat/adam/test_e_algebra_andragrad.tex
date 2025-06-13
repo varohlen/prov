@@ -1,0 +1,55 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[swedish]{babel}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{enumitem}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+
+\title{Test E-nivå: Algebra, ekvationssystem och andragradsfunktioner}
+\author{}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section*{Uppgifter}
+\begin{enumerate}[label=\textbf{\arabic*.}]
+    % 1. Algebra och parentesmultiplikation
+    \item Förenkla uttrycket: $(2x - 3)(x + 5)$
+
+    % 2. Konjugat- och kvadreringsregler
+    \item Utveckla och förenkla: $(y + 4)^2 - (y - 4)^2$
+
+    % 3. Ekvationssystem
+    \item Lös ekvationssystemet:
+    \begin{align*}
+    2x + y &= 11 \\
+    x - y &= 1
+    \end{align*}
+
+    % 4. Problemlösning med andragradsfunktion
+    \item En boll kastas från en höjd av $2$ meter med en utgångshastighet på $16$ m/s. Bollens höjd $h$ (i meter) efter $t$ sekunder ges av $h(t) = 2 + 16t - 5t^2$.
+    \begin{enumerate}[label=\alph*)]
+        \item När når bollen sin högsta höjd?
+        \item Hur högt når bollen?
+        \item När träffar bollen marken?
+    \end{enumerate}
+
+    % 5. Problemlösning med rektangel
+    \item En rektangels area är $30$ cm$^2$ och längden är $x+2$ cm, bredden $x$ cm. Bestäm rektangelns mått.
+\end{enumerate}
+
+\newpage
+\section*{Facit}
+\begin{enumerate}[label=\textbf{\arabic*.}]
+    \item $(2x - 3)(x + 5) = 2x^2 + 10x - 3x - 15 = 2x^2 + 7x - 15$
+    \item $(y + 4)^2 - (y - 4)^2 = (y^2 + 8y + 16) - (y^2 - 8y + 16) = 16y$
+    \item \text{Lös ut $x$ ur andra ekvationen: } x = y + 1.\newline Sätt in i första: $2(y + 1) + y = 11 \Rightarrow 2y + 2 + y = 11 \Rightarrow 3y = 9 \Rightarrow y = 3$.\newline $x = 3 + 1 = 4$\newline Svar: $x=4$, $y=3$
+    \item a) Högsta punkten: $t = -\frac{16}{2\cdot(-5)} = 1.6$\newline b) $h(1.6) = 2 + 16 \cdot 1.6 - 5 \cdot (1.6)^2 = 2 + 25.6 - 12.8 = 14.8$\newline c) $h(t) = 0 \Rightarrow 2 + 16t - 5t^2 = 0 \Rightarrow 5t^2 - 16t - 2 = 0$\newline pq-formeln: $t = \frac{16}{10} \pm \sqrt{(1.6)^2 + 0.4} \approx 3.3$\newline Svar: $t \approx 3.3$ sekunder
+    \item $x(x+2) = 30 \Rightarrow x^2 + 2x - 30 = 0$\newline pq-formeln: $x = -1 \pm \sqrt{1 + 30} = -1 \pm \sqrt{31}$\newline Svar: $x \approx 4.6$, $x+2 \approx 6.6$ (avrundat)
+\end{enumerate}
+
+\end{document}

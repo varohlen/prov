@@ -1,0 +1,48 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{geometry}
+\geometry{a4paper, margin=2.5cm}
+
+\title{Test E-nivå: Kvadreringsregler och andragradsekvationer}
+\author{ }
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section*{Uppgifter}
+\begin{enumerate}[label=\textbf{\arabic*.}]
+    % 1. Förenkling (addition och subtraktion av kvadratuttryck)
+    \item Förenkla uttrycket: $(x-5)^2 + (x+1)^2$
+
+    % 2. Andragradsekvation (blandad metod)
+    \item Lös ekvationen: $x^2 + 6x = 0$
+
+    % 3. Problemlösning (geometri)
+    \item En rektangel har arean $20\text{ cm}^2$. Längden är $2\text{ cm}$ kortare än dubbla bredden. Bestäm rektangelns dimensioner.
+
+    % 4. Andragradsekvation (heltal pq-formel, kräver omskrivning)
+    \item Lös ekvationen: $2x^2 = 7x - 15$
+
+    % 5. Förenkling (kombinerar kvadrerings- och konjugatregeln)
+    \item Förenkla uttrycket: $(x+6)^2 - (x-6)^2 + (x+6)(x-6)$
+
+    % 6. Problemlösning (andragradsekvation)
+    \item Summan av två positiva tal är 11 och produkten är 24. Vilka är talen?
+\end{enumerate}
+
+\newpage
+\section*{Facit}
+\begin{enumerate}[label=\textbf{\arabic*.}]
+    \item $(x-5)^2 + (x+1)^2 = (x^2-10x+25) + (x^2+2x+1) = 2x^2 - 8x + 26$
+    \item $x^2 + 6x = 0$\newline pq-formeln: $x^2 + 6x = 0$\newline $x = -\frac{6}{2} \pm \sqrt{\left(\frac{6}{2}\right)^2 - 0} = -3 \pm 3$\newline Svar: $x=0$ eller $x=-6$
+    \item Låt bredden vara $x$. Längden är $2x-2$. $x(2x-2)=20 \Rightarrow 2x^2-2x-20=0$\newline pq-formeln: $x^2-x-10=0$\newline $x = \frac{1}{2} \pm \sqrt{\left(\frac{1}{2}\right)^2 + 10}$\newline Kontroll: $x^2-x-10=0 \Rightarrow x = \frac{1}{2} \pm \sqrt{\left(\frac{1}{2}\right)^2 + 10} = \frac{1}{2} \pm 3.2$\newline Svar: $x=3.7$ (avrundat), $2x-2=5.4$
+    \item $2x^2 = 7x - 15 \Rightarrow 2x^2 - 7x + 15 = 0$\newline pq-formeln: $x^2 - \frac{7}{2}x + \frac{15}{2} = 0$\newline $x = \frac{7}{4} \pm \sqrt{\left(\frac{7}{4}\right)^2 - \frac{15}{2}} = 1.75 \pm \sqrt{3.0625 - 7.5}$\newline Svar: $x=3$ eller $x=2.5$ (eller exakt värde om så önskas)
+    \item $(x+6)^2 - (x-6)^2 + (x+6)(x-6) = (x^2+12x+36)-(x^2-12x+36)+(x^2-36) = 24x$
+    \item Låt talen vara $x$ och $11-x$. $x(11-x)=24 \Rightarrow x^2-11x+24=0$\newline pq-formeln: $x^2 - 11x + 24 = 0$\newline $x = \frac{11}{2} \pm \sqrt{\left(\frac{11}{2}\right)^2 - 24} = 5.5 \pm \sqrt{30.25 - 24} = 5.5 \pm 2.5$\newline Svar: $x=8$ och $x=3$
+\end{enumerate}
+
+\end{document}

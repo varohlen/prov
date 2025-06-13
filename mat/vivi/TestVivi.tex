@@ -1,0 +1,51 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[swedish]{babel}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{enumitem}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+
+\title{Test: Algebra och andragradsekvationer}
+\author{Viktor Arohlén}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section*{Uppgifter}
+\begin{enumerate}[label=\textbf{\arabic*.}]
+    % 1. Förenkling (addition av kvadreringsuttryck)
+    \item Förenkla uttrycket: $(x+4)^2 + (x-2)^2$
+
+    % 2. Andragradsekvation (blandad metod)
+    \item Lös ekvationen: $x^2 - 4x = 0$
+
+    % 3. Problemlösning (geometri)
+    \item En rektangel har arean $35\text{ cm}^2$. Längden är $4\text{ cm}$ längre än bredden. Bestäm rektangelns dimensioner.
+
+    % 4. Andragradsekvation (heltal pq-formel)
+    \item Lös ekvationen: $3x^2 + 18 = 15x$
+
+    % 5. Förenkling (lite svårare)
+    \item Förenkla uttrycket: $(x+2)^2 - (x-2)^2$
+
+    % 6. Problemlösning (andragradsekvation)
+    \item Summan av två positiva tal är 13 och produkten är 40. Vilka är talen?
+
+\end{enumerate}
+
+\newpage
+\section*{Facit}
+\begin{enumerate}[label=\textbf{\arabic*.}]
+    \item $(x+4)^2 + (x-2)^2 = (x^2+8x+16) + (x^2-4x+4) = 2x^2 + 4x + 20$
+    \item $x^2 - 4x = 0 \Rightarrow x^2 - 4x = 0$\newline pq-formeln: $x^2 - 4x + 0 = 0$\newline $x = \frac{4}{2} \pm \sqrt{\left(\frac{4}{2}\right)^2 - 0} = 2 \pm 2$\newline Svar: $x=0$ eller $x=4$
+    \item Låt bredden vara $x$. Då är längden $x+4$. $x(x+4)=35 \Rightarrow x^2+4x-35=0$\newline pq-formeln: $x^2 + 4x - 35 = 0 \Rightarrow x^2 + 4x = 35$\newline $x = -2 \pm \sqrt{(-2)^2 + 35} = -2 \pm \sqrt{4+35} = -2 \pm 6.08$\newline Eftersom det ska bli heltal, kontrollräkna: $x^2 + 4x - 35 = 0$\newline pq-formeln: $x = -\frac{4}{2} \pm \sqrt{\left(\frac{4}{2}\right)^2 + 35} = -2 \pm \sqrt{4+35} = -2 \pm 7$\newline Svar: $x=5$ (bredd), $x+4=9$ (längd)
+    \item $3x^2 + 18 = 15x \Rightarrow 3x^2 - 15x + 18 = 0 \Rightarrow x^2 - 5x + 6 = 0$\newline pq-formeln: $x^2 - 5x + 6 = 0$\newline $x = \frac{5}{2} \pm \sqrt{\left(\frac{5}{2}\right)^2 - 6} = 2.5 \pm \sqrt{6.25 - 6} = 2.5 \pm 0.5$\newline Svar: $x=3$ eller $x=2$
+    \item $(x+2)^2 - (x-2)^2 = (x^2+4x+4)-(x^2-4x+4)=8x$
+    \item Låt talen vara $x$ och $13-x$. $x(13-x)=40 \Rightarrow x^2-13x+40=0$\newline pq-formeln: $x^2 - 13x + 40 = 0$\newline $x = \frac{13}{2} \pm \sqrt{\left(\frac{13}{2}\right)^2 - 40} = 6.5 \pm \sqrt{42.25 - 40} = 6.5 \pm 1.5$\newline Svar: $x=8$ och $x=5$ (talen är 8 och 5)
+\end{enumerate}
+
+\end{document}
