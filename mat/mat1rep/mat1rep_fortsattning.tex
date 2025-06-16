@@ -1,0 +1,141 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[swedish]{babel}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{enumitem}
+\usepackage{geometry}
+\usepackage{tikz}
+\usetikzlibrary{calc} % För avancerade TikZ-makron
+% Kompilera alltid med pdflatex eller lualatex för att TikZ ska fungera korrekt
+\geometry{margin=2.5cm}
+
+\title{Fortsättning -- Repetitionsuppgifter Matematik 1}
+\author{}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+% --- Algebra: Förenkling och parentesmultiplikation ---
+\section*{Algebra: Förenkling och parentesmultiplikation}
+\begin{enumerate}[label=\textbf{A\arabic*.}]
+    \item Förenkla uttrycket: $3x + 4x$
+    \item Förenkla uttrycket: $5y - 2y + y$
+    \item Förenkla uttrycket: $2(a + 3)$
+    \item Förenkla uttrycket: $4(x - 2)$
+    \item Multiplicera in i parentesen: $3(x + 2)$
+    \item Multiplicera in i parentesen: $2(y - 5)$
+    \item Förenkla: $2(x + 3) + 4x$
+    \item Förenkla: $5(a - 2) + 3a$
+    \item Förenkla: $2x + 3(x - 1)$
+    \item Förenkla: $4(y + 2) - 2y$
+\end{enumerate}
+\newpage
+% --- Blandade uppgifter ---
+\section*{Blandade uppgifter}
+\begin{enumerate}[label=\textbf{B\arabic*.}]
+    % --- GRAFTOLKNING 1 ---
+    \item \textbf{Grafanalys:} Nedan visas grafen till en linje.
+    \begin{center}
+    \begin{tikzpicture}[scale=0.8]
+      % Axlar
+      \draw[->] (-1,0) -- (5,0) node[right] {$x$};
+      \draw[->] (0,-1) -- (0,5) node[above] {$y$};
+      % x-ticks
+      \foreach \x in {0,1,2,3,4}
+        \draw (\x,0.1) -- (\x,-0.1) node[below] {$\x$};
+      % y-ticks
+      \foreach \y in {0,1,2,3,4}
+        \draw (0.1,\y) -- (-0.1,\y) node[left] {$\y$};
+      % Linje
+      \draw[thick,blue] (-1,1) -- (4,4.5);
+    \end{tikzpicture}
+    \end{center}
+    a) Läs av $y$-värdet när $x=2$.
+    
+    b) Vad är linjens lutning?
+    
+    c) Var skär linjen $y$-axeln?
+
+    \item Lös ekvationen: $2(x+3) = 4x - 6$
+    \item Vad är lutningen (k-värdet) i linjen $y = 3x - 2$?
+    \item En vara kostar 500 kr och säljs med 20\% rabatt. Vad blir priset efter rabatten?
+    \item Förenkla uttrycket: $7a + 2a - 5a$
+    \item Bestäm ekvationen för den räta linje som går genom punkterna $(1,2)$ och $(3,6)$.
+    \item Lös olikheten: $2x + 3 < 7$
+    \item Läs av $f(2)$ ur grafen nedan (rita eller föreställ dig en graf där $f(2) = 4$).
+    \item Multiplicera in i parentesen: $5(y - 3)$
+    \item En cykelbutik hyr ut cyklar för 80 kr per dag plus en fast avgift på 50 kr. Skriv en funktion $H(x)$ för hyran av $x$ dagar. Vad kostar det att hyra i 3 dagar?
+    \item Lös ekvationen: $\frac{x}{3} + 2 = 5$
+    % --- GRAFTOLKNING 2 ---
+    \newpage
+    \item \textbf{Grafanalys:} Nedan visas grafen till en linje.
+    \begin{center}
+    \begin{tikzpicture}[scale=0.8]
+      % Axlar
+      \draw[->] (-1,0) -- (5,0) node[right] {$x$};
+      \draw[->] (0,-2) -- (0,4) node[above] {$y$};
+      % x-ticks
+      \foreach \x in {0,1,2,3,4}
+        \draw (\x,0.1) -- (\x,-0.1) node[below] {$\x$};
+      % y-ticks
+      \foreach \y in {-1,0,1,2,3}
+        \draw (0.1,\y) -- (-0.1,\y) node[left] {$\y$};
+      % Linje
+      \draw[thick,red] (-1,3) -- (4,-1);
+    \end{tikzpicture}
+    \end{center}
+    a) Läs av $x$-värdet där linjen skär $y=0$.
+    
+    b) Är linjen växande eller avtagande?
+
+    \item Förenkla: $2x + 3(x - 1)$
+    \item En linje har ekvationen $y = -2x + 5$. Var skär den y-axeln?
+    \item En vanlig tärning kastas två gånger. Vad är sannolikheten att få två sexor?
+    \item Lös ekvationen: $5x + 2 = 3x - 4$
+    \item Skriv en funktion $f(x)$ som beskriver arean av en rektangel med bredd $x$ och höjd 5.
+    \item Vad är nollstället för funktionen $y = x - 4$?
+    \item Priset på en vara är 200 kr. Priset höjs med 15\%. Vad är det nya priset?
+    \item Förenkla uttrycket: $4(x + 2) - 2x$
+    \item En graf visar $y = 2x + 1$. Vad är värdet på $y$ när $x = 0$?
+    \item Skriv ekvationen för en rät linje med k-värde $-3$ och som går genom punkten $(0,2)$.
+    \item Medelvärdet av talen 3, 7, 8 och $x$ är 6. Bestäm $x$.
+    \item Lös ekvationen: $3(x - 1) - 2(x + 3) = 5$
+    \item En biobiljett kostar 90 kr. Skriv en funktion $C(x)$ som beskriver totalkostnaden för $x$ biljetter. Vad kostar 5 biljetter?
+    % --- GRAFTOLKNING 3 ---
+    \newpage
+    \item \textbf{Grafanalys:} Nedan visas grafen till en linje.
+    \begin{center}
+    \begin{tikzpicture}[scale=0.8]
+      % Axlar
+      \draw[->] (-1,0) -- (5,0) node[right] {$x$};
+      \draw[->] (0,-2) -- (0,5) node[above] {$y$};
+      % x-ticks
+      \foreach \x in {0,1,2,3,4}
+        \draw (\x,0.1) -- (\x,-0.1) node[below] {$\x$};
+      % y-ticks
+      \foreach \y in {-1,0,1,2,3,4}
+        \draw (0.1,\y) -- (-0.1,\y) node[left] {$\y$};
+      % Linje
+      \draw[thick,green!60!black] (-1,-1) -- (4,4);
+    \end{tikzpicture}
+    \end{center}
+    a) Vad är linjens ekvation på formen $y = kx + m$?
+    
+    b) Läs av $y$-värdet när $x=3$.
+
+    \item Du sätter in 3000 kr på ett sparkonto med 2\% ränta. Hur mycket har du efter ett år?
+    \item Förenkla: $3(a - 2) + 2a$
+    \item I en påse finns 3 röda, 5 blå och 2 gröna kulor. Vad är sannolikheten att dra en blå kula?
+    \item Lös ekvationen: $3x - 4 = 11$
+    \item En bakteriekultur fördubblas varje timme och startar med 10 bakterier. Skriv en funktion $N(t)$ som beskriver antalet bakterier efter $t$ timmar. Hur många bakterier finns efter 4 timmar?
+    \item Läs av var grafen $y = 2x - 6$ skär y-axeln.
+    \item Summan av två tal är 15 och det ena talet är dubbelt så stort som det andra. Vilka är talen?
+    \item Förenkla: $2(x + 3) + 4x$
+    \item En bussbiljett kostar 25 kr. Du köper $x$ biljetter och betalar med en 200-lapp. Hur mycket får du tillbaka?
+    \item Skriv ekvationen för en rät linje som har k-värde $4$ och skär y-axeln i $-1$.
+\end{enumerate}
+
+\end{document}
