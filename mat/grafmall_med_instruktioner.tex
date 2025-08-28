@@ -1,0 +1,66 @@
+% ---------------------------------------------
+% MALL FÖR GRAFUPPGIFTER MED PGFPLOTS (LATEX)
+% ---------------------------------------------
+% Denna mall ger alltid ett kvadratiskt rutnät på papperet,
+% och du kan själv välja intervall, tick-steg och funktion.
+% 
+% SÅ HÄR ANVÄNDER DU MALLEN:
+% 1. Sätt xmin, xmax, ymin, ymax till önskade gränser.
+% 2. Välj xtick distance och ytick distance så att grafen blir lättläst.
+% 3. Sätt width/(xmax-xmin) = height/(ymax-ymin) för att rutorna ska bli kvadratiska på papperet.
+%    (Exempel: 11 x-rutor och 24 y-rutor: width=7cm, height=15.27cm)
+% 4. Byt ut FUNKTIONSUTTRYCK mot önskad funktion.
+% 5. Kopiera in koden i din LaTeX-fil där du vill ha grafen.
+% 
+% Exempel på användning finns längst ner!
+% ---------------------------------------------
+
+% Lägg i preamble om det inte redan finns:
+% \usepackage{pgfplots}
+% \pgfplotsset{compat=1.17}
+
+\begin{center}
+\begin{tikzpicture}
+  \begin{axis}[
+    axis lines=middle,
+    axis line style/.append style={-},
+    grid=both,
+    xmin=START_X, xmax=END_X,
+    ymin=START_Y, ymax=END_Y,
+    samples=200,
+    width=GRAF_BREDD,
+    height=GRAF_HOJD,
+    domain=START_X:END_X,
+    xtick distance=XTICK_STEG,
+    ytick distance=YTICK_STEG,
+    clip=true
+  ]
+    \addplot[blue, thick] {FUNKTIONSUTTRYCK};
+  \end{axis}
+\end{tikzpicture}
+\end{center}
+
+% -----------
+% EXEMPEL 1:
+% -----------
+% Graf av f(x) = -0.5x^3 + 3x^2 + x + 2, x från -3 till 8, y från 0 till 24,
+% 1 ruta per x-enhet, 1 ruta per 2 y-enheter, kvadratiskt rutnät på papperet:
+%
+% \begin{tikzpicture}
+%   \begin{axis}[
+%     axis lines=middle,
+%     axis line style/.append style={-},
+%     grid=both,
+%     xmin=-3, xmax=8,
+%     ymin=0, ymax=24,
+%     samples=200,
+%     width=7cm,
+%     height=15.27cm,
+%     domain=-3:8,
+%     xtick distance=1,
+%     ytick distance=2,
+%     clip=true
+%   ]
+%     \addplot[blue, thick] {-0.5*x^3 + 3*x^2 + x + 2};
+%   \end{axis}
+% \end{tikzpicture}
