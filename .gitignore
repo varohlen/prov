@@ -25,3 +25,12 @@
 .LSOverride
 ._*
 .code-workspace
+
+## Images (not needed in repo, only for local PDF compilation)
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.svg
