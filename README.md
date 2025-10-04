@@ -1,33 +1,77 @@
-# Exam Collection
+# Provsamling
 
-This repository contains my collection of exams for various subjects.
+Samling av prov, uppgifter och resurser för gymnasiekurser.
 
-## Structure
+## 📁 Struktur
 
-Exams are organized by subject and grade level:
+```
+prov/
+├── subjects/              # Alla ämnesprover
+│   ├── biologi/          # Biologi 1, 2
+│   ├── naturkunskap/     # Naturkunskap 1a1, 1b, 2
+│   ├── miljo/            # Miljökunskap 1
+│   ├── matematik/        # Matematik 1b, 2b, 3b
+│   └── ai/               # AI-kursmaterial
+├── resources/            # Återanvändbara resurser
+│   ├── templates/        # LaTeX-mallar
+│   ├── images/          # Python-genererade bilder
+│   └── scripts/         # Hjälpscript
+├── archive/             # Äldre/personliga prov
+├── nationella-prov/     # Referensmaterial från NP
+└── docs/                # Dokumentation och referenser
+```
 
-- `Bio1/` - Biology 1
-- `Bio2/` - Biology 2
-- `Milj1/` - Environmental Science 1
-- `Nak1a1/` - Natural Science 1a1
-- `Nak1b/` - Natural Science 1b
-- `Nak2/` - Natural Science 2
+## 🚀 Användning
 
-Each exam is in its own directory containing:
-- `.tex` source files
-- PDF outputs
-- Supporting images and resources
+### LaTeX-prov
 
-## Usage
+Proven är skrivna i LaTeX med `exam` document class:
 
-The exams are written in LaTeX using the `exam` document class. To compile an exam:
+```bash
+# Navigera till provmapp
+cd subjects/matematik/ma3b
 
-1. Navigate to the exam directory
-2. Run `pdflatex examfile.tex` to generate the student version
-3. Run `pdflatex "\def\answers{1}\input{examfile.tex}"` to generate the answer key
+# Kompilera elevversion
+pdflatex prov_algebra_ma3b.tex
 
-## Requirements
+# Kompilera facit
+pdflatex "\def\answers{1}\input{prov_algebra_ma3b.tex}"
+```
 
-- LaTeX distribution (e.g., TeX Live, MiKTeX)
+### Python-grafgenerering
+
+```bash
+# Aktivera Python-miljö
+source venv/bin/activate
+
+# Kör ett grafscript
+python resources/scripts/graph.py
+
+# Bilder sparas i resources/images/
+```
+
+## 📦 Krav
+
+### LaTeX
+- LaTeX distribution (TeX Live, MiKTeX)
 - `exam` document class
-- Standard LaTeX packages (specified in each .tex file)
+- Standard LaTeX-paket
+
+### Python
+- Python 3.11+
+- matplotlib, numpy (se `requirements.txt`)
+
+### Installation
+```bash
+# Python-miljö (första gången)
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+## 📝 Resurser
+
+- **Templates**: Återanvändbara LaTeX-mallar i `resources/templates/`
+- **Scripts**: Hjälpscript för kompilering och bildgenerering i `resources/scripts/`
+- **Images**: Genererade grafer och bilder i `resources/images/`
+- **Docs**: Dokumentation och referenser i `docs/`

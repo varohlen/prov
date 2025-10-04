@@ -34,3 +34,11 @@
 *.bmp
 *.tiff
 *.svg
+
+## Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
