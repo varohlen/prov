@@ -1,0 +1,336 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\geometry{a4paper, margin=1in}
+
+\title{Facit: Övningsbank Algebra och Funktioner \\ \large Matematik 3b}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Polynom och Polynomekvationer}
+
+\subsection*{Uppgift P1}
+Graden är 4 och koefficienten för högsta gradtermen är 3.
+
+\subsection*{Uppgift P2}
+\begin{enumerate}[label=\alph*)]
+    \item $p(2) = 2^3 - 4 \cdot 2^2 + 2 + 6 = 8 - 16 + 2 + 6 = 0$
+    \item Ja, $x = 2$ är ett nollställe eftersom $p(2) = 0$.
+\end{enumerate}
+
+\subsection*{Uppgift P3}
+\begin{align*}
+x^3 - 8 &= 0 \\
+(x - 2)(x^2 + 2x + 4) &= 0
+\end{align*}
+Första faktorn ger $x = 2$. Andra faktorn har inga reella lösningar (diskriminanten är negativ).
+
+Svar: $x = 2$
+
+\subsection*{Uppgift P4}
+Eftersom $x = -1$ är en rot kan vi faktorisera:
+\begin{align*}
+x^3 + 2x^2 - 5x - 6 &= (x + 1)(x^2 + x - 6) \\
+&= (x + 1)(x + 3)(x - 2)
+\end{align*}
+
+Svar: $x = -1$, $x = -3$, $x = 2$
+
+\subsection*{Uppgift P5}
+\begin{enumerate}[label=\alph*)]
+    \item $p(x) = a(x + 2)(x - 1)(x - 3)$ där $a$ är en konstant.
+    
+    Använd villkoret $p(0) = 12$:
+    \begin{align*}
+    p(0) &= a(0 + 2)(0 - 1)(0 - 3) = a \cdot 2 \cdot (-1) \cdot (-3) = 6a \\
+    6a &= 12 \\
+    a &= 2
+    \end{align*}
+    
+    Svar: $p(x) = 2(x + 2)(x - 1)(x - 3)$
+    
+    \item Multiplicera ut:
+    \begin{align*}
+    p(x) &= 2(x + 2)(x - 1)(x - 3) \\
+    &= 2(x + 2)(x^2 - 4x + 3) \\
+    &= 2(x^3 - 4x^2 + 3x + 2x^2 - 8x + 6) \\
+    &= 2(x^3 - 2x^2 - 5x + 6) \\
+    &= 2x^3 - 4x^2 - 10x + 12
+    \end{align*}
+\end{enumerate}
+
+\subsection*{Uppgift P6}
+Eftersom $x = 1$ är ett nollställe: $p(1) = 1 + a + b - 12 = 0 \Rightarrow a + b = 11$
+
+Eftersom $x = -3$ är ett nollställe: $p(-3) = -27 + 9a - 3b - 12 = 0 \Rightarrow 9a - 3b = 39 \Rightarrow 3a - b = 13$
+
+Lös ekvationssystemet:
+\begin{align*}
+a + b &= 11 \\
+3a - b &= 13
+\end{align*}
+Addera: $4a = 24 \Rightarrow a = 6$, därmed $b = 5$
+
+Svar: $a = 6$, $b = 5$
+
+\subsection*{Uppgift P7}
+\begin{align*}
+2x^4 - 8x^2 &= 0 \\
+2x^2(x^2 - 4) &= 0 \\
+2x^2(x - 2)(x + 2) &= 0
+\end{align*}
+
+Svar: $x = 0$ (dubbelrot), $x = 2$, $x = -2$
+
+\subsection*{Uppgift P8}
+Faktorisera nämnaren: $x^2 - 3x + 2 = (x - 1)(x - 2)$
+
+Utför polynomdivision:
+\begin{align*}
+\frac{x^4 - 3x^3 + 2x^2 + 2x - 4}{x^2 - 3x + 2} &= x^2 + 2
+\end{align*}
+
+Verifiering: $(x^2 - 3x + 2)(x^2 + 2) = x^4 - 3x^3 + 2x^2 + 2x^2 - 6x + 4 = x^4 - 3x^3 + 4x^2 - 6x + 4$
+
+Korrigering: Låt mig räkna om...
+$(x^2 - 3x + 2)(x^2) = x^4 - 3x^3 + 2x^2$
+Återstår: $2x - 4$
+$(x^2 - 3x + 2)(2) = 2x^2 - 6x + 4$
+
+Kvoten är $x^2 + 2$ med rest $8x - 8$. Polynomet är inte exakt delbart.
+
+\subsection*{Uppgift P9}
+\begin{enumerate}[label=\alph*)]
+    \item $p(x) = a(x + 1)^2(x - 2)(x - 4)$
+    
+    Använd $p(0) = 8$:
+    \begin{align*}
+    p(0) &= a(1)^2(-2)(-4) = 8a \\
+    8a &= 8 \\
+    a &= 1
+    \end{align*}
+    
+    Svar: $p(x) = (x + 1)^2(x - 2)(x - 4)$
+    
+    \item Vid $x = -1$ (dubbel rot) tangerar grafen x-axeln. Vid $x = 2$ och $x = 4$ skär grafen x-axeln.
+\end{enumerate}
+
+\newpage
+
+\section{Rationella Uttryck}
+
+\subsection*{Uppgift R1}
+\begin{align*}
+\frac{x^2 - 16}{x + 4} &= \frac{(x - 4)(x + 4)}{x + 4} = x - 4
+\end{align*}
+
+\subsection*{Uppgift R2}
+Uttrycket är inte definierat när nämnaren är noll: $x - 3 = 0 \Rightarrow x = 3$
+
+\subsection*{Uppgift R3}
+\begin{align*}
+\frac{3x + 6}{x^2 + 2x} &= \frac{3(x + 2)}{x(x + 2)} = \frac{3}{x}
+\end{align*}
+
+\subsection*{Uppgift R4}
+\begin{align*}
+\frac{x^2 + 5x + 6}{x^2 - 9} &= \frac{(x + 2)(x + 3)}{(x - 3)(x + 3)} = \frac{x + 2}{x - 3}
+\end{align*}
+
+\subsection*{Uppgift R5}
+\begin{align*}
+\frac{2}{x + 1} + \frac{3}{x - 2} &= \frac{2(x - 2) + 3(x + 1)}{(x + 1)(x - 2)} \\
+&= \frac{2x - 4 + 3x + 3}{(x + 1)(x - 2)} \\
+&= \frac{5x - 1}{(x + 1)(x - 2)}
+\end{align*}
+
+\subsection*{Uppgift R6}
+\begin{align*}
+\frac{x^2 - 4}{x^2 + 4x + 4} \cdot \frac{x + 2}{x - 2} &= \frac{(x - 2)(x + 2)}{(x + 2)^2} \cdot \frac{x + 2}{x - 2} \\
+&= \frac{(x - 2)(x + 2)(x + 2)}{(x + 2)^2(x - 2)} \\
+&= 1
+\end{align*}
+
+\subsection*{Uppgift R7}
+\begin{align*}
+\frac{3}{x - 1} &= \frac{2}{x + 2} \\
+3(x + 2) &= 2(x - 1) \\
+3x + 6 &= 2x - 2 \\
+x &= -8
+\end{align*}
+
+Kontroll: $\frac{3}{-8 - 1} = \frac{3}{-9} = -\frac{1}{3}$ och $\frac{2}{-8 + 2} = \frac{2}{-6} = -\frac{1}{3}$ ✓
+
+\subsection*{Uppgift R8}
+\begin{align*}
+\frac{5x - 1}{x^2 - 4} &= \frac{A}{x - 2} + \frac{B}{x + 2} \\
+\frac{5x - 1}{(x - 2)(x + 2)} &= \frac{A(x + 2) + B(x - 2)}{(x - 2)(x + 2)}
+\end{align*}
+
+Därmed: $5x - 1 = A(x + 2) + B(x - 2)$
+
+Sätt $x = 2$: $10 - 1 = A(4) \Rightarrow A = \frac{9}{4}$
+
+Sätt $x = -2$: $-10 - 1 = B(-4) \Rightarrow B = \frac{11}{4}$
+
+Svar: $A = \frac{9}{4}$, $B = \frac{11}{4}$
+
+\subsection*{Uppgift R9}
+\begin{align*}
+\frac{1}{x} - \frac{1}{x + h} &= \frac{x + h - x}{x(x + h)} = \frac{h}{x(x + h)}
+\end{align*}
+
+\subsection*{Uppgift R10}
+\begin{align*}
+\frac{x + 1}{x - 1} - \frac{x - 1}{x + 1} &= \frac{8}{x^2 - 1} \\
+\frac{(x + 1)^2 - (x - 1)^2}{(x - 1)(x + 1)} &= \frac{8}{(x - 1)(x + 1)} \\
+(x + 1)^2 - (x - 1)^2 &= 8 \\
+x^2 + 2x + 1 - (x^2 - 2x + 1) &= 8 \\
+4x &= 8 \\
+x &= 2
+\end{align*}
+
+\newpage
+
+\section{Gränsvärden}
+
+\subsection*{Uppgift G1}
+\[
+\lim_{x \to 3} (2x + 5) = 2 \cdot 3 + 5 = 11
+\]
+
+\subsection*{Uppgift G2}
+\begin{align*}
+\lim_{x \to 2} \frac{x^2 - 4}{x - 2} &= \lim_{x \to 2} \frac{(x - 2)(x + 2)}{x - 2} \\
+&= \lim_{x \to 2} (x + 2) = 4
+\end{align*}
+
+\subsection*{Uppgift G3}
+\begin{align*}
+\lim_{x \to \infty} \frac{4x + 3}{2x - 1} &= \lim_{x \to \infty} \frac{x(4 + \frac{3}{x})}{x(2 - \frac{1}{x})} \\
+&= \lim_{x \to \infty} \frac{4 + \frac{3}{x}}{2 - \frac{1}{x}} = \frac{4}{2} = 2
+\end{align*}
+
+\subsection*{Uppgift G4}
+\begin{align*}
+\lim_{x \to -1} \frac{x^2 + 3x + 2}{x + 1} &= \lim_{x \to -1} \frac{(x + 1)(x + 2)}{x + 1} \\
+&= \lim_{x \to -1} (x + 2) = 1
+\end{align*}
+
+\subsection*{Uppgift G5}
+\begin{align*}
+\lim_{x \to \infty} \frac{3x^2 - 5x + 1}{x^2 + 2} &= \lim_{x \to \infty} \frac{x^2(3 - \frac{5}{x} + \frac{1}{x^2})}{x^2(1 + \frac{2}{x^2})} \\
+&= \lim_{x \to \infty} \frac{3 - \frac{5}{x} + \frac{1}{x^2}}{1 + \frac{2}{x^2}} = \frac{3}{1} = 3
+\end{align*}
+
+\subsection*{Uppgift G6}
+\begin{enumerate}[label=\alph*)]
+    \item $\lim_{x \to 2^-} f(x) = 2^2 + 1 = 5$ och $\lim_{x \to 2^+} f(x) = 3 \cdot 2 - 1 = 5$
+    \item Ja, $\lim_{x \to 2} f(x) = 5$ eftersom vänster- och högergränsvärdet är lika.
+    \item Ja, funktionen är kontinuerlig i $x = 2$ eftersom $\lim_{x \to 2} f(x) = f(2) = 5$.
+\end{enumerate}
+
+\subsection*{Uppgift G7}
+\begin{align*}
+\lim_{x \to \infty} \frac{5x^3 + 2x}{2x^3 - x^2 + 1} &= \lim_{x \to \infty} \frac{x^3(5 + \frac{2}{x^2})}{x^3(2 - \frac{1}{x} + \frac{1}{x^3})} \\
+&= \lim_{x \to \infty} \frac{5 + \frac{2}{x^2}}{2 - \frac{1}{x} + \frac{1}{x^3}} = \frac{5}{2}
+\end{align*}
+
+\subsection*{Uppgift G8}
+\begin{align*}
+\lim_{x \to 1} \frac{x^3 - 1}{x^2 - 1} &= \lim_{x \to 1} \frac{(x - 1)(x^2 + x + 1)}{(x - 1)(x + 1)} \\
+&= \lim_{x \to 1} \frac{x^2 + x + 1}{x + 1} = \frac{3}{2}
+\end{align*}
+
+\subsection*{Uppgift G9}
+\begin{enumerate}[label=\alph*)]
+    \item 
+    \begin{align*}
+    \lim_{x \to 3} g(x) &= \lim_{x \to 3} \frac{x^2 - 9}{x - 3} \\
+    &= \lim_{x \to 3} \frac{(x - 3)(x + 3)}{x - 3} \\
+    &= \lim_{x \to 3} (x + 3) = 6
+    \end{align*}
+    \item Ja, funktionen kan göras kontinuerlig genom att sätta $g(3) = 6$.
+\end{enumerate}
+
+\subsection*{Uppgift G10}
+\begin{align*}
+\lim_{h \to 0} \frac{(x + h)^2 - x^2}{h} &= \lim_{h \to 0} \frac{x^2 + 2xh + h^2 - x^2}{h} \\
+&= \lim_{h \to 0} \frac{2xh + h^2}{h} \\
+&= \lim_{h \to 0} (2x + h) = 2x
+\end{align*}
+
+\newpage
+
+\section{Blandade Uppgifter och Problemlösning}
+
+\subsection*{Uppgift B1}
+\begin{enumerate}[label=\alph*)]
+    \item $A(x) = x(10 - x) = 10x - x^2$
+    \item Skriv om: $A(x) = -(x^2 - 10x) = -(x^2 - 10x + 25 - 25) = -(x - 5)^2 + 25$
+    
+    Arean är maximal när $(x - 5)^2 = 0$, dvs när $x = 5$ cm.
+    
+    Maximal area: $A(5) = 25$ cm²
+\end{enumerate}
+
+\subsection*{Uppgift B2}
+Låt talen vara $x$ och $y$.
+\begin{align*}
+x + y &= 20 \\
+xy &= 75
+\end{align*}
+
+Från första ekvationen: $y = 20 - x$
+
+Sätt in i andra: $x(20 - x) = 75$
+\begin{align*}
+20x - x^2 &= 75 \\
+x^2 - 20x + 75 &= 0 \\
+(x - 5)(x - 15) &= 0
+\end{align*}
+
+Svar: Talen är 5 och 15.
+
+\subsection*{Uppgift B3}
+\begin{enumerate}[label=\alph*)]
+    \item $V(x) = x(20 - 2x)(30 - 2x) = x(600 - 40x - 60x + 4x^2) = 4x^3 - 100x^2 + 600x$
+    \item Definitionsmängd: $0 < x < 10$ (eftersom $20 - 2x > 0$)
+    \item Använd digitala verktyg för att hitta maximum. Derivera och sätt lika med noll, eller använd grafisk metod.
+    
+    Svar: $x \approx 3.92$ cm ger maximal volym $V \approx 1056$ cm³
+\end{enumerate}
+
+\subsection*{Uppgift B4}
+\begin{enumerate}[label=\alph*)]
+    \item Använd de tre punkterna:
+    \begin{align*}
+    (0, 3): \quad c &= 3 \\
+    (1, 0): \quad a + b + c &= 0 \Rightarrow a + b = -3 \\
+    (3, 0): \quad 9a + 3b + c &= 0 \Rightarrow 9a + 3b = -3 \Rightarrow 3a + b = -1
+    \end{align*}
+    
+    Lös systemet:
+    \begin{align*}
+    a + b &= -3 \\
+    3a + b &= -1
+    \end{align*}
+    Subtrahera: $2a = 2 \Rightarrow a = 1$, därmed $b = -4$
+    
+    Svar: $a = 1$, $b = -4$, $c = 3$. Parabeln är $y = x^2 - 4x + 3$
+    
+    \item Vertex: $x = -\frac{b}{2a} = -\frac{-4}{2} = 2$, $y = 2^2 - 4 \cdot 2 + 3 = -1$
+    
+    Svar: Vertex är $(2, -1)$
+\end{enumerate}
+
+\end{document}

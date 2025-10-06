@@ -1,0 +1,260 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\geometry{a4paper, margin=1in}
+
+\title{Övningsbank: Algebra och Funktioner \\ \large Matematik 3b}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Instruktioner}
+Denna övningsbank innehåller uppgifter inom följande områden:
+\begin{itemize}
+    \item Polynom och polynomekvationer
+    \item Rationella uttryck
+    \item Gränsvärden
+\end{itemize}
+
+Uppgifterna är märkta med svårighetsgrad (E, C, A) och är baserade på tidigare nationella prov samt det centrala innehållet i Matematik 3b enligt GY25.
+
+\newpage
+
+\section{Polynom och Polynomekvationer}
+
+\subsection*{Uppgift P1 (E)}
+Bestäm graden och koefficienten för den högsta gradtermen i polynomet
+\[
+p(x) = 3x^4 - 2x^3 + 5x - 7
+\]
+
+\subsection*{Uppgift P2 (E)}
+Givet polynomet $p(x) = x^3 - 4x^2 + x + 6$.
+\begin{enumerate}[label=\alph*)]
+    \item Beräkna $p(2)$.
+    \item Är $x = 2$ ett nollställe till $p(x)$? Motivera ditt svar.
+\end{enumerate}
+
+\subsection*{Uppgift P3 (E)}
+Lös ekvationen $x^3 - 8 = 0$ genom att faktorisera med konjugatregeln.
+
+\subsection*{Uppgift P4 (C)}
+Lös polynomekvationen $x^3 + 2x^2 - 5x - 6 = 0$ fullständigt, givet att $x = -1$ är en rot.
+
+\subsection*{Uppgift P5 (C)}
+Ett polynom $p(x)$ av tredje graden har nollställena $x = -2$, $x = 1$ och $x = 3$. Dessutom gäller att $p(0) = 12$.
+\begin{enumerate}[label=\alph*)]
+    \item Skriv polynomet på faktoriserad form.
+    \item Bestäm polynomet på standardform.
+\end{enumerate}
+
+\subsection*{Uppgift P6 (C)}
+Polynomet $p(x) = x^3 + ax^2 + bx - 12$ har nollställena $x = 1$ och $x = -3$. Bestäm konstanterna $a$ och $b$.
+
+\subsection*{Uppgift P7 (C)}
+Lös ekvationen $2x^4 - 8x^2 = 0$ fullständigt.
+
+\subsection*{Uppgift P8 (A)}
+Visa att polynomet $p(x) = x^4 - 3x^3 + 2x^2 + 2x - 4$ är delbart med $x^2 - 3x + 2$. Utför sedan polynomdivisionen och ange kvoten.
+
+\subsection*{Uppgift P9 (A)}
+Ett polynom $p(x)$ av fjärde graden har nollställena $x = -1$ (dubbel rot), $x = 2$ och $x = 4$. Polynomet går genom punkten $(0, 8)$.
+\begin{enumerate}[label=\alph*)]
+    \item Bestäm polynomet.
+    \item Beskriv polynomets beteende vid nollställena.
+\end{enumerate}
+
+\begin{center}
+\includegraphics[width=0.7\textwidth]{../../../resources/images/polynom_dubbel_rot.png}
+\end{center}
+
+\newpage
+
+\section{Rationella Uttryck}
+
+\subsection*{Uppgift R1 (E)}
+Förenkla uttrycket
+\[
+\frac{x^2 - 16}{x + 4}
+\]
+
+\subsection*{Uppgift R2 (E)}
+För vilket värde på $x$ är uttrycket $\frac{2x + 5}{x - 3}$ inte definierat?
+
+\subsection*{Uppgift R3 (E)}
+Förenkla uttrycket
+\[
+\frac{3x + 6}{x^2 + 2x}
+\]
+
+\subsection*{Uppgift R4 (C)}
+Förenkla uttrycket
+\[
+\frac{x^2 + 5x + 6}{x^2 - 9}
+\]
+
+\subsection*{Uppgift R5 (C)}
+Beräkna
+\[
+\frac{2}{x + 1} + \frac{3}{x - 2}
+\]
+och skriv svaret som ett enda rationellt uttryck.
+
+\subsection*{Uppgift R6 (C)}
+Förenkla uttrycket
+\[
+\frac{x^2 - 4}{x^2 + 4x + 4} \cdot \frac{x + 2}{x - 2}
+\]
+
+\subsection*{Uppgift R7 (C)}
+Lös ekvationen
+\[
+\frac{3}{x - 1} = \frac{2}{x + 2}
+\]
+
+\subsection*{Uppgift R8 (A)}
+Bestäm konstanterna $A$ och $B$ så att likheten
+\[
+\frac{5x - 1}{x^2 - 4} = \frac{A}{x - 2} + \frac{B}{x + 2}
+\]
+gäller för alla $x$ där uttrycken är definierade.
+
+\subsection*{Uppgift R9 (A)}
+Förenkla uttrycket
+\[
+\frac{1}{x} - \frac{1}{x + h}
+\]
+och skriv svaret som ett enda rationellt uttryck.
+
+\subsection*{Uppgift R10 (A)}
+Lös ekvationen
+\[
+\frac{x + 1}{x - 1} - \frac{x - 1}{x + 1} = \frac{8}{x^2 - 1}
+\]
+
+\newpage
+
+\section{Gränsvärden}
+
+\subsection*{Uppgift G1 (E)}
+Bestäm gränsvärdet
+\[
+\lim_{x \to 3} (2x + 5)
+\]
+
+\subsection*{Uppgift G2 (E)}
+Bestäm gränsvärdet
+\[
+\lim_{x \to 2} \frac{x^2 - 4}{x - 2}
+\]
+
+\subsection*{Uppgift G3 (E)}
+Bestäm gränsvärdet
+\[
+\lim_{x \to \infty} \frac{4x + 3}{2x - 1}
+\]
+
+\subsection*{Uppgift G4 (C)}
+Bestäm gränsvärdet
+\[
+\lim_{x \to -1} \frac{x^2 + 3x + 2}{x + 1}
+\]
+
+\subsection*{Uppgift G5 (C)}
+Bestäm gränsvärdet
+\[
+\lim_{x \to \infty} \frac{3x^2 - 5x + 1}{x^2 + 2}
+\]
+
+\subsection*{Uppgift G6 (C)}
+Funktionen $f(x)$ är definierad som
+\[
+f(x) = \begin{cases}
+x^2 + 1 & \text{om } x < 2 \\
+5 & \text{om } x = 2 \\
+3x - 1 & \text{om } x > 2
+\end{cases}
+\]
+
+\begin{center}
+\includegraphics[width=0.7\textwidth]{../../../resources/images/styckvis_funktion.png}
+\end{center}
+
+\begin{enumerate}[label=\alph*)]
+    \item Bestäm $\lim_{x \to 2^-} f(x)$ och $\lim_{x \to 2^+} f(x)$.
+    \item Existerar $\lim_{x \to 2} f(x)$? Motivera ditt svar.
+    \item Är funktionen kontinuerlig i $x = 2$? Motivera ditt svar.
+\end{enumerate}
+
+\subsection*{Uppgift G7 (C)}
+Bestäm gränsvärdet
+\[
+\lim_{x \to \infty} \frac{5x^3 + 2x}{2x^3 - x^2 + 1}
+\]
+
+\subsection*{Uppgift G8 (A)}
+Bestäm gränsvärdet
+\[
+\lim_{x \to 1} \frac{x^3 - 1}{x^2 - 1}
+\]
+
+\subsection*{Uppgift G9 (A)}
+En funktion $g(x)$ är definierad som
+\[
+g(x) = \frac{x^2 - 9}{x - 3}
+\]
+för $x \neq 3$.
+
+\begin{center}
+\includegraphics[width=0.7\textwidth]{../../../resources/images/hebbar_diskontinuitet.png}
+\end{center}
+
+\begin{enumerate}[label=\alph*)]
+    \item Bestäm $\lim_{x \to 3} g(x)$.
+    \item Kan funktionen göras kontinuerlig i $x = 3$ genom att definiera $g(3)$ på lämpligt sätt? I så fall, vilket värde ska $g(3)$ ha?
+\end{enumerate}
+
+\subsection*{Uppgift G10 (A)}
+Bestäm gränsvärdet
+\[
+\lim_{h \to 0} \frac{(x + h)^2 - x^2}{h}
+\]
+
+\newpage
+
+\section{Blandade Uppgifter och Problemlösning}
+
+\subsection*{Uppgift B1 (C)}
+En rektangel har ena sidan $x$ cm och den andra sidan $(10 - x)$ cm.
+\begin{enumerate}[label=\alph*)]
+    \item Skriv ett uttryck för rektangelns area $A(x)$.
+    \item För vilket värde på $x$ blir arean maximal? (Lös algebraiskt utan digitala verktyg)
+\end{enumerate}
+
+\subsection*{Uppgift B2 (C)}
+Summan av två tal är 20. Produkten av talen är 75. Vilka är talen? Ställ upp en ekvation och lös den.
+
+\subsection*{Uppgift B3 (A)}
+En öppen låda ska tillverkas genom att klippa bort kvadrater med sidan $x$ cm från varje hörn av en rektangulär plåt med måtten 20 cm × 30 cm, och sedan vika upp sidorna.
+\begin{enumerate}[label=\alph*)]
+    \item Skriv ett uttryck för lådans volym $V(x)$.
+    \item Bestäm definitionsmängden för $V(x)$.
+    \item För vilket värde på $x$ blir volymen maximal? (Använd digitala verktyg)
+\end{enumerate}
+
+\subsection*{Uppgift B4 (A)}
+En parabel $y = ax^2 + bx + c$ går genom punkterna $(0, 3)$, $(1, 0)$ och $(3, 0)$.
+\begin{enumerate}[label=\alph*)]
+    \item Bestäm konstanterna $a$, $b$ och $c$.
+    \item Bestäm parabelns vertex.
+\end{enumerate}
+
+\end{document}

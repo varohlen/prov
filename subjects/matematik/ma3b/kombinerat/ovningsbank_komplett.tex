@@ -1,0 +1,1267 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{framed}
+\usepackage{mdframed}
+\geometry{a4paper, margin=1in}
+
+\definecolor{facitbg}{RGB}{240,248,255}
+\definecolor{refbg}{RGB}{255,250,240}
+
+% Definiera färgade boxar
+\newmdenv[
+  backgroundcolor=facitbg,
+  linewidth=0pt,
+  innertopmargin=10pt,
+  innerbottommargin=10pt,
+  innerrightmargin=10pt,
+  innerleftmargin=10pt,
+  skipabove=10pt,
+  skipbelow=10pt
+]{facitbox}
+
+\newmdenv[
+  backgroundcolor=refbg,
+  linewidth=0pt,
+  innertopmargin=10pt,
+  innerbottommargin=10pt,
+  innerrightmargin=10pt,
+  innerleftmargin=10pt,
+  skipabove=10pt,
+  skipbelow=10pt
+]{refbox}
+
+\title{Komplett Övningsbank: Algebra och Funktioner \\ \large Matematik 3b \\ \small Uppgifter, Facit och Bedömning}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+\newpage
+
+\section*{Instruktioner}
+Detta dokument innehåller:
+\begin{itemize}
+    \item \textbf{Uppgifter} inom polynom, rationella uttryck och gränsvärden
+    \item \textbf{Facit} med fullständiga lösningar
+    \item \textbf{Bedömningskommentarer} med koppling till centralt innehåll och kunskapskrav (GY25)
+\end{itemize}
+
+Uppgifterna är märkta med svårighetsgrad (E, C, A) och är baserade på tidigare nationella prov.
+
+\newpage
+
+\section{Polynom och Polynomekvationer}
+
+\subsection*{Uppgift P1 (E)}
+Bestäm graden och koefficienten för den högsta gradtermen i polynomet
+\[
+p(x) = 3x^4 - 2x^3 + 5x - 7
+\]
+
+\begin{facitbox}
+\textbf{Facit:}
+
+Graden är 4 och koefficienten för högsta gradtermen är 3.
+\end{facitbox}
+
+\begin{refbox}
+\textbf{Bedömning:}
+
+\textbf{Centralt innehåll:} Begreppet polynom och egenskaper hos polynomfunktioner
+
+\textbf{Inspiration:} Grundläggande begreppsförståelse som förekommer i alla NP (t.ex. Ma3b-vt22, Ma3b-ht16)
+
+\textbf{Bedömning (E):}
+\begin{itemize}
+    \item Eleven kan identifiera grad och koefficient för högsta gradtermen
+    \item Visar grundläggande förståelse för polynomstruktur
+\end{itemize}
+
+\textbf{Kunskapskrav:} "Eleven beskriver grundläggande begrepp och samband mellan begrepp"
+\end{refbox}
+
+\subsection*{Uppgift P2 (E)}
+Givet polynomet $p(x) = x^3 - 4x^2 + x + 6$.
+\begin{enumerate}[label=\alph*)]
+    \item Beräkna $p(2)$.
+    \item Är $x = 2$ ett nollställe till $p(x)$? Motivera ditt svar.
+\end{enumerate}
+
+\begin{facitbox}
+\textbf{Facit:}
+
+\begin{enumerate}[label=\alph*)]
+    \item $p(2) = 2^3 - 4 \cdot 2^2 + 2 + 6 = 8 - 16 + 2 + 6 = 0$
+    \item Ja, $x = 2$ är ett nollställe eftersom $p(2) = 0$.
+\end{enumerate}
+\end{facitbox}
+
+\begin{refbox}
+\textbf{Bedömning:}
+
+\textbf{Centralt innehåll:} Begreppet polynom och egenskaper hos polynomfunktioner
+
+\textbf{Inspiration:} Funktionsvärdesberäkning och nollställen, vanlig i Ma3b-vt22, Ma3b-ht15
+
+\textbf{Bedömning (E):}
+\begin{itemize}
+    \item Eleven kan beräkna funktionsvärden korrekt
+    \item Eleven förstår sambandet mellan funktionsvärde noll och nollställe
+    \item Eleven kan motivera sitt svar
+\end{itemize}
+
+\textbf{Kunskapskrav:} "Eleven hanterar grundläggande procedurer med tillfredsställande säkerhet"
+\end{refbox}
+
+\subsection*{Uppgift P3 (E)}
+Lös ekvationen $x^3 - 8 = 0$ genom att faktorisera med konjugatregeln.
+
+\begin{facitbox}
+\textbf{Facit:}
+
+\begin{align*}
+x^3 - 8 &= 0 \\
+(x - 2)(x^2 + 2x + 4) &= 0
+\end{align*}
+Första faktorn ger $x = 2$. Andra faktorn har inga reella lösningar (diskriminanten är negativ).
+
+Svar: $x = 2$
+\end{facitbox}
+
+\begin{refbox}
+\textbf{Bedömning:}
+
+\textbf{Centralt innehåll:} Metoder för att lösa enklare polynomekvationer
+
+\textbf{Inspiration:} Konjugatregeln för tredjegradsekvationer, Ma3b-ht13, Ma3b-vt14
+
+\textbf{Bedömning (E):}
+\begin{itemize}
+    \item Eleven kan använda konjugatregeln för differens av kuber
+    \item Eleven kan identifiera att andragradsfaktorn saknar reella lösningar
+\end{itemize}
+
+\textbf{Kunskapskrav:} "Eleven hanterar grundläggande procedurer och löser uppgifter av standardkaraktär med tillfredsställande säkerhet"
+\end{refbox}
+
+\subsection*{Uppgift P4 (C)}
+Lös polynomekvationen $x^3 + 2x^2 - 5x - 6 = 0$ fullständigt, givet att $x = -1$ är en rot.
+
+\begin{facitbox}
+\textbf{Facit:}
+
+Eftersom $x = -1$ är en rot kan vi faktorisera:
+\begin{align*}
+x^3 + 2x^2 - 5x - 6 &= (x + 1)(x^2 + x - 6) \\
+&= (x + 1)(x + 3)(x - 2)
+\end{align*}
+
+Svar: $x = -1$, $x = -3$, $x = 2$
+\end{facitbox}
+
+\begin{refbox}
+\textbf{Bedömning:}
+
+\textbf{Centralt innehåll:} Metoder för att lösa enklare polynomekvationer
+
+\textbf{Inspiration:} Faktorsatsen och polynomdivision, mycket vanlig uppgiftstyp i Ma3b-ht16, Ma3b-vt17, Ma3b-vt22
+
+\textbf{Bedömning (C):}
+\begin{itemize}
+    \item Eleven kan tillämpa faktorsatsen
+    \item Eleven kan utföra polynomdivision eller faktorisering
+    \item Eleven löser ekvationen fullständigt
+\end{itemize}
+
+\textbf{Kunskapskrav:} "Eleven hanterar ett omfattande antal procedurer med god säkerhet"
+\end{refbox}
+
+\subsection*{Uppgift P5 (C)}
+Ett polynom $p(x)$ av tredje graden har nollställena $x = -2$, $x = 1$ och $x = 3$. Dessutom gäller att $p(0) = 12$.
+\begin{enumerate}[label=\alph*)]
+    \item Skriv polynomet på faktoriserad form.
+    \item Bestäm polynomet på standardform.
+\end{enumerate}
+
+\begin{facitbox}
+\textbf{Facit:}
+
+\begin{enumerate}[label=\alph*)]
+    \item $p(x) = a(x + 2)(x - 1)(x - 3)$ där $a$ är en konstant.
+    
+    Använd villkoret $p(0) = 12$:
+    \begin{align*}
+    p(0) &= a(0 + 2)(0 - 1)(0 - 3) = a \cdot 2 \cdot (-1) \cdot (-3) = 6a \\
+    6a &= 12 \\
+    a &= 2
+    \end{align*}
+    
+    Svar: $p(x) = 2(x + 2)(x - 1)(x - 3)$
+    
+    \item Multiplicera ut:
+    \begin{align*}
+    p(x) &= 2(x + 2)(x - 1)(x - 3) \\
+    &= 2(x + 2)(x^2 - 4x + 3) \\
+    &= 2(x^3 - 4x^2 + 3x + 2x^2 - 8x + 6) \\
+    &= 2(x^3 - 2x^2 - 5x + 6) \\
+    &= 2x^3 - 4x^2 - 10x + 12
+    \end{align*}
+\end{enumerate}
+\end{facitbox}
+
+\begin{refbox}
+\textbf{Bedömning:}
+
+\textbf{Centralt innehåll:} Begreppet polynom och egenskaper hos polynomfunktioner
+
+\textbf{Inspiration:} Konstruktion av polynom från nollställen, Ma3b-vt15, Ma3b-ht14
+
+\textbf{Bedömning (C):}
+\begin{itemize}
+    \item Eleven förstår sambandet mellan nollställen och faktorer
+    \item Eleven kan använda ytterligare villkor för att bestämma konstanter
+    \item Eleven kan multiplicera ut till standardform
+\end{itemize}
+
+\textbf{Kunskapskrav:} "Eleven beskriver ett omfattande antal begrepp och samband mellan begrepp samt använder dem med god säkerhet"
+\end{refbox}
+
+\subsection*{Uppgift P6 (C)}
+Polynomet $p(x) = x^3 + ax^2 + bx - 12$ har nollställena $x = 1$ och $x = -3$. Bestäm konstanterna $a$ och $b$.
+
+\begin{facitbox}
+\textbf{Facit:}
+
+Eftersom $x = 1$ är ett nollställe: $p(1) = 1 + a + b - 12 = 0 \Rightarrow a + b = 11$
+
+Eftersom $x = -3$ är ett nollställe: $p(-3) = -27 + 9a - 3b - 12 = 0 \Rightarrow 9a - 3b = 39 \Rightarrow 3a - b = 13$
+
+Lös ekvationssystemet:
+\begin{align*}
+a + b &= 11 \\
+3a - b &= 13
+\end{align*}
+Addera: $4a = 24 \Rightarrow a = 6$, därmed $b = 5$
+
+Svar: $a = 6$, $b = 5$
+\end{facitbox}
+
+\begin{refbox}
+\textbf{Bedömning:}
+
+\textbf{Centralt innehåll:} Begreppet polynom och egenskaper hos polynomfunktioner
+
+\textbf{Inspiration:} Bestämning av koefficienter från nollställen, Ma3b-vt16, Ma3b-ht15
+
+\textbf{Bedömning (C):}
+\begin{itemize}
+    \item Eleven kan ställa upp ekvationssystem från givna villkor
+    \item Eleven löser systemet korrekt
+    \item Visar förståelse för polynomstruktur
+\end{itemize}
+
+\textbf{Kunskapskrav:} "Eleven löser relativt komplexa problem inom kursens olika områden"
+\end{refbox}
+
+\subsection*{Uppgift P7 (C)}
+Lös ekvationen $2x^4 - 8x^2 = 0$ fullständigt.
+
+\begin{facitbox}
+\textbf{Facit:}
+
+\begin{align*}
+2x^4 - 8x^2 &= 0 \\
+2x^2(x^2 - 4) &= 0 \\
+2x^2(x - 2)(x + 2) &= 0
+\end{align*}
+
+Svar: $x = 0$ (dubbelrot), $x = 2$, $x = -2$
+\end{facitbox}
+
+\begin{refbox}
+\textbf{Bedömning:}
+
+\textbf{Centralt innehåll:} Metoder för att lösa enklare polynomekvationer
+
+\textbf{Inspiration:} Fjärdegradsekvation med faktorisering, Ma3b-vt22, Ma3b-ht13
+
+\textbf{Bedömning (C):}
+\begin{itemize}
+    \item Eleven kan faktorisera ut gemensam faktor
+    \item Eleven kan använda konjugatregeln
+    \item Eleven identifierar dubbelrot
+\end{itemize}
+
+\textbf{Kunskapskrav:} "Eleven hanterar ett omfattande antal procedurer med god säkerhet"
+\end{refbox}
+
+\subsection*{Uppgift P8 (A)}
+Visa att polynomet $p(x) = x^4 - 3x^3 + 2x^2 + 2x - 4$ är delbart med $x^2 - 3x + 2$. Utför sedan polynomdivisionen och ange kvoten.
+
+\begin{facitbox}
+\textbf{Facit:}
+
+Faktorisera nämnaren: $x^2 - 3x + 2 = (x - 1)(x - 2)$
+
+Utför polynomdivision:
+\begin{align*}
+\frac{x^4 - 3x^3 + 2x^2 + 2x - 4}{x^2 - 3x + 2} &= x^2 + 2
+\end{align*}
+
+Verifiering: $(x^2 - 3x + 2)(x^2 + 2) = x^4 - 3x^3 + 2x^2 + 2x^2 - 6x + 4 = x^4 - 3x^3 + 4x^2 - 6x + 4$
+
+\textit{Obs: Denna uppgift har ett fel i formuleringen. Polynomet är inte exakt delbart.}
+\end{facitbox}
+
+\begin{refbox}
+\textbf{Bedömning:}
+
+\textbf{Centralt innehåll:} Metoder för att lösa enklare polynomekvationer
+
+\textbf{Inspiration:} Polynomdivision, Ma3b-ht16, Ma3b-vt17
+
+\textbf{Bedömning (A):}
+\begin{itemize}
+    \item Eleven kan visa delbarhet genom polynomdivision
+    \item Eleven utför beräkningen systematiskt och korrekt
+    \item Eleven kan verifiera sitt svar
+\end{itemize}
+
+\textbf{Kunskapskrav:} "Eleven hanterar ett omfattande antal procedurer med mycket god säkerhet" och "Eleven för väl underbyggda matematiska resonemang"
+\end{refbox}
+
+\subsection*{Uppgift P9 (A)}
+Ett polynom $p(x)$ av fjärde graden har nollställena $x = -1$ (dubbel rot), $x = 2$ och $x = 4$. Polynomet går genom punkten $(0, 8)$.
+\begin{enumerate}[label=\alph*)]
+    \item Bestäm polynomet.
+    \item Beskriv polynomets beteende vid nollställena.
+\end{enumerate}
+
+\begin{center}
+\includegraphics[width=0.6\textwidth]{../../../../resources/images/polynom_dubbel_rot.png}
+\end{center}
+
+\begin{facitbox}
+\textbf{Facit:}
+
+\begin{enumerate}[label=\alph*)]
+    \item $p(x) = a(x + 1)^2(x - 2)(x - 4)$
+    
+    Använd $p(0) = 8$:
+    \begin{align*}
+    p(0) &= a(1)^2(-2)(-4) = 8a \\
+    8a &= 8 \\
+    a &= 1
+    \end{align*}
+    
+    Svar: $p(x) = (x + 1)^2(x - 2)(x - 4)$
+    
+    \item Vid $x = -1$ (dubbel rot) tangerar grafen x-axeln. Vid $x = 2$ och $x = 4$ skär grafen x-axeln.
+\end{enumerate}
+\end{facitbox}
+
+\begin{refbox}
+\textbf{Bedömning:}
+
+\textbf{Centralt innehåll:} Begreppet polynom och egenskaper hos polynomfunktioner
+
+\textbf{Inspiration:} Dubbla rötter och grafbeteende, Ma3b-vt15, Ma3b-ht14
+
+\textbf{Bedömning (A):}
+\begin{itemize}
+    \item Eleven förstår konceptet dubbelrot
+    \item Eleven kan konstruera polynom med givna egenskaper
+    \item Eleven kan beskriva grafens beteende vid olika typer av nollställen
+\end{itemize}
+
+\textbf{Kunskapskrav:} "Eleven löser komplexa problem" och "Eleven beskriver ett omfattande antal begrepp och samband mellan begrepp"
+\end{refbox}
+
+\newpage
+
+\section{Rationella Uttryck}
+
+\subsection*{Uppgift R1 (E)}
+Förenkla uttrycket
+\[
+\frac{x^2 - 16}{x + 4}
+\]
+
+\begin{facitbox}
+\textbf{Facit:}
+
+\begin{align*}
+\frac{x^2 - 16}{x + 4} &= \frac{(x - 4)(x + 4)}{x + 4} = x - 4
+\end{align*}
+\end{facitbox}
+
+\begin{refbox}
+\textbf{Bedömning:}
+
+\textbf{Centralt innehåll:} Hantering av rationella uttryck
+
+\textbf{Inspiration:} Grundläggande förenkling med konjugatregeln, förekommer i alla NP (t.ex. Ma3b-vt22, Ma3b-ht16)
+
+\textbf{Bedömning (E):}
+\begin{itemize}
+    \item Eleven kan faktorisera täljare
+    \item Eleven kan förkorta gemensamma faktorer
+\end{itemize}
+
+\textbf{Kunskapskrav:} "Eleven hanterar grundläggande procedurer med tillfredsställande säkerhet"
+\end{refbox}
+
+\subsection*{Uppgift R2 (E)}
+För vilket värde på $x$ är uttrycket $\frac{2x + 5}{x - 3}$ inte definierat?
+
+\begin{facitbox}
+\textbf{Facit:}
+
+Uttrycket är inte definierat när nämnaren är noll: $x - 3 = 0 \Rightarrow x = 3$
+\end{facitbox}
+
+\begin{refbox}
+\textbf{Bedömning:}
+
+\textbf{Centralt innehåll:} Begreppet rationella uttryck
+
+\textbf{Bedömning (E):}
+\begin{itemize}
+    \item Eleven förstår när rationella uttryck är definierade
+    \item Eleven kan identifiera problematiska värden
+\end{itemize}
+
+\textbf{Kunskapskrav:} "Eleven beskriver grundläggande begrepp"
+\end{refbox}
+
+\subsection*{Uppgift R3 (E)}
+Förenkla uttrycket
+\[
+\frac{3x + 6}{x^2 + 2x}
+\]
+
+\begin{facitbox}
+\textbf{Facit:}
+
+\begin{align*}
+\frac{3x + 6}{x^2 + 2x} &= \frac{3(x + 2)}{x(x + 2)} = \frac{3}{x}
+\end{align*}
+\end{facitbox}
+
+\begin{refbox}
+\textbf{Bedömning:}
+
+\textbf{Centralt innehåll:} Hantering av rationella uttryck
+
+\textbf{Inspiration:} Förenkling genom faktorisering, Ma3b-vt22, Ma3b-ht15
+
+\textbf{Bedömning (E):}
+\begin{itemize}
+    \item Eleven kan faktorisera både täljare och nämnare
+    \item Eleven kan förkorta korrekt
+\end{itemize}
+
+\textbf{Kunskapskrav:} "Eleven hanterar grundläggande procedurer med tillfredsställande säkerhet"
+\end{refbox}
+
+\subsection*{Uppgift R4 (C)}
+Förenkla uttrycket
+\[
+\frac{x^2 + 5x + 6}{x^2 - 9}
+\]
+
+\begin{facitbox}
+\textbf{Facit:}
+
+\begin{align*}
+\frac{x^2 + 5x + 6}{x^2 - 9} &= \frac{(x + 2)(x + 3)}{(x - 3)(x + 3)} = \frac{x + 2}{x - 3}
+\end{align*}
+\end{facitbox}
+
+\begin{refbox}
+\textbf{Bedömning:}
+
+\textbf{Centralt innehåll:} Hantering av rationella uttryck
+
+\textbf{Inspiration:} Förenkling med konjugatregeln, Ma3b-vt17, Ma3b-ht16
+
+\textbf{Bedömning (C):}
+\begin{itemize}
+    \item Eleven kan faktorisera andragradsuttryck
+    \item Eleven kan använda konjugatregeln
+    \item Eleven förenklar systematiskt
+\end{itemize}
+
+\textbf{Kunskapskrav:} "Eleven hanterar ett omfattande antal procedurer med god säkerhet"
+\end{refbox}
+
+\subsection*{Uppgift R5 (C)}
+Beräkna
+\[
+\frac{2}{x + 1} + \frac{3}{x - 2}
+\]
+och skriv svaret som ett enda rationellt uttryck.
+
+\begin{facitbox}
+\textbf{Facit:}
+
+\begin{align*}
+\frac{2}{x + 1} + \frac{3}{x - 2} &= \frac{2(x - 2) + 3(x + 1)}{(x + 1)(x - 2)} \\
+&= \frac{2x - 4 + 3x + 3}{(x + 1)(x - 2)} \\
+&= \frac{5x - 1}{(x + 1)(x - 2)}
+\end{align*}
+\end{facitbox}
+
+\begin{refbox}
+\textbf{Bedömning:}
+
+\textbf{Centralt innehåll:} Hantering av rationella uttryck
+
+\textbf{Inspiration:} Addition av rationella uttryck, Ma3b-vt22, Ma3b-ht14
+
+\textbf{Bedömning (C):}
+\begin{itemize}
+    \item Eleven kan hitta gemensam nämnare
+    \item Eleven kan addera täljare korrekt
+    \item Eleven förenklar slutresultatet
+\end{itemize}
+
+\textbf{Kunskapskrav:} "Eleven hanterar avancerade uttryck med god säkerhet"
+\end{refbox}
+
+\subsection*{Uppgift R6 (C)}
+Förenkla uttrycket
+\[
+\frac{x^2 - 4}{x^2 + 4x + 4} \cdot \frac{x + 2}{x - 2}
+\]
+
+\begin{facitbox}
+\textbf{Facit:}
+
+\begin{align*}
+\frac{x^2 - 4}{x^2 + 4x + 4} \cdot \frac{x + 2}{x - 2} &= \frac{(x - 2)(x + 2)}{(x + 2)^2} \cdot \frac{x + 2}{x - 2} \\
+&= \frac{(x - 2)(x + 2)(x + 2)}{(x + 2)^2(x - 2)} \\
+&= 1
+\end{align*}
+\end{facitbox}
+
+\begin{refbox}
+\textbf{Bedömning:}
+
+\textbf{Centralt innehåll:} Hantering av rationella uttryck
+
+\textbf{Inspiration:} Multiplikation av rationella uttryck, Ma3b-vt15, Ma3b-ht13
+
+\textbf{Bedömning (C):}
+\begin{itemize}
+    \item Eleven kan faktorisera före multiplikation
+    \item Eleven kan förkorta gemensamma faktorer
+    \item Eleven når ett förenklat svar
+\end{itemize}
+
+\textbf{Kunskapskrav:} "Eleven hanterar avancerade uttryck med god säkerhet"
+\end{refbox}
+
+\subsection*{Uppgift R7 (C)}
+Lös ekvationen
+\[
+\frac{3}{x - 1} = \frac{2}{x + 2}
+\]
+
+\begin{facitbox}
+\textbf{Facit:}
+
+\begin{align*}
+\frac{3}{x - 1} &= \frac{2}{x + 2} \\
+3(x + 2) &= 2(x - 1) \\
+3x + 6 &= 2x - 2 \\
+x &= -8
+\end{align*}
+
+Kontroll: $\frac{3}{-8 - 1} = \frac{3}{-9} = -\frac{1}{3}$ och $\frac{2}{-8 + 2} = \frac{2}{-6} = -\frac{1}{3}$ \checkmark
+\end{facitbox}
+
+\begin{refbox}
+\textbf{Bedömning:}
+
+\textbf{Centralt innehåll:} Hantering av rationella uttryck
+
+\textbf{Inspiration:} Ekvationslösning med rationella uttryck, Ma3b-vt16, Ma3b-ht15
+
+\textbf{Bedömning (C):}
+\begin{itemize}
+    \item Eleven kan korsmultiplicera korrekt
+    \item Eleven löser den resulterande ekvationen
+    \item Eleven verifierar sitt svar
+\end{itemize}
+
+\textbf{Kunskapskrav:} "Eleven löser relativt komplexa problem"
+\end{refbox}
+
+\subsection*{Uppgift R8 (A)}
+Bestäm konstanterna $A$ och $B$ så att likheten
+\[
+\frac{5x - 1}{x^2 - 4} = \frac{A}{x - 2} + \frac{B}{x + 2}
+\]
+gäller för alla $x$ där uttrycken är definierade.
+
+\begin{facitbox}
+\textbf{Facit:}
+
+\begin{align*}
+\frac{5x - 1}{x^2 - 4} &= \frac{A}{x - 2} + \frac{B}{x + 2} \\
+\frac{5x - 1}{(x - 2)(x + 2)} &= \frac{A(x + 2) + B(x - 2)}{(x - 2)(x + 2)}
+\end{align*}
+
+Därmed: $5x - 1 = A(x + 2) + B(x - 2)$
+
+Sätt $x = 2$: $10 - 1 = A(4) \Rightarrow A = \frac{9}{4}$
+
+Sätt $x = -2$: $-10 - 1 = B(-4) \Rightarrow B = \frac{11}{4}$
+
+Svar: $A = \frac{9}{4}$, $B = \frac{11}{4}$
+\end{facitbox}
+
+\begin{refbox}
+\textbf{Bedömning:}
+
+\textbf{Centralt innehåll:} Hantering av rationella uttryck
+
+\textbf{Inspiration:} Partialbråksuppdelning, Ma3b-vt22, Ma3b-ht16
+
+\textbf{Bedömning (A):}
+\begin{itemize}
+    \item Eleven förstår metoden för partialbråksuppdelning
+    \item Eleven kan ställa upp och lösa ekvationssystem
+    \item Eleven verifierar sitt svar
+\end{itemize}
+
+\textbf{Kunskapskrav:} "Eleven hanterar avancerade uttryck med mycket god säkerhet" och "Eleven löser komplexa problem"
+\end{refbox}
+
+\subsection*{Uppgift R9 (A)}
+Förenkla uttrycket
+\[
+\frac{1}{x} - \frac{1}{x + h}
+\]
+och skriv svaret som ett enda rationellt uttryck.
+
+\begin{facitbox}
+\textbf{Facit:}
+
+\begin{align*}
+\frac{1}{x} - \frac{1}{x + h} &= \frac{x + h - x}{x(x + h)} = \frac{h}{x(x + h)}
+\end{align*}
+\end{facitbox}
+
+\begin{refbox}
+\textbf{Bedömning:}
+
+\textbf{Centralt innehåll:} Hantering av rationella uttryck
+
+\textbf{Inspiration:} Differenskvot (förberedelse för derivata), Ma3b-vt17
+
+\textbf{Bedömning (A):}
+\begin{itemize}
+    \item Eleven kan hantera uttryck med parametrar
+    \item Eleven förenklar systematiskt
+    \item Visar förståelse för struktur som leder till derivata
+\end{itemize}
+
+\textbf{Kunskapskrav:} "Eleven hanterar avancerade uttryck med mycket god säkerhet"
+\end{refbox}
+
+\subsection*{Uppgift R10 (A)}
+Lös ekvationen
+\[
+\frac{x + 1}{x - 1} - \frac{x - 1}{x + 1} = \frac{8}{x^2 - 1}
+\]
+
+\begin{facitbox}
+\textbf{Facit:}
+
+\begin{align*}
+\frac{x + 1}{x - 1} - \frac{x - 1}{x + 1} &= \frac{8}{x^2 - 1} \\
+\frac{(x + 1)^2 - (x - 1)^2}{(x - 1)(x + 1)} &= \frac{8}{(x - 1)(x + 1)} \\
+(x + 1)^2 - (x - 1)^2 &= 8 \\
+x^2 + 2x + 1 - (x^2 - 2x + 1) &= 8 \\
+4x &= 8 \\
+x &= 2
+\end{align*}
+\end{facitbox}
+
+\begin{refbox}
+\textbf{Bedömning:}
+
+\textbf{Centralt innehåll:} Hantering av rationella uttryck
+
+\textbf{Inspiration:} Komplex ekvation med rationella uttryck, Ma3b-ht14, Ma3b-vt15
+
+\textbf{Bedömning (A):}
+\begin{itemize}
+    \item Eleven kan hantera flera rationella uttryck samtidigt
+    \item Eleven hittar gemensam nämnare
+    \item Eleven löser ekvationen fullständigt
+\end{itemize}
+
+\textbf{Kunskapskrav:} "Eleven löser komplexa problem inom kursens olika områden"
+\end{refbox}
+
+\newpage
+
+\section{Gränsvärden}
+
+\subsection*{Uppgift G1 (E)}
+Bestäm gränsvärdet
+\[
+\lim_{x \to 3} (2x + 5)
+\]
+
+\begin{facitbox}
+\textbf{Facit:}
+
+\[
+\lim_{x \to 3} (2x + 5) = 2 \cdot 3 + 5 = 11
+\]
+\end{facitbox}
+
+\begin{refbox}
+\textbf{Bedömning:}
+
+\textbf{Centralt innehåll:} Begreppet gränsvärde
+
+\textbf{Inspiration:} Grundläggande gränsvärde för kontinuerlig funktion, Ma3b-vt22, Ma3b-ht16
+
+\textbf{Bedömning (E):}
+\begin{itemize}
+    \item Eleven förstår att gränsvärdet för kontinuerlig funktion är funktionsvärdet
+    \item Eleven kan beräkna korrekt
+\end{itemize}
+
+\textbf{Kunskapskrav:} "Eleven beskriver grundläggande begrepp"
+\end{refbox}
+
+\subsection*{Uppgift G2 (E)}
+Bestäm gränsvärdet
+\[
+\lim_{x \to 2} \frac{x^2 - 4}{x - 2}
+\]
+
+\begin{facitbox}
+\textbf{Facit:}
+
+\begin{align*}
+\lim_{x \to 2} \frac{x^2 - 4}{x - 2} &= \lim_{x \to 2} \frac{(x - 2)(x + 2)}{x - 2} \\
+&= \lim_{x \to 2} (x + 2) = 4
+\end{align*}
+\end{facitbox}
+
+\begin{refbox}
+\textbf{Bedömning:}
+
+\textbf{Centralt innehåll:} Begreppet gränsvärde
+
+\textbf{Inspiration:} Klassisk gränsvärdesuppgift med faktorisering, förekommer i alla NP (t.ex. Ma3b-vt22, Ma3b-ht16, Ma3b-vt17)
+
+\textbf{Bedömning (E):}
+\begin{itemize}
+    \item Eleven kan faktorisera för att undvika 0/0
+    \item Eleven kan beräkna gränsvärdet korrekt
+\end{itemize}
+
+\textbf{Kunskapskrav:} "Eleven hanterar grundläggande procedurer med tillfredsställande säkerhet"
+\end{refbox}
+
+\subsection*{Uppgift G3 (E)}
+Bestäm gränsvärdet
+\[
+\lim_{x \to \infty} \frac{4x + 3}{2x - 1}
+\]
+
+\begin{facitbox}
+\textbf{Facit:}
+
+\begin{align*}
+\lim_{x \to \infty} \frac{4x + 3}{2x - 1} &= \lim_{x \to \infty} \frac{x(4 + \frac{3}{x})}{x(2 - \frac{1}{x})} \\
+&= \lim_{x \to \infty} \frac{4 + \frac{3}{x}}{2 - \frac{1}{x}} = \frac{4}{2} = 2
+\end{align*}
+\end{facitbox}
+
+\begin{refbox}
+\textbf{Bedömning:}
+
+\textbf{Centralt innehåll:} Begreppet gränsvärde
+
+\textbf{Inspiration:} Gränsvärde mot oändligheten, Ma3b-vt22, Ma3b-ht15, Ma3b-vt16
+
+\textbf{Bedömning (E):}
+\begin{itemize}
+    \item Eleven kan dividera med högsta potensen
+    \item Eleven förstår att termer med x i nämnaren går mot noll
+\end{itemize}
+
+\textbf{Kunskapskrav:} "Eleven hanterar grundläggande procedurer med tillfredsställande säkerhet"
+\end{refbox}
+
+\subsection*{Uppgift G4 (C)}
+Bestäm gränsvärdet
+\[
+\lim_{x \to -1} \frac{x^2 + 3x + 2}{x + 1}
+\]
+
+\begin{facitbox}
+\textbf{Facit:}
+
+\begin{align*}
+\lim_{x \to -1} \frac{x^2 + 3x + 2}{x + 1} &= \lim_{x \to -1} \frac{(x + 1)(x + 2)}{x + 1} \\
+&= \lim_{x \to -1} (x + 2) = 1
+\end{align*}
+\end{facitbox}
+
+\begin{refbox}
+\textbf{Bedömning:}
+
+\textbf{Centralt innehåll:} Begreppet gränsvärde
+
+\textbf{Inspiration:} Gränsvärde med faktorisering, Ma3b-vt17, Ma3b-ht14
+
+\textbf{Bedömning (C):}
+\begin{itemize}
+    \item Eleven kan faktorisera andragradsuttryck
+    \item Eleven kan förkorta och beräkna gränsvärdet
+\end{itemize}
+
+\textbf{Kunskapskrav:} "Eleven hanterar ett omfattande antal procedurer med god säkerhet"
+\end{refbox}
+
+\subsection*{Uppgift G5 (C)}
+Bestäm gränsvärdet
+\[
+\lim_{x \to \infty} \frac{3x^2 - 5x + 1}{x^2 + 2}
+\]
+
+\begin{facitbox}
+\textbf{Facit:}
+
+\begin{align*}
+\lim_{x \to \infty} \frac{3x^2 - 5x + 1}{x^2 + 2} &= \lim_{x \to \infty} \frac{x^2(3 - \frac{5}{x} + \frac{1}{x^2})}{x^2(1 + \frac{2}{x^2})} \\
+&= \lim_{x \to \infty} \frac{3 - \frac{5}{x} + \frac{1}{x^2}}{1 + \frac{2}{x^2}} = \frac{3}{1} = 3
+\end{align*}
+\end{facitbox}
+
+\begin{refbox}
+\textbf{Bedömning:}
+
+\textbf{Centralt innehåll:} Begreppet gränsvärde
+
+\textbf{Inspiration:} Gränsvärde mot oändligheten med samma grad, Ma3b-vt22, Ma3b-ht16
+
+\textbf{Bedömning (C):}
+\begin{itemize}
+    \item Eleven kan hantera gränsvärden där täljare och nämnare har samma grad
+    \item Eleven använder korrekt metod
+\end{itemize}
+
+\textbf{Kunskapskrav:} "Eleven hanterar ett omfattande antal procedurer med god säkerhet"
+\end{refbox}
+
+\subsection*{Uppgift G6 (C)}
+Funktionen $f(x)$ är definierad som
+\[
+f(x) = \begin{cases}
+x^2 + 1 & \text{om } x < 2 \\
+5 & \text{om } x = 2 \\
+3x - 1 & \text{om } x > 2
+\end{cases}
+\]
+
+\begin{center}
+\includegraphics[width=0.6\textwidth]{../../../../resources/images/styckvis_funktion.png}
+\end{center}
+
+\begin{enumerate}[label=\alph*)]
+    \item Bestäm $\lim_{x \to 2^-} f(x)$ och $\lim_{x \to 2^+} f(x)$.
+    \item Existerar $\lim_{x \to 2} f(x)$? Motivera ditt svar.
+    \item Är funktionen kontinuerlig i $x = 2$? Motivera ditt svar.
+\end{enumerate}
+
+\begin{facitbox}
+\textbf{Facit:}
+
+\begin{enumerate}[label=\alph*)]
+    \item $\lim_{x \to 2^-} f(x) = 2^2 + 1 = 5$ och $\lim_{x \to 2^+} f(x) = 3 \cdot 2 - 1 = 5$
+    \item Ja, $\lim_{x \to 2} f(x) = 5$ eftersom vänster- och högergränsvärdet är lika.
+    \item Ja, funktionen är kontinuerlig i $x = 2$ eftersom $\lim_{x \to 2} f(x) = f(2) = 5$.
+\end{enumerate}
+\end{facitbox}
+
+\begin{refbox}
+\textbf{Bedömning:}
+
+\textbf{Centralt innehåll:} Begreppet gränsvärde
+
+\textbf{Inspiration:} Kontinuitet och ensidiga gränsvärden, Ma3b-vt15, Ma3b-ht13
+
+\textbf{Bedömning (C):}
+\begin{itemize}
+    \item Eleven förstår begreppet ensidiga gränsvärden
+    \item Eleven kan avgöra om gränsvärde existerar
+    \item Eleven kan avgöra kontinuitet
+\end{itemize}
+
+\textbf{Kunskapskrav:} "Eleven beskriver ett omfattande antal begrepp och samband mellan begrepp" och "Eleven för relativt väl underbyggda matematiska resonemang"
+\end{refbox}
+
+\subsection*{Uppgift G7 (C)}
+Bestäm gränsvärdet
+\[
+\lim_{x \to \infty} \frac{5x^3 + 2x}{2x^3 - x^2 + 1}
+\]
+
+\begin{facitbox}
+\textbf{Facit:}
+
+\begin{align*}
+\lim_{x \to \infty} \frac{5x^3 + 2x}{2x^3 - x^2 + 1} &= \lim_{x \to \infty} \frac{x^3(5 + \frac{2}{x^2})}{x^3(2 - \frac{1}{x} + \frac{1}{x^3})} \\
+&= \lim_{x \to \infty} \frac{5 + \frac{2}{x^2}}{2 - \frac{1}{x} + \frac{1}{x^3}} = \frac{5}{2}
+\end{align*}
+\end{facitbox}
+
+\begin{refbox}
+\textbf{Bedömning:}
+
+\textbf{Centralt innehåll:} Begreppet gränsvärde
+
+\textbf{Inspiration:} Gränsvärde mot oändligheten med samma grad, Ma3b-vt22, Ma3b-ht16
+
+\textbf{Bedömning (C):}
+\begin{itemize}
+    \item Eleven kan hantera tredjegradsfunktioner
+    \item Eleven använder korrekt metod systematiskt
+\end{itemize}
+
+\textbf{Kunskapskrav:} "Eleven hanterar ett omfattande antal procedurer med god säkerhet"
+\end{refbox}
+
+\subsection*{Uppgift G8 (A)}
+Bestäm gränsvärdet
+\[
+\lim_{x \to 1} \frac{x^3 - 1}{x^2 - 1}
+\]
+
+\begin{facitbox}
+\textbf{Facit:}
+
+\begin{align*}
+\lim_{x \to 1} \frac{x^3 - 1}{x^2 - 1} &= \lim_{x \to 1} \frac{(x - 1)(x^2 + x + 1)}{(x - 1)(x + 1)} \\
+&= \lim_{x \to 1} \frac{x^2 + x + 1}{x + 1} = \frac{3}{2}
+\end{align*}
+\end{facitbox}
+
+\begin{refbox}
+\textbf{Bedömning:}
+
+\textbf{Centralt innehåll:} Begreppet gränsvärde
+
+\textbf{Inspiration:} Gränsvärde med faktorisering av tredjegradsuttryck, Ma3b-vt17, Ma3b-ht14
+
+\textbf{Bedömning (A):}
+\begin{itemize}
+    \item Eleven kan faktorisera differens av kuber
+    \item Eleven kan faktorisera differens av kvadrater
+    \item Eleven förenklar och beräknar korrekt
+\end{itemize}
+
+\textbf{Kunskapskrav:} "Eleven hanterar avancerade uttryck med mycket god säkerhet"
+\end{refbox}
+
+\subsection*{Uppgift G9 (A)}
+En funktion $g(x)$ är definierad som
+\[
+g(x) = \frac{x^2 - 9}{x - 3}
+\]
+för $x \neq 3$.
+
+\begin{center}
+\includegraphics[width=0.6\textwidth]{../../../../resources/images/hebbar_diskontinuitet.png}
+\end{center}
+
+\begin{enumerate}[label=\alph*)]
+    \item Bestäm $\lim_{x \to 3} g(x)$.
+    \item Kan funktionen göras kontinuerlig i $x = 3$ genom att definiera $g(3)$ på lämpligt sätt? I så fall, vilket värde ska $g(3)$ ha?
+\end{enumerate}
+
+\begin{facitbox}
+\textbf{Facit:}
+
+\begin{enumerate}[label=\alph*)]
+    \item 
+    \begin{align*}
+    \lim_{x \to 3} g(x) &= \lim_{x \to 3} \frac{x^2 - 9}{x - 3} \\
+    &= \lim_{x \to 3} \frac{(x - 3)(x + 3)}{x - 3} \\
+    &= \lim_{x \to 3} (x + 3) = 6
+    \end{align*}
+    \item Ja, funktionen kan göras kontinuerlig genom att sätta $g(3) = 6$.
+\end{enumerate}
+\end{facitbox}
+
+\begin{refbox}
+\textbf{Bedömning:}
+
+\textbf{Centralt innehåll:} Begreppet gränsvärde
+
+\textbf{Inspiration:} Kontinuitet och hebbar diskontinuitet, Ma3b-vt15, Ma3b-ht13
+
+\textbf{Bedömning (A):}
+\begin{itemize}
+    \item Eleven förstår konceptet hebbar diskontinuitet
+    \item Eleven kan beräkna gränsvärdet
+    \item Eleven kan resonera om hur funktionen kan göras kontinuerlig
+\end{itemize}
+
+\textbf{Kunskapskrav:} "Eleven beskriver ett omfattande antal begrepp och samband mellan begrepp" och "Eleven för väl underbyggda matematiska resonemang"
+\end{refbox}
+
+\subsection*{Uppgift G10 (A)}
+Bestäm gränsvärdet
+\[
+\lim_{h \to 0} \frac{(x + h)^2 - x^2}{h}
+\]
+
+\begin{facitbox}
+\textbf{Facit:}
+
+\begin{align*}
+\lim_{h \to 0} \frac{(x + h)^2 - x^2}{h} &= \lim_{h \to 0} \frac{x^2 + 2xh + h^2 - x^2}{h} \\
+&= \lim_{h \to 0} \frac{2xh + h^2}{h} \\
+&= \lim_{h \to 0} (2x + h) = 2x
+\end{align*}
+\end{facitbox}
+
+\begin{refbox}
+\textbf{Bedömning:}
+
+\textbf{Centralt innehåll:} Begreppet gränsvärde (förberedelse för derivata)
+
+\textbf{Inspiration:} Differenskvot som leder till derivata, Ma3b-vt22, Ma3b-vt17
+
+\textbf{Bedömning (A):}
+\begin{itemize}
+    \item Eleven kan hantera gränsvärde med parameter
+    \item Eleven förenklar algebraiskt
+    \item Visar förståelse för sambandet med derivata
+\end{itemize}
+
+\textbf{Kunskapskrav:} "Eleven hanterar avancerade uttryck med mycket god säkerhet" och "Eleven löser komplexa problem"
+\end{refbox}
+
+\newpage
+
+\section{Blandade Uppgifter och Problemlösning}
+
+\subsection*{Uppgift B1 (C)}
+En rektangel har ena sidan $x$ cm och den andra sidan $(10 - x)$ cm.
+\begin{enumerate}[label=\alph*)]
+    \item Skriv ett uttryck för rektangelns area $A(x)$.
+    \item För vilket värde på $x$ blir arean maximal? (Lös algebraiskt utan digitala verktyg)
+\end{enumerate}
+
+\begin{facitbox}
+\textbf{Facit:}
+
+\begin{enumerate}[label=\alph*)]
+    \item $A(x) = x(10 - x) = 10x - x^2$
+    \item Skriv om: $A(x) = -(x^2 - 10x) = -(x^2 - 10x + 25 - 25) = -(x - 5)^2 + 25$
+    
+    Arean är maximal när $(x - 5)^2 = 0$, dvs när $x = 5$ cm.
+    
+    Maximal area: $A(5) = 25$ cm²
+\end{enumerate}
+\end{facitbox}
+
+\begin{refbox}
+\textbf{Bedömning:}
+
+\textbf{Centralt innehåll:} Begreppet polynom och egenskaper hos polynomfunktioner
+
+\textbf{Inspiration:} Optimering med kvadratkomplettering, Ma3b-vt16, Ma3b-ht15
+
+\textbf{Bedömning (C):}
+\begin{itemize}
+    \item Eleven kan modellera situationen matematiskt
+    \item Eleven kan använda kvadratkomplettering för att hitta maximum
+    \item Eleven löser problemet utan digitala verktyg
+\end{itemize}
+
+\textbf{Kunskapskrav:} "Eleven löser relativt komplexa problem" och "Eleven tillämpar och formulerar matematiska modeller i relativt komplexa uppgifter"
+\end{refbox}
+
+\subsection*{Uppgift B2 (C)}
+Summan av två tal är 20. Produkten av talen är 75. Vilka är talen? Ställ upp en ekvation och lös den.
+
+\begin{facitbox}
+\textbf{Facit:}
+
+Låt talen vara $x$ och $y$.
+\begin{align*}
+x + y &= 20 \\
+xy &= 75
+\end{align*}
+
+Från första ekvationen: $y = 20 - x$
+
+Sätt in i andra: $x(20 - x) = 75$
+\begin{align*}
+20x - x^2 &= 75 \\
+x^2 - 20x + 75 &= 0 \\
+(x - 5)(x - 15) &= 0
+\end{align*}
+
+Svar: Talen är 5 och 15.
+\end{facitbox}
+
+\begin{refbox}
+\textbf{Bedömning:}
+
+\textbf{Centralt innehåll:} Metoder för att lösa enklare polynomekvationer
+
+\textbf{Inspiration:} Klassisk problemlösning med andragradsekvation, Ma3b-vt22, Ma3b-ht16
+
+\textbf{Bedömning (C):}
+\begin{itemize}
+    \item Eleven kan översätta textproblem till ekvation
+    \item Eleven löser andragradsekvationen
+    \item Eleven tolkar lösningen i kontext
+\end{itemize}
+
+\textbf{Kunskapskrav:} "Eleven löser relativt komplexa problem" och "Eleven tillämpar och formulerar matematiska modeller"
+\end{refbox}
+
+\subsection*{Uppgift B3 (A)}
+En öppen låda ska tillverkas genom att klippa bort kvadrater med sidan $x$ cm från varje hörn av en rektangulär plåt med måtten 20 cm × 30 cm, och sedan vika upp sidorna.
+\begin{enumerate}[label=\alph*)]
+    \item Skriv ett uttryck för lådans volym $V(x)$.
+    \item Bestäm definitionsmängden för $V(x)$.
+    \item För vilket värde på $x$ blir volymen maximal? (Använd digitala verktyg)
+\end{enumerate}
+
+\begin{facitbox}
+\textbf{Facit:}
+
+\begin{enumerate}[label=\alph*)]
+    \item $V(x) = x(20 - 2x)(30 - 2x) = x(600 - 40x - 60x + 4x^2) = 4x^3 - 100x^2 + 600x$
+    \item Definitionsmängd: $0 < x < 10$ (eftersom $20 - 2x > 0$)
+    \item Använd digitala verktyg för att hitta maximum. Derivera och sätt lika med noll, eller använd grafisk metod.
+    
+    Svar: $x \approx 3.92$ cm ger maximal volym $V \approx 1056$ cm³
+\end{enumerate}
+\end{facitbox}
+
+\begin{refbox}
+\textbf{Bedömning:}
+
+\textbf{Centralt innehåll:} Begreppet polynom och egenskaper hos polynomfunktioner
+
+\textbf{Inspiration:} Volymoptimering, Ma3b-vt15, Ma3b-ht14
+
+\textbf{Bedömning (A):}
+\begin{itemize}
+    \item Eleven kan modellera en tredimensionell situation
+    \item Eleven kan bestämma definitionsmängd från fysiska begränsningar
+    \item Eleven använder digitala verktyg för optimering
+\end{itemize}
+
+\textbf{Kunskapskrav:} "Eleven löser komplexa problem" och "Eleven tillämpar och formulerar matematiska modeller i komplexa uppgifter"
+\end{refbox}
+
+\subsection*{Uppgift B4 (A)}
+En parabel $y = ax^2 + bx + c$ går genom punkterna $(0, 3)$, $(1, 0)$ och $(3, 0)$.
+\begin{enumerate}[label=\alph*)]
+    \item Bestäm konstanterna $a$, $b$ och $c$.
+    \item Bestäm parabelns vertex.
+\end{enumerate}
+
+\begin{facitbox}
+\textbf{Facit:}
+
+\begin{enumerate}[label=\alph*)]
+    \item Använd de tre punkterna:
+    \begin{align*}
+    (0, 3): \quad c &= 3 \\
+    (1, 0): \quad a + b + c &= 0 \Rightarrow a + b = -3 \\
+    (3, 0): \quad 9a + 3b + c &= 0 \Rightarrow 9a + 3b = -3 \Rightarrow 3a + b = -1
+    \end{align*}
+    
+    Lös systemet:
+    \begin{align*}
+    a + b &= -3 \\
+    3a + b &= -1
+    \end{align*}
+    Subtrahera: $2a = 2 \Rightarrow a = 1$, därmed $b = -4$
+    
+    Svar: $a = 1$, $b = -4$, $c = 3$. Parabeln är $y = x^2 - 4x + 3$
+    
+    \item Vertex: $x = -\frac{b}{2a} = -\frac{-4}{2} = 2$, $y = 2^2 - 4 \cdot 2 + 3 = -1$
+    
+    Svar: Vertex är $(2, -1)$
+\end{enumerate}
+\end{facitbox}
+
+\begin{refbox}
+\textbf{Bedömning:}
+
+\textbf{Centralt innehåll:} Begreppet polynom och egenskaper hos polynomfunktioner
+
+\textbf{Inspiration:} Bestämning av parabel från punkter, Ma3b-vt17, Ma3b-ht13
+
+\textbf{Bedömning (A):}
+\begin{itemize}
+    \item Eleven kan ställa upp ekvationssystem från givna villkor
+    \item Eleven löser systemet korrekt
+    \item Eleven kan bestämma vertex från standardform
+\end{itemize}
+
+\textbf{Kunskapskrav:} "Eleven löser komplexa problem" och "Eleven för väl underbyggda matematiska resonemang"
+\end{refbox}
+
+\newpage
+
+\section*{Sammanfattning}
+
+\subsection*{Fördelning per nivå:}
+\begin{itemize}
+    \item \textbf{E-uppgifter}: 9 st (P1-P3, R1-R3, G1-G3)
+    \item \textbf{C-uppgifter}: 16 st (P4-P7, R4-R7, G4-G7, B1-B2)
+    \item \textbf{A-uppgifter}: 9 st (P8-P9, R8-R10, G8-G10, B3-B4)
+\end{itemize}
+
+\textbf{Totalt}: 34 uppgifter
+
+\subsection*{Koppling till centralt innehåll (GY25):}
+\begin{itemize}
+    \item \textbf{Polynom}: 13 uppgifter (P1-P9, B1-B4)
+    \item \textbf{Rationella uttryck}: 10 uppgifter (R1-R10)
+    \item \textbf{Gränsvärden}: 10 uppgifter (G1-G10)
+    \item \textbf{Blandade/Problemlösning}: 4 uppgifter (B1-B4)
+\end{itemize}
+
+\subsection*{Användning:}
+Materialet kan användas för:
+\begin{enumerate}
+    \item \textbf{Övningsprov}: Välj 6-8 uppgifter av varierande svårighetsgrad
+    \item \textbf{Diagnostiskt prov}: Använd E-uppgifter för att identifiera kunskapsluckor
+    \item \textbf{Fördjupning}: A-uppgifter för elever som behöver utmaning
+    \item \textbf{Läxor}: Välj uppgifter inom specifika områden
+\end{enumerate}
+
+\end{document}

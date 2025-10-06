@@ -1,0 +1,236 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{mdframed}
+\geometry{a4paper, margin=1in}
+
+\definecolor{facitbg}{RGB}{240,248,255}
+
+\newmdenv[
+  backgroundcolor=facitbg,
+  linewidth=0pt,
+  innertopmargin=10pt,
+  innerbottommargin=10pt,
+  innerrightmargin=10pt,
+  innerleftmargin=10pt,
+  skipabove=10pt,
+  skipbelow=10pt
+]{facitbox}
+
+\title{Facit: Övningsprov Algebra och Funktioner \\ \large Matematik 3b}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Polynom och Polynomekvationer}
+
+\subsection*{Uppgift 1 (E)}
+\begin{facitbox}
+Graden är 4 och koefficienten för högsta gradtermen är 3.
+\end{facitbox}
+
+\subsection*{Uppgift 2 (E)}
+\begin{facitbox}
+\begin{enumerate}[label=\alph*)]
+    \item $p(2) = 2^3 - 4 \cdot 2^2 + 2 + 6 = 8 - 16 + 2 + 6 = 0$
+    \item Ja, $x = 2$ är ett nollställe eftersom $p(2) = 0$.
+\end{enumerate}
+\end{facitbox}
+
+\subsection*{Uppgift 3 (C)}
+\begin{facitbox}
+\begin{enumerate}[label=\alph*)]
+    \item $p(x) = a(x + 2)(x - 1)(x - 3)$ där $a$ är en konstant.
+    
+    Använd villkoret $p(0) = 12$:
+    \begin{align*}
+    p(0) &= a(0 + 2)(0 - 1)(0 - 3) = a \cdot 2 \cdot (-1) \cdot (-3) = 6a \\
+    6a &= 12 \\
+    a &= 2
+    \end{align*}
+    
+    Svar: $p(x) = 2(x + 2)(x - 1)(x - 3)$
+    
+    \item Multiplicera ut:
+    \begin{align*}
+    p(x) &= 2(x + 2)(x - 1)(x - 3) \\
+    &= 2(x + 2)(x^2 - 4x + 3) \\
+    &= 2(x^3 - 4x^2 + 3x + 2x^2 - 8x + 6) \\
+    &= 2(x^3 - 2x^2 - 5x + 6) \\
+    &= 2x^3 - 4x^2 - 10x + 12
+    \end{align*}
+\end{enumerate}
+\end{facitbox}
+
+\subsection*{Uppgift 4 (C)}
+\begin{facitbox}
+\begin{align*}
+2x^4 - 8x^2 &= 0 \\
+2x^2(x^2 - 4) &= 0 \\
+2x^2(x - 2)(x + 2) &= 0
+\end{align*}
+
+Svar: $x = 0$ (dubbelrot), $x = 2$, $x = -2$
+\end{facitbox}
+
+\subsection*{Uppgift 5 (A)}
+\begin{facitbox}
+\begin{enumerate}[label=\alph*)]
+    \item $p(x) = a(x + 1)^2(x - 2)(x - 4)$
+    
+    Använd $p(0) = 8$:
+    \begin{align*}
+    p(0) &= a(1)^2(-2)(-4) = 8a \\
+    8a &= 8 \\
+    a &= 1
+    \end{align*}
+    
+    Svar: $p(x) = (x + 1)^2(x - 2)(x - 4)$
+    
+    \item Vid $x = -1$ (dubbel rot) tangerar grafen x-axeln. Vid $x = 2$ och $x = 4$ skär grafen x-axeln.
+\end{enumerate}
+\end{facitbox}
+
+\section{Rationella Uttryck}
+
+\subsection*{Uppgift 6 (E)}
+\begin{facitbox}
+\begin{align*}
+\frac{x^2 - 16}{x + 4} &= \frac{(x - 4)(x + 4)}{x + 4} = x - 4
+\end{align*}
+\end{facitbox}
+
+\subsection*{Uppgift 7 (E)}
+\begin{facitbox}
+Uttrycket är inte definierat när nämnaren är noll: $x - 3 = 0 \Rightarrow x = 3$
+\end{facitbox}
+
+\subsection*{Uppgift 8 (E)}
+\begin{facitbox}
+\begin{align*}
+\frac{3x + 6}{x^2 + 2x} &= \frac{3(x + 2)}{x(x + 2)} = \frac{3}{x}
+\end{align*}
+\end{facitbox}
+
+\subsection*{Uppgift 9 (C)}
+\begin{facitbox}
+\begin{align*}
+\frac{2}{x + 1} + \frac{3}{x - 2} &= \frac{2(x - 2) + 3(x + 1)}{(x + 1)(x - 2)} \\
+&= \frac{2x - 4 + 3x + 3}{(x + 1)(x - 2)} \\
+&= \frac{5x - 1}{(x + 1)(x - 2)}
+\end{align*}
+\end{facitbox}
+
+\subsection*{Uppgift 10 (C)}
+\begin{facitbox}
+\begin{align*}
+\frac{x^2 - 4}{x^2 + 4x + 4} \cdot \frac{x + 2}{x - 2} &= \frac{(x - 2)(x + 2)}{(x + 2)^2} \cdot \frac{x + 2}{x - 2} \\
+&= \frac{(x - 2)(x + 2)(x + 2)}{(x + 2)^2(x - 2)} \\
+&= 1
+\end{align*}
+\end{facitbox}
+
+\subsection*{Uppgift 11 (C)}
+\begin{facitbox}
+\begin{align*}
+\frac{3}{x - 1} &= \frac{2}{x + 2} \\
+3(x + 2) &= 2(x - 1) \\
+3x + 6 &= 2x - 2 \\
+x &= -8
+\end{align*}
+
+Kontroll: $\frac{3}{-8 - 1} = \frac{3}{-9} = -\frac{1}{3}$ och $\frac{2}{-8 + 2} = \frac{2}{-6} = -\frac{1}{3}$ \checkmark
+\end{facitbox}
+
+\subsection*{Uppgift 12 (A)}
+\begin{facitbox}
+\begin{align*}
+\frac{5x - 1}{x^2 - 4} &= \frac{A}{x - 2} + \frac{B}{x + 2} \\
+\frac{5x - 1}{(x - 2)(x + 2)} &= \frac{A(x + 2) + B(x - 2)}{(x - 2)(x + 2)}
+\end{align*}
+
+Därmed: $5x - 1 = A(x + 2) + B(x - 2)$
+
+Sätt $x = 2$: $10 - 1 = A(4) \Rightarrow A = \frac{9}{4}$
+
+Sätt $x = -2$: $-10 - 1 = B(-4) \Rightarrow B = \frac{11}{4}$
+
+Svar: $A = \frac{9}{4}$, $B = \frac{11}{4}$
+\end{facitbox}
+
+\subsection*{Uppgift 13 (A)}
+\begin{facitbox}
+\begin{align*}
+\frac{x + 1}{x - 1} - \frac{x - 1}{x + 1} &= \frac{8}{x^2 - 1} \\
+\frac{(x + 1)^2 - (x - 1)^2}{(x - 1)(x + 1)} &= \frac{8}{(x - 1)(x + 1)} \\
+(x + 1)^2 - (x - 1)^2 &= 8 \\
+x^2 + 2x + 1 - (x^2 - 2x + 1) &= 8 \\
+4x &= 8 \\
+x &= 2
+\end{align*}
+\end{facitbox}
+
+\section{Gränsvärden}
+
+\subsection*{Uppgift 14 (E)}
+\begin{facitbox}
+\[
+\lim_{x \to 3} (2x + 5) = 2 \cdot 3 + 5 = 11
+\]
+\end{facitbox}
+
+\subsection*{Uppgift 15 (E)}
+\begin{facitbox}
+\begin{align*}
+\lim_{x \to 2} \frac{x^2 - 4}{x - 2} &= \lim_{x \to 2} \frac{(x - 2)(x + 2)}{x - 2} \\
+&= \lim_{x \to 2} (x + 2) = 4
+\end{align*}
+\end{facitbox}
+
+\subsection*{Uppgift 16 (C)}
+\begin{facitbox}
+\begin{align*}
+\lim_{x \to -1} \frac{x^2 + 3x + 2}{x + 1} &= \lim_{x \to -1} \frac{(x + 1)(x + 2)}{x + 1} \\
+&= \lim_{x \to -1} (x + 2) = 1
+\end{align*}
+\end{facitbox}
+
+\subsection*{Uppgift 17 (C)}
+\begin{facitbox}
+\begin{align*}
+\lim_{x \to \infty} \frac{3x^2 - 5x + 1}{x^2 + 2} &= \lim_{x \to \infty} \frac{x^2(3 - \frac{5}{x} + \frac{1}{x^2})}{x^2(1 + \frac{2}{x^2})} \\
+&= \lim_{x \to \infty} \frac{3 - \frac{5}{x} + \frac{1}{x^2}}{1 + \frac{2}{x^2}} = \frac{3}{1} = 3
+\end{align*}
+\end{facitbox}
+
+\subsection*{Uppgift 18 (C)}
+\begin{facitbox}
+\begin{enumerate}[label=\alph*)]
+    \item Vänstergränsvärdet: $\lim_{x \to 2^-} f(x) = 2^2 + 1 = 5$
+    
+    Högergränsvärdet: $\lim_{x \to 2^+} f(x) = 3 \cdot 2 - 1 = 5$
+    
+    \item Ja, $\lim_{x \to 2} f(x) = 5$ eftersom vänster- och högergränsvärdet är lika.
+    
+    \item Ja, funktionen är kontinuerlig i $x = 2$ eftersom $\lim_{x \to 2} f(x) = f(2) = 5$.
+\end{enumerate}
+\end{facitbox}
+
+\subsection*{Uppgift 19 (A)}
+\begin{facitbox}
+\begin{align*}
+\lim_{h \to 0} \frac{(x + h)^2 - x^2}{h} &= \lim_{h \to 0} \frac{x^2 + 2xh + h^2 - x^2}{h} \\
+&= \lim_{h \to 0} \frac{2xh + h^2}{h} \\
+&= \lim_{h \to 0} (2x + h) = 2x
+\end{align*}
+\end{facitbox}
+
+\end{document}
