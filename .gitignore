@@ -19,6 +19,9 @@
 *.pdfsync
 *.code-workspace
 
+## Typst
+*.typ.pdf
+
 ## Mac OS
 .DS_Store
 .AppleDouble

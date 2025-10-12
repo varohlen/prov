@@ -1,0 +1,675 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[swedish]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{mdframed}
+\geometry{a4paper, margin=1in}
+
+\definecolor{ledtradbg}{RGB}{255,250,240}
+\definecolor{losningbg}{RGB}{240,248,255}
+
+\newmdenv[
+  backgroundcolor=ledtradbg,
+  linewidth=0pt,
+  innertopmargin=8pt,
+  innerbottommargin=8pt,
+  innerrightmargin=8pt,
+  innerleftmargin=8pt
+]{ledtradbox}
+
+\newmdenv[
+  backgroundcolor=losningbg,
+  linewidth=0pt,
+  innertopmargin=8pt,
+  innerbottommargin=8pt,
+  innerrightmargin=8pt,
+  innerleftmargin=8pt
+]{losningbox}
+
+\begin{document}
+
+\begin{center}
+\Large\textbf{Facit} \\
+\large Övningsprov: Algebra och Funktioner \\
+\normalsize Matematik 3b
+\end{center}
+
+\vspace{0.5cm}
+
+\subsection*{Uppgift 1}
+
+\begin{ledtradbox}
+\textbf{Ledtråd:} Graden är den högsta exponenten. Koefficienten är talet framför den termen.
+\end{ledtradbox}
+
+\begin{losningbox}
+\textbf{Lösning:} Polynomet har termen $3x^4$ som högsta gradterm.
+\end{losningbox}
+
+\noindent
+\textbf{Svar:} Graden är 4 och koefficienten för högsta gradtermen är 3.
+
+\vspace{0.3cm}
+\noindent\rule{\textwidth}{0.4pt}
+\vspace{0.3cm}
+
+\subsection*{Uppgift 2}
+
+\begin{ledtradbox}
+\textbf{Ledtråd:} Ett polynom har endast heltalspotenser av $x$ och inga $x$ i nämnare eller under rot.
+\end{ledtradbox}
+
+\begin{losningbox}
+\textbf{Lösning:} 
+\begin{itemize}
+    \item a) $f(x) = 2x^3 - 5x + 7$ ✓ (polynom)
+    \item b) $g(x) = \frac{1}{x} + x^2 = x^{-1} + x^2$ ✗ (negativ exponent)
+    \item c) $h(x) = \sqrt{x} + 3 = x^{1/2} + 3$ ✗ (bråkexponent)
+    \item d) $k(x) = 4x^5 - 2x^3 + x - 9$ ✓ (polynom)
+    \item e) $m(x) = x^{-2} + 5x$ ✗ (negativ exponent)
+\end{itemize}
+\end{losningbox}
+
+\noindent
+\textbf{Svar:} a) och d) är polynom.
+
+\vspace{0.3cm}
+\noindent\rule{\textwidth}{0.4pt}
+\vspace{0.3cm}
+
+\subsection*{Uppgift 3}
+
+\begin{ledtradbox}
+\textbf{Ledtråd:} Tänk på sambandet mellan polynomets grad och antalet nollställen.
+\end{ledtradbox}
+
+\begin{losningbox}
+\textbf{Lösning:} Ett polynom av grad $n$ kan ha högst $n$ nollställen.
+\end{losningbox}
+
+\noindent
+\textbf{Svar:} Maximalt 5 nollställen.
+
+\vspace{0.3cm}
+\noindent\rule{\textwidth}{0.4pt}
+\vspace{0.3cm}
+
+\subsection*{Uppgift 4}
+
+\begin{ledtradbox}
+\textbf{Ledtråd:} 
+\begin{itemize}
+    \item a) Sätt in $x = 2$ i polynomet
+    \item b) Ett nollställe innebär att $p(x) = 0$
+\end{itemize}
+\end{ledtradbox}
+
+\begin{losningbox}
+\textbf{Lösning:}
+\begin{enumerate}[label=\alph*)]
+    \item $p(2) = 2^3 - 4 \cdot 2^2 + 2 + 6 = 8 - 16 + 2 + 6 = 0$
+    \item Eftersom $p(2) = 0$ är $x = 2$ ett nollställe.
+\end{enumerate}
+\end{losningbox}
+
+\noindent
+\textbf{Svar:} a) $p(2) = 0$ \quad b) Ja, $x = 2$ är ett nollställe.
+
+\vspace{0.3cm}
+\noindent\rule{\textwidth}{0.4pt}
+\vspace{0.3cm}
+
+\subsection*{Uppgift 5}
+
+\begin{ledtradbox}
+\textbf{Ledtråd:} Nollställena fås när varje faktor är lika med noll.
+\end{ledtradbox}
+
+\begin{losningbox}
+\textbf{Lösning:} 
+\begin{align*}
+x - 2 = 0 &\Rightarrow x = 2 \\
+x + 3 = 0 &\Rightarrow x = -3 \\
+x - 5 = 0 &\Rightarrow x = 5
+\end{align*}
+\end{losningbox}
+
+\noindent
+\textbf{Svar:} $x = 2$, $x = -3$, $x = 5$
+
+\vspace{0.3cm}
+\noindent\rule{\textwidth}{0.4pt}
+\vspace{0.3cm}
+
+\subsection*{Uppgift 6}
+
+\begin{ledtradbox}
+\textbf{Ledtråd:} Faktorisera täljaren med konjugatregeln: $a^2 - b^2 = (a-b)(a+b)$
+\end{ledtradbox}
+
+\begin{losningbox}
+\textbf{Lösning:}
+\[
+\frac{x^2 - 16}{x + 4} = \frac{(x-4)(x+4)}{x+4} = x - 4
+\]
+\end{losningbox}
+
+\noindent
+\textbf{Svar:} $x - 4$
+
+\vspace{0.3cm}
+\noindent\rule{\textwidth}{0.4pt}
+\vspace{0.3cm}
+
+\subsection*{Uppgift 7}
+
+\begin{ledtradbox}
+\textbf{Ledtråd:} Ett rationellt uttryck är inte definierat när nämnaren är noll.
+\end{ledtradbox}
+
+\begin{losningbox}
+\textbf{Lösning:} Nämnaren är $x - 3$. Sätt $x - 3 = 0 \Rightarrow x = 3$
+\end{losningbox}
+
+\noindent
+\textbf{Svar:} $x = 3$
+
+\vspace{0.3cm}
+\noindent\rule{\textwidth}{0.4pt}
+\vspace{0.3cm}
+
+\subsection*{Uppgift 8}
+
+\begin{ledtradbox}
+\textbf{Ledtråd:} Bryt ut gemensamma faktorer i täljare och nämnare.
+\end{ledtradbox}
+
+\begin{losningbox}
+\textbf{Lösning:}
+\[
+\frac{3x + 6}{x^2 + 2x} = \frac{3(x+2)}{x(x+2)} = \frac{3}{x}
+\]
+\end{losningbox}
+
+\noindent
+\textbf{Svar:} $\frac{3}{x}$
+
+\vspace{0.3cm}
+\noindent\rule{\textwidth}{0.4pt}
+\vspace{0.3cm}
+
+\subsection*{Uppgift 9}
+
+\begin{ledtradbox}
+\textbf{Ledtråd:} För kontinuerliga funktioner: sätt in värdet direkt.
+\end{ledtradbox}
+
+\begin{losningbox}
+\textbf{Lösning:}
+\[
+\lim_{x \to 3} (2x + 5) = 2 \cdot 3 + 5 = 11
+\]
+\end{losningbox}
+
+\noindent
+\textbf{Svar:} $11$
+
+\vspace{0.3cm}
+\noindent\rule{\textwidth}{0.4pt}
+\vspace{0.3cm}
+
+\subsection*{Uppgift 10}
+
+\begin{ledtradbox}
+\textbf{Ledtråd:} Faktorisera täljaren och förkorta innan du sätter in värdet.
+\end{ledtradbox}
+
+\begin{losningbox}
+\textbf{Lösning:}
+\[
+\lim_{x \to 2} \frac{x^2 - 4}{x - 2} = \lim_{x \to 2} \frac{(x-2)(x+2)}{x-2} = \lim_{x \to 2} (x+2) = 4
+\]
+\end{losningbox}
+
+\noindent
+\textbf{Svar:} $4$
+
+\vspace{0.3cm}
+\noindent\rule{\textwidth}{0.4pt}
+\vspace{0.3cm}
+
+\subsection*{Uppgift 11}
+
+\begin{ledtradbox}
+\textbf{Ledtråd:} Använd variabelsubstitution $t = x^2$ för att få en andragradsekvation.
+\end{ledtradbox}
+
+\begin{losningbox}
+\textbf{Lösning:} Låt $t = x^2$:
+\begin{align*}
+t^2 - 5t + 4 &= 0 \\
+(t-1)(t-4) &= 0 \\
+t = 1 \text{ eller } t &= 4
+\end{align*}
+
+Återsubstitution:
+\begin{itemize}
+    \item $x^2 = 1 \Rightarrow x = \pm 1$
+    \item $x^2 = 4 \Rightarrow x = \pm 2$
+\end{itemize}
+\end{losningbox}
+
+\noindent
+\textbf{Svar:} $x = \pm 1, \pm 2$
+
+\vspace{0.3cm}
+\noindent\rule{\textwidth}{0.4pt}
+\vspace{0.3cm}
+
+\subsection*{Uppgift 12}
+
+\begin{ledtradbox}
+\textbf{Ledtråd:} Hitta gemensam nämnare och addera.
+\end{ledtradbox}
+
+\begin{losningbox}
+\textbf{Lösning:}
+\begin{align*}
+\frac{2}{x+1} + \frac{3}{x-2} &= \frac{2(x-2) + 3(x+1)}{(x+1)(x-2)} \\
+&= \frac{2x - 4 + 3x + 3}{(x+1)(x-2)} \\
+&= \frac{5x - 1}{(x+1)(x-2)}
+\end{align*}
+\end{losningbox}
+
+\noindent
+\textbf{Svar:} $\frac{5x - 1}{(x+1)(x-2)}$
+
+\vspace{0.3cm}
+\noindent\rule{\textwidth}{0.4pt}
+\vspace{0.3cm}
+
+\subsection*{Uppgift 13}
+
+\begin{ledtradbox}
+\textbf{Ledtråd:} Division av bråk: multiplicera med inverterade bråket.
+\end{ledtradbox}
+
+\begin{losningbox}
+\textbf{Lösning:}
+\begin{align*}
+\frac{x^2-9}{x+3} : \frac{x-3}{x+1} &= \frac{x^2-9}{x+3} \cdot \frac{x+1}{x-3} \\
+&= \frac{(x-3)(x+3)}{x+3} \cdot \frac{x+1}{x-3} \\
+&= x + 1
+\end{align*}
+\end{losningbox}
+
+\noindent
+\textbf{Svar:} $x + 1$
+
+\vspace{0.3cm}
+\noindent\rule{\textwidth}{0.4pt}
+\vspace{0.3cm}
+
+\subsection*{Uppgift 14}
+
+\begin{ledtradbox}
+\textbf{Ledtråd:}
+\begin{itemize}
+    \item a) Använd nollställena för att skriva faktorerna
+    \item b) Multiplicera ut steg för steg
+\end{itemize}
+\end{ledtradbox}
+
+\begin{losningbox}
+\textbf{Lösning:}
+\begin{enumerate}[label=\alph*)]
+    \item $p(x) = a(x+2)(x-1)(x-3)$
+    
+    Använd $p(0) = 12$:
+    \[
+    a(2)(-1)(-3) = 6a = 12 \Rightarrow a = 2
+    \]
+    
+    Svar: $p(x) = 2(x+2)(x-1)(x-3)$
+    
+    \item Multiplicera ut:
+    \begin{align*}
+    p(x) &= 2(x+2)(x^2-4x+3) \\
+    &= 2(x^3 - 2x^2 - 5x + 6) \\
+    &= 2x^3 - 4x^2 - 10x + 12
+    \end{align*}
+\end{enumerate}
+\end{losningbox}
+
+\noindent
+\textbf{Svar:} a) $p(x) = 2(x+2)(x-1)(x-3)$ \quad b) $p(x) = 2x^3 - 4x^2 - 10x + 12$
+
+\vspace{0.3cm}
+\noindent\rule{\textwidth}{0.4pt}
+\vspace{0.3cm}
+
+\subsection*{Uppgift 15}
+
+\begin{ledtradbox}
+\textbf{Ledtråd:} Bryt ut $2x^2$ först, sedan faktorisera $x^2 - 4$.
+\end{ledtradbox}
+
+\begin{losningbox}
+\textbf{Lösning:}
+\begin{align*}
+2x^4 - 8x^2 &= 0 \\
+2x^2(x^2 - 4) &= 0 \\
+2x^2(x-2)(x+2) &= 0
+\end{align*}
+\end{losningbox}
+
+\noindent
+\textbf{Svar:} $x = 0$ (dubbelrot), $x = \pm 2$
+
+\vspace{0.3cm}
+\noindent\rule{\textwidth}{0.4pt}
+\vspace{0.3cm}
+
+\subsection*{Uppgift 16}
+
+\begin{ledtradbox}
+\textbf{Ledtråd:} Faktorisera alla uttryck innan förenkling.
+\end{ledtradbox}
+
+\begin{losningbox}
+\textbf{Lösning:}
+\begin{align*}
+\frac{x^2-4}{x^2+4x+4} \cdot \frac{x+2}{x-2} &= \frac{(x-2)(x+2)}{(x+2)^2} \cdot \frac{x+2}{x-2} \\
+&= 1
+\end{align*}
+\end{losningbox}
+
+\noindent
+\textbf{Svar:} $1$
+
+\vspace{0.3cm}
+\noindent\rule{\textwidth}{0.4pt}
+\vspace{0.3cm}
+
+\subsection*{Uppgift 17}
+
+\begin{ledtradbox}
+\textbf{Ledtråd:} Korsmultiplicera och lös den linjära ekvationen.
+\end{ledtradbox}
+
+\begin{losningbox}
+\textbf{Lösning:}
+\begin{align*}
+\frac{3}{x-1} &= \frac{2}{x+2} \\
+3(x+2) &= 2(x-1) \\
+3x + 6 &= 2x - 2 \\
+x &= -8
+\end{align*}
+\end{losningbox}
+
+\noindent
+\textbf{Svar:} $x = -8$
+
+\vspace{0.3cm}
+\noindent\rule{\textwidth}{0.4pt}
+\vspace{0.3cm}
+
+\subsection*{Uppgift 18}
+
+\begin{ledtradbox}
+\textbf{Ledtråd:} Faktorisera täljaren och förkorta.
+\end{ledtradbox}
+
+\begin{losningbox}
+\textbf{Lösning:}
+\begin{align*}
+\lim_{x \to -1} \frac{x^2+3x+2}{x+1} &= \lim_{x \to -1} \frac{(x+1)(x+2)}{x+1} \\
+&= \lim_{x \to -1} (x+2) = 1
+\end{align*}
+\end{losningbox}
+
+\noindent
+\textbf{Svar:} $1$
+
+\vspace{0.3cm}
+\noindent\rule{\textwidth}{0.4pt}
+\vspace{0.3cm}
+
+\subsection*{Uppgift 19}
+
+\begin{ledtradbox}
+\textbf{Ledtråd:} Bryt ut högsta potensen av $x$ i täljare och nämnare.
+\end{ledtradbox}
+
+\begin{losningbox}
+\textbf{Lösning:}
+\begin{align*}
+\lim_{x \to \infty} \frac{3x^2-5x+1}{x^2+2} &= \lim_{x \to \infty} \frac{x^2(3-\frac{5}{x}+\frac{1}{x^2})}{x^2(1+\frac{2}{x^2})} \\
+&= \lim_{x \to \infty} \frac{3-\frac{5}{x}+\frac{1}{x^2}}{1+\frac{2}{x^2}} = \frac{3}{1} = 3
+\end{align*}
+\end{losningbox}
+
+\noindent
+\textbf{Svar:} $3$
+
+\vspace{0.3cm}
+\noindent\rule{\textwidth}{0.4pt}
+\vspace{0.3cm}
+
+\subsection*{Uppgift 20}
+
+\begin{ledtradbox}
+\textbf{Ledtråd:} 
+\begin{itemize}
+    \item Nollställen är där grafen skär/tangerar x-axeln
+    \item Dubbel rot: grafen tangerar (vänder vid) x-axeln
+    \item Enkel rot: grafen skär x-axeln
+\end{itemize}
+\end{ledtradbox}
+
+\begin{losningbox}
+\textbf{Lösning:} Från grafen kan vi se att polynomet har nollställen vid $x \approx 2$ och $x \approx 3.5$ (enkla rötter där grafen skär x-axeln) samt vid $x = 5$ (dubbel rot där grafen tangerar x-axeln).
+\end{losningbox}
+
+\noindent
+\textbf{Svar:} a) Nollställen: $x \approx 2$, $x \approx 3.5$, $x = 5$ \quad b) Vid $x = 5$ är det en dubbel rot (tangerar), övriga är enkla rötter (skär).
+
+\vspace{0.3cm}
+\noindent\rule{\textwidth}{0.4pt}
+\vspace{0.3cm}
+
+\subsection*{Uppgift 21}
+
+\begin{ledtradbox}
+\textbf{Ledtråd:}
+\begin{itemize}
+    \item Vänstergränsvärde: använd formeln för $x < 2$
+    \item Högergränsvärde: använd formeln för $x > 2$
+    \item Kontinuitet: gränsvärdet måste existera och vara lika med funktionsvärdet
+\end{itemize}
+\end{ledtradbox}
+
+\begin{losningbox}
+\textbf{Lösning:}
+\begin{enumerate}[label=\alph*)]
+    \item $\lim_{x \to 2^-} f(x) = 2^2 + 1 = 5$ och $\lim_{x \to 2^+} f(x) = 3 \cdot 2 - 1 = 5$
+    \item Ja, $\lim_{x \to 2} f(x) = 5$ eftersom vänster- och högergränsvärdet är lika.
+    \item Ja, funktionen är kontinuerlig eftersom $\lim_{x \to 2} f(x) = f(2) = 5$.
+\end{enumerate}
+\end{losningbox}
+
+\noindent
+\textbf{Svar:} a) Båda gränsvärdena = 5 \quad b) Ja, gränsvärdet existerar \quad c) Ja, kontinuerlig
+
+\vspace{0.3cm}
+\noindent\rule{\textwidth}{0.4pt}
+\vspace{0.3cm}
+
+\subsection*{Uppgift 22}
+
+\begin{ledtradbox}
+\textbf{Ledtråd:}
+\begin{itemize}
+    \item a) Total kostnad = fasta kostnader + rörliga kostnader
+    \item b) Kostnad per mugg = total kostnad delat med antal
+    \item c) När $x \to \infty$, vad händer med $\frac{5000}{x}$?
+\end{itemize}
+\end{ledtradbox}
+
+\begin{losningbox}
+\textbf{Lösning:}
+\begin{enumerate}[label=\alph*)]
+    \item $K(x) = 5000 + 15x$
+    \item $k(x) = \frac{5000 + 15x}{x} = \frac{5000}{x} + 15$
+    \item $\lim_{x \to \infty} k(x) = \lim_{x \to \infty} (\frac{5000}{x} + 15) = 0 + 15 = 15$ kr/mugg
+\end{enumerate}
+\end{losningbox}
+
+\noindent
+\textbf{Svar:} a) $K(x) = 5000 + 15x$ \quad b) $k(x) = \frac{5000}{x} + 15$ \quad c) 15 kr/mugg (de fasta kostnaderna fördelas på fler muggar)
+
+\vspace{0.3cm}
+\noindent\rule{\textwidth}{0.4pt}
+\vspace{0.3cm}
+
+\subsection*{Uppgift 23}
+
+\begin{ledtradbox}
+\textbf{Ledtråd:} Använd partialbråksuppdelning. Sätt lämpliga värden på $x$ för att eliminera en variabel i taget.
+\end{ledtradbox}
+
+\begin{losningbox}
+\textbf{Lösning:}
+\[
+\frac{5x-1}{(x-2)(x+2)} = \frac{A(x+2) + B(x-2)}{(x-2)(x+2)}
+\]
+
+Därmed: $5x - 1 = A(x+2) + B(x-2)$
+
+Sätt $x = 2$: $9 = 4A \Rightarrow A = \frac{9}{4}$
+
+Sätt $x = -2$: $-11 = -4B \Rightarrow B = \frac{11}{4}$
+\end{losningbox}
+
+\noindent
+\textbf{Svar:} $A = \frac{9}{4}$, $B = \frac{11}{4}$
+
+\vspace{0.3cm}
+\noindent\rule{\textwidth}{0.4pt}
+\vspace{0.3cm}
+
+\subsection*{Uppgift 24}
+
+\begin{ledtradbox}
+\textbf{Ledtråd:} Skriv om vänsterledet med gemensam nämnare, sedan multiplicera bort nämnarna.
+\end{ledtradbox}
+
+\begin{losningbox}
+\textbf{Lösning:}
+\begin{align*}
+\frac{x+1}{x-1} - \frac{x-1}{x+1} &= \frac{8}{x^2-1} \\
+\frac{(x+1)^2 - (x-1)^2}{(x-1)(x+1)} &= \frac{8}{(x-1)(x+1)} \\
+(x+1)^2 - (x-1)^2 &= 8 \\
+x^2 + 2x + 1 - (x^2 - 2x + 1) &= 8 \\
+4x &= 8 \\
+x &= 2
+\end{align*}
+\end{losningbox}
+
+\noindent
+\textbf{Svar:} $x = 2$
+
+\vspace{0.3cm}
+\noindent\rule{\textwidth}{0.4pt}
+\vspace{0.3cm}
+
+\subsection*{Uppgift 25}
+
+\begin{ledtradbox}
+\textbf{Ledtråd:} Multiplicera ut $(x+h)^2$ och förenkla. Bryt sedan ut $h$ från täljaren.
+\end{ledtradbox}
+
+\begin{losningbox}
+\textbf{Lösning:}
+\begin{align*}
+\lim_{h \to 0} \frac{(x+h)^2 - x^2}{h} &= \lim_{h \to 0} \frac{x^2 + 2xh + h^2 - x^2}{h} \\
+&= \lim_{h \to 0} \frac{2xh + h^2}{h} \\
+&= \lim_{h \to 0} (2x + h) = 2x
+\end{align*}
+\end{losningbox}
+
+\noindent
+\textbf{Svar:} $2x$
+
+\vspace{0.3cm}
+\noindent\rule{\textwidth}{0.4pt}
+\vspace{0.3cm}
+
+\subsection*{Uppgift 26}
+
+\begin{ledtradbox}
+\textbf{Ledtråd:}
+\begin{itemize}
+    \item a) Dubbel rot betyder faktorn ska vara upphöjd till 2
+    \item b) Multiplicera ut systematiskt, två faktorer i taget
+\end{itemize}
+\end{ledtradbox}
+
+\begin{losningbox}
+\textbf{Lösning:}
+\begin{enumerate}[label=\alph*)]
+    \item $p(x) = a(x+1)^2(x-2)(x-4)$
+    
+    Använd $p(0) = 8$:
+    \[
+    a(1)^2(-2)(-4) = 8a = 8 \Rightarrow a = 1
+    \]
+    
+    Svar: $p(x) = (x+1)^2(x-2)(x-4)$
+    
+    \item Multiplicera ut:
+    \begin{align*}
+    p(x) &= (x+1)^2(x-2)(x-4) \\
+    &= (x^2+2x+1)(x^2-6x+8) \\
+    &= x^4 - 3x^3 - 6x^2 + 8x + 8
+    \end{align*}
+\end{enumerate}
+\end{losningbox}
+
+\noindent
+\textbf{Svar:} a) $p(x) = (x+1)^2(x-2)(x-4)$ \quad b) $p(x) = x^4 - 3x^3 - 6x^2 + 8x + 8$
+
+\vspace{0.3cm}
+\noindent\rule{\textwidth}{0.4pt}
+\vspace{0.3cm}
+
+\subsection*{Uppgift 27}
+
+\begin{ledtradbox}
+\textbf{Ledtråd:}
+\begin{itemize}
+    \item a) Omkrets = $2 \cdot \text{bredd} + 2 \cdot \text{längd}$
+    \item b) Area = bredd $\times$ längd
+    \item c) Vad händer när bredden blir mycket liten eller mycket stor?
+    \item d) Analysera funktionen $A(x) = 50x - x^2$ när $x$ blir stor
+\end{itemize}
+\end{ledtradbox}
+
+\begin{losningbox}
+\textbf{Lösning:}
+\begin{enumerate}[label=\alph*)]
+    \item Från $2x + 2l = 100$ får vi $l = 50 - x$
+    \item $A(x) = x \cdot l = x(50-x) = 50x - x^2$
+    \item $\lim_{x \to 0^+} A(x) = 0$ och $\lim_{x \to 50^-} A(x) = 0$
+    \item Arean kan inte bli oändligt stor eftersom $A(x) = 50x - x^2$. När $x$ ökar mycket blir $-x^2$-termen dominerande och arean minskar. Funktionen har ett maximum (vid $x = 25$ ger $A = 625$ m²).
+\end{enumerate}
+\end{losningbox}
+
+\noindent
+\textbf{Svar:} a) $l = 50 - x$ \quad b) $A(x) = 50x - x^2$ \quad c) Båda gränsvärdena = 0 (trädgården blir en linje) \quad d) Arean begränsas av $-x^2$-termen som dominerar för stora $x$
+
+\end{document}
