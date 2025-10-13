@@ -99,7 +99,7 @@
     #v(3em)
   ],
 
-  [Beräkna: *(2p)*
+  [Beräkna: *(3p)*
     #v(1em)
     #enum(
       numbering: n => [#numbering("a)", n)],
@@ -124,7 +124,7 @@
 #set enum(numbering: n => [*#n.*], indent: 0pt, body-indent: 8pt)
 
 #enum(
-  start: 8,
+  start: 7,
   [Funktionen $f(x)$ är definierad som: *(3p)*
 
     $
@@ -146,7 +146,7 @@
     #v(3em)
   ],
 
-  [Ett polynom $p(x)$ av tredje graden har följande graf: *(3p)*
+  [Ett polynom $p(x)$ av tredje graden har följande graf: *(4p)*
 
     #figure(
       image("polynomial_q14.png", width: 80%),
@@ -170,7 +170,7 @@
 #set enum(numbering: n => [*#n.*], indent: 0pt, body-indent: 8pt)
 
 #enum(
-  start: 10,
+  start: 9,
   [I ett naturområde finns 200 örnar år 2020. Varje år planteras $A$ nya örnar ut för att rädda arten. Antalet örnar efter $x$ år beskrivs av: *(4p)*
 
     #figure(
