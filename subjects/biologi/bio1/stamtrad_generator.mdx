@@ -1,0 +1,142 @@
+---
+title: Stamträd för uppgift - Generera bilder
+description: Använd denna fil för att generera bilder av stamträden till uppgiften
+---
+
+import Pedigree from '../../../../../summor.se/src/components/Pedigree.astro';
+
+# Stamträd för uppgift
+
+Öppna denna fil i en webbläsare och ta screenshots av varje stamträd.
+Spara bilderna som:
+- `stamtrad_uppgift1.png` (Cystisk fibros)
+- `stamtrad_uppgift2.png` (Färgblindhet)
+- `stamtrad_uppgift3.png` (Huntingtons)
+
+---
+
+## Uppgift 1: Cystisk fibros (Autosomalt recessiv)
+
+<Pedigree 
+  title="Uppgift 1: Cystisk fibros"
+  legend={false}
+  generations={[
+    {
+      individuals: [
+        { id: '1', sex: 'male', affected: false },
+        { id: '2', sex: 'female', affected: false }
+      ],
+      partnerships: [[0, 1]]
+    },
+    {
+      individuals: [
+        { id: '3', sex: 'female', affected: false },
+        { id: '4', sex: 'male', affected: false },
+        { id: '5', sex: 'female', affected: false },
+        { id: '6', sex: 'male', affected: false }
+      ],
+      partnerships: [[2, 3]]
+    },
+    {
+      individuals: [
+        { id: '7', sex: 'female', affected: true },
+        { id: '8', sex: 'male', affected: false }
+      ],
+      partnerships: []
+    }
+  ]}
+/>
+
+---
+
+## Uppgift 2: Färgblindhet (X-bunden recessiv)
+
+<Pedigree 
+  title="Uppgift 2: Färgblindhet"
+  legend={false}
+  generations={[
+    {
+      individuals: [
+        { id: '1', sex: 'male', affected: false, genotype: 'X^F Y' },
+        { id: '2', sex: 'female', affected: false, carrier: true, genotype: 'X^F X^f' }
+      ],
+      partnerships: [[0, 1]]
+    },
+    {
+      individuals: [
+        { id: '3', sex: 'male', affected: true, genotype: 'X^f Y' },
+        { id: '4', sex: 'male', affected: false, genotype: 'X^F Y' },
+        { id: '5', sex: 'female', affected: false, carrier: true, genotype: 'X^F X^f' },
+        { id: '6', sex: 'male', affected: false, genotype: 'X^F Y' }
+      ],
+      partnerships: [[2, 3]]
+    },
+    {
+      individuals: [
+        { id: '7', sex: 'male', affected: true, genotype: 'X^f Y' },
+        { id: '8', sex: 'female', affected: false }
+      ],
+      partnerships: []
+    }
+  ]}
+/>
+
+---
+
+## Uppgift 3: Huntingtons sjukdom (Autosomalt dominant)
+
+<Pedigree 
+  title="Uppgift 3: Huntingtons sjukdom"
+  legend={false}
+  generations={[
+    {
+      individuals: [
+        { id: '1', sex: 'male', affected: true },
+        { id: '2', sex: 'female', affected: false }
+      ],
+      partnerships: [[0, 1]]
+    },
+    {
+      individuals: [
+        { id: '3', sex: 'male', affected: true },
+        { id: '4', sex: 'female', affected: false },
+        { id: '5', sex: 'female', affected: false },
+        { id: '6', sex: 'male', affected: false }
+      ],
+      partnerships: [[0, 1]]
+    },
+    {
+      individuals: [
+        { id: '7', sex: 'female', affected: true },
+        { id: '8', sex: 'male', affected: false },
+        { id: '9', sex: 'female', affected: false }
+      ],
+      partnerships: [[1, 2]]
+    },
+    {
+      individuals: [
+        { id: '10', sex: 'male', affected: false }
+      ],
+      partnerships: []
+    }
+  ]}
+/>
+
+---
+
+## Instruktioner för att spara bilder:
+
+### Metod 1: Screenshot (enklast)
+1. Öppna denna fil i din lokala dev-server
+2. Ta screenshot av varje stamträd (Cmd+Shift+4 på Mac)
+3. Spara i `/prov/subjects/biologi/bio1/images/`
+
+### Metod 2: Browser DevTools (bättre kvalitet)
+1. Högerklicka på stamträdet
+2. "Inspect Element"
+3. Högerklicka på `.pedigree-container` i DevTools
+4. "Capture node screenshot"
+5. Spara bilden
+
+### Metod 3: Puppeteer/Playwright (automatiskt)
+Om du vill automatisera kan vi skapa ett script som tar screenshots automatiskt.

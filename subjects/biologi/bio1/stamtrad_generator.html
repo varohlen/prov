@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stamträd Generator - Uppgift</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: #f5f5f5;
+        }
+        
+        .pedigree-container {
+            background: white;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .pedigree-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            color: #1a1a1a;
+        }
+        
+        .generation {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            width: 100%;
+            margin: 1rem 0;
+        }
+        
+        .generation-label {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+        
+        .individuals-row {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: start;
+        }
+        
+        .individual-group {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        
+        .individual {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            min-width: 60px;
+        }
+        
+        .symbol {
+            width: 40px;
+            height: 40px;
+            border: 2px solid #1a1a1a;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease;
+        }
+        
+        .symbol.male {
+            border-radius: 0;
+        }
+        
+        .symbol.female {
+            border-radius: 50%;
+        }
+        
+        .symbol.affected {
+            background-color: #1a1a1a;
+        }
+        
+        .symbol.carrier .carrier-dot {
+            width: 8px;
+            height: 8px;
+            background-color: #1a1a1a;
+            border-radius: 50%;
+        }
+        
+        .genotype-label {
+            font-size: 0.75rem;
+            color: #666;
+            text-align: center;
+        }
+        
+        .partnership-wrapper {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .partnership-line {
+            height: 2px;
+            background-color: #1a1a1a;
+            width: 40px;
+            margin: 0 -5px;
+        }
+        
+        .offspring-line {
+            width: 2px;
+            background-color: #1a1a1a;
+            height: 24px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .instructions {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+        
+        .instructions h2 {
+            margin-top: 0;
+        }
+        
+        .instructions ol {
+            line-height: 1.8;
+        }
+        
+        hr {
+            border: none;
+            border-top: 2px solid #e0e0e0;
+            margin: 3rem 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Stamträd för uppgift - Generera bilder</h1>
+    
+    <div class="instructions">
+        <h2>📸 Instruktioner</h2>
+        <ol>
+            <li>Scrolla ner till varje stamträd</li>
+            <li>Högerklicka på stamträdet → "Inspect Element"</li>
+            <li>I DevTools, högerklicka på <code>&lt;div class="pedigree-container"&gt;</code></li>
+            <li>Välj "Capture node screenshot"</li>
+            <li>Spara som:
+                <ul>
+                    <li><code>stamtrad_uppgift1.png</code></li>
+                    <li><code>stamtrad_uppgift2.png</code></li>
+                    <li><code>stamtrad_uppgift3.png</code></li>
+                </ul>
+            </li>
+        </ol>
+        <p><strong>Alternativ:</strong> Använd Cmd+Shift+4 (Mac) eller Snipping Tool (Windows) för screenshot.</p>
+    </div>
+
+    <hr>
+
+    <!-- Uppgift 1: Cystisk fibros -->
+    <div class="pedigree-container" id="pedigree1">
+        <h3 class="pedigree-title">Uppgift 1: Cystisk fibros</h3>
+        <div class="pedigree">
+            <!-- Generation I -->
+            <div class="generation">
+                <div class="generation-label">
+                    <span>I</span>
+                </div>
+                <div class="individuals-row">
+                    <div class="individual-group">
+                        <div class="individual">
+                            <div class="symbol male"></div>
+                            <div style="font-size: 0.75rem; color: #666;">I-1</div>
+                        </div>
+                        <div class="partnership-wrapper">
+                            <div class="partnership-line"></div>
+                            <div class="offspring-line"></div>
+                        </div>
+                    </div>
+                    <div class="individual">
+                        <div class="symbol female"></div>
+                        <div style="font-size: 0.75rem; color: #666;">I-2</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Generation II -->
+            <div class="generation">
+                <div class="generation-label">
+                    <span>II</span>
+                </div>
+                <div class="individuals-row">
+                    <div class="individual">
+                        <div class="symbol female"></div>
+                        <div style="font-size: 0.75rem; color: #666;">II-1</div>
+                    </div>
+                    <div class="individual">
+                        <div class="symbol male"></div>
+                        <div style="font-size: 0.75rem; color: #666;">II-2</div>
+                    </div>
+                    <div class="individual-group">
+                        <div class="individual">
+                            <div class="symbol female"></div>
+                            <div style="font-size: 0.75rem; color: #666;">II-3</div>
+                        </div>
+                        <div class="partnership-wrapper">
+                            <div class="partnership-line"></div>
+                            <div class="offspring-line"></div>
+                        </div>
+                    </div>
+                    <div class="individual">
+                        <div class="symbol male"></div>
+                        <div style="font-size: 0.75rem; color: #666;">II-4</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Generation III -->
+            <div class="generation">
+                <div class="generation-label">
+                    <span>III</span>
+                </div>
+                <div class="individuals-row">
+                    <div class="individual">
+                        <div class="symbol female affected"></div>
+                        <div style="font-size: 0.75rem; color: #666;">III-1</div>
+                    </div>
+                    <div class="individual">
+                        <div class="symbol male"></div>
+                        <div style="font-size: 0.75rem; color: #666;">III-2</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Uppgift 2: Färgblindhet -->
+    <div class="pedigree-container" id="pedigree2">
+        <h3 class="pedigree-title">Uppgift 2: Färgblindhet</h3>
+        <div class="pedigree">
+            <!-- Generation I -->
+            <div class="generation">
+                <div class="generation-label">
+                    <span>I</span>
+                </div>
+                <div class="individuals-row">
+                    <div class="individual-group">
+                        <div class="individual">
+                            <div class="symbol male"></div>
+                            <div style="font-size: 0.75rem; color: #666;">I-1</div>
+                        </div>
+                        <div class="partnership-wrapper">
+                            <div class="partnership-line"></div>
+                            <div class="offspring-line"></div>
+                        </div>
+                    </div>
+                    <div class="individual">
+                        <div class="symbol female carrier">
+                            <div class="carrier-dot"></div>
+                        </div>
+                        <div style="font-size: 0.75rem; color: #666;">I-2</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Generation II -->
+            <div class="generation">
+                <div class="generation-label">
+                    <span>II</span>
+                </div>
+                <div class="individuals-row">
+                    <div class="individual">
+                        <div class="symbol male affected"></div>
+                        <div style="font-size: 0.75rem; color: #666;">II-1</div>
+                    </div>
+                    <div class="individual">
+                        <div class="symbol male"></div>
+                        <div style="font-size: 0.75rem; color: #666;">II-2</div>
+                    </div>
+                    <div class="individual-group">
+                        <div class="individual">
+                            <div class="symbol female carrier">
+                                <div class="carrier-dot"></div>
+                            </div>
+                            <div style="font-size: 0.75rem; color: #666;">II-3</div>
+                        </div>
+                        <div class="partnership-wrapper">
+                            <div class="partnership-line"></div>
+                            <div class="offspring-line"></div>
+                        </div>
+                    </div>
+                    <div class="individual">
+                        <div class="symbol male"></div>
+                        <div style="font-size: 0.75rem; color: #666;">II-4</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Generation III -->
+            <div class="generation">
+                <div class="generation-label">
+                    <span>III</span>
+                </div>
+                <div class="individuals-row">
+                    <div class="individual">
+                        <div class="symbol male affected"></div>
+                        <div style="font-size: 0.75rem; color: #666;">III-1</div>
+                    </div>
+                    <div class="individual">
+                        <div class="symbol female"></div>
+                        <div style="font-size: 0.75rem; color: #666;">III-2</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Uppgift 3: Huntingtons -->
+    <div class="pedigree-container" id="pedigree3">
+        <h3 class="pedigree-title">Uppgift 3: Huntingtons sjukdom</h3>
+        <div class="pedigree">
+            <!-- Generation I -->
+            <div class="generation">
+                <div class="generation-label">
+                    <span>I</span>
+                </div>
+                <div class="individuals-row">
+                    <div class="individual-group">
+                        <div class="individual">
+                            <div class="symbol male affected"></div>
+                            <div style="font-size: 0.75rem; color: #666;">I-1</div>
+                        </div>
+                        <div class="partnership-wrapper">
+                            <div class="partnership-line"></div>
+                            <div class="offspring-line"></div>
+                        </div>
+                    </div>
+                    <div class="individual">
+                        <div class="symbol female"></div>
+                        <div style="font-size: 0.75rem; color: #666;">I-2</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Generation II -->
+            <div class="generation">
+                <div class="generation-label">
+                    <span>II</span>
+                </div>
+                <div class="individuals-row">
+                    <div class="individual-group">
+                        <div class="individual">
+                            <div class="symbol male affected"></div>
+                            <div style="font-size: 0.75rem; color: #666;">II-1</div>
+                        </div>
+                        <div class="partnership-wrapper">
+                            <div class="partnership-line"></div>
+                            <div class="offspring-line"></div>
+                        </div>
+                    </div>
+                    <div class="individual">
+                        <div class="symbol female"></div>
+                        <div style="font-size: 0.75rem; color: #666;">II-2</div>
+                    </div>
+                    <div class="individual">
+                        <div class="symbol female"></div>
+                        <div style="font-size: 0.75rem; color: #666;">II-3</div>
+                    </div>
+                    <div class="individual">
+                        <div class="symbol male"></div>
+                        <div style="font-size: 0.75rem; color: #666;">II-4</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Generation III -->
+            <div class="generation">
+                <div class="generation-label">
+                    <span>III</span>
+                </div>
+                <div class="individuals-row">
+                    <div class="individual">
+                        <div class="symbol female affected"></div>
+                        <div style="font-size: 0.75rem; color: #666;">III-1</div>
+                    </div>
+                    <div class="individual-group">
+                        <div class="individual">
+                            <div class="symbol male"></div>
+                            <div style="font-size: 0.75rem; color: #666;">III-2</div>
+                        </div>
+                        <div class="partnership-wrapper">
+                            <div class="partnership-line"></div>
+                            <div class="offspring-line"></div>
+                        </div>
+                    </div>
+                    <div class="individual">
+                        <div class="symbol female"></div>
+                        <div style="font-size: 0.75rem; color: #666;">III-3</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Generation IV -->
+            <div class="generation">
+                <div class="generation-label">
+                    <span>IV</span>
+                </div>
+                <div class="individuals-row">
+                    <div class="individual">
+                        <div class="symbol male" style="opacity: 0.5;"></div>
+                        <div style="font-size: 0.75rem; color: #666;">IV-1 (?)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="instructions">
+        <h2>✅ Nästa steg</h2>
+        <p>När du har sparat bilderna, placera dem i mappen:</p>
+        <code>/Users/varohlen/utveckling/prov/subjects/biologi/bio1/images/</code>
+        <p>Sedan kan vi uppdatera Typst-filen att använda bilderna istället för ASCII-art.</p>
+    </div>
+
+</body>
+</html>
