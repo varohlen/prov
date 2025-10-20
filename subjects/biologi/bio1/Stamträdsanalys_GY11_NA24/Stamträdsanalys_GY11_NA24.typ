@@ -1,72 +1,71 @@
+// Biologi 1 – Prov: Stamträdsanalys
+// Viktor Arohlén
+
 #import "@preview/cetz:0.3.1": canvas, draw
 
 #set page(
   paper: "a4",
-  margin: (x: 2cm, y: 2cm),
+  margin: 2.5cm,
   footer: [
-    #set text(size: 9pt, fill: gray)
+    #set text(size: 9pt, fill: gray, font: ("Excalifont", "Comic Sans MS"))
     #align(center)[
-      #link("https://summor.se")[summor.se]
+      #box(baseline: 20%, image("logo.png", height: 1.2em)) #link(
+        "https://summor.se",
+      )[summor.se]
     ]
   ],
 )
+#set text(font: "New Computer Modern", size: 12pt, lang: "sv")
+#set par(justify: false, leading: 0.65em)
 
-#set text(
-  font: "New Computer Modern",
-  size: 11pt,
-)
-
-#set par(justify: true)
-
+// Title
 #align(center)[
-  #text(size: 18pt, weight: "bold")[Uppgift: Stamträdsanalys 2]
-
-  #v(0.5em)
-
-  #text(size: 12pt)[Biologi 1 - Klassisk genetik]
-
-  #v(0.5em)
-
-  #grid(
-    columns: (1fr, 1fr),
-    gutter: 2em,
-    [Namn: #line(length: 100%)], [Datum: #line(length: 100%)],
-  )
+  #text(size: 18pt, weight: "bold")[Prov: Stamträdsanalys] \
+  #text(size: 14pt)[Biologi 1 – Klassisk genetik] \
+  #v(0.3cm)
+  #text(size: 11pt)[Viktor Arohlén] \
+  #text(size: 10pt)[2025-10-20]
 ]
 
-#v(1em)
+#v(0.5cm)
 
-#line(length: 100%, stroke: 0.5pt)
+// Rules box
+#rect(
+  width: 100%,
+  stroke: 1pt + black,
+  inset: 12pt,
+  [
+    *Viktiga regler för provet:*
 
-#v(1em)
+    - Tillåtna hjälpmedel: Dina egna anteckningar och kursmaterial från summor.se/bio1/5
+    - Svara direkt i provet med penna
+    - Skriv tydligt och läsbart
+    - Motivera dina svar där det efterfrågas
+    - Mobiltelefoner och kommunikation är ej tillåtet
+    - Misstänkt fusk leder till att provet ej kan bedömas
+  ],
+)
 
-= Instruktioner
+#v(1cm)
 
-Denna uppgift testar din förmåga att analysera stamträd och tillämpa kunskaper om ärftlighetsmönster. Du kommer att analysera tre stamträd med olika nedärvningsmönster.
+// Signature box
+#rect(
+  width: 100%,
+  stroke: 1pt + black,
+  inset: 10pt,
+  [
+    Jag skriver under på att jag tagit del av reglerna ovan och följer dem:
 
-*Tillåtna hjälpmedel:*
-- Dina egna anteckningar
-- Kursmaterial från summor.se/bio1/5
-- Miniräknare
-
-*Tid:* 90 minuter
-
-*Bedömning:* Se bedömningsmatris på sista sidan.
-
-#v(0.5em)
-
-*Symbolförklaring:*
-- ○ = Frisk kvinna
-- □ = Frisk man
-- ● = Drabbad kvinna
-- ■ = Drabbad man
-- ◐ = Anlagsbärande kvinna
-- Horisontell linje mellan symboler = Par
-- Vertikal linje = Förälder-barn relation
-
-#v(1em)
+    #v(0.2cm)
+    *Namn:* #line(length: 50%, stroke: 0.5pt) #h(1cm) \
+    *Klass:* #line(length: 20%, stroke: 0.5pt)
+  ],
+)
 
 #pagebreak()
+
+// Questions section
+#set text(size: 11pt)
 
 = Fall 1: Familjen Andersson (11 poäng)
 #v(0.5em)
@@ -132,19 +131,23 @@ En ärftlig sjukdom har upptäckts hos barnet III-1 i familjen Andersson. Förä
 
 *a)* Analysera stamträdet och bestäm vilket nedärvningsmönster sjukdomen följer. Motivera ditt svar med minst tre observationer från stamträdet. _(3p)_
 
-#v(1.5cm)
+#v(0.8cm)
 
 *b)* Bestäm genotyperna för alla individer i stamträdet. Ange alla möjliga genotyper för varje individ. Förklara ditt resonemang för minst två individer. _(4p)_
 
-#v(2cm)
+#v(1cm)
 
 *c)* Paret II-3 och II-4 planerar att få ytterligare ett barn. Beräkna sannolikheten att detta barn kommer att drabbas av sjukdomen. Visa dina beräkningar med ett korsningsschema. _(3p)_
 
-#v(2cm)
+#v(1cm)
 
 *d) Begreppsfåga:* Förklara vad en anlagsbärare är och ge ett exempel från detta stamträd. _(1p)_
 
-#v(1.5cm)
+#v(0.8cm)
+
+#pagebreak()
+
+// Blank page for Fall 1
 
 #pagebreak()
 
@@ -218,19 +221,23 @@ En ärftlig sjukdom har upptäckts hos barnet III-1 i familjen Bergström. För�
 
 *a)* Analysera stamträdet och bestäm vilket nedärvningsmönster sjukdomen följer. Motivera ditt svar. _(2p)_
 
-#v(1.5cm)
+#v(0.8cm)
 
 *b)* Bestäm genotyperna för individ II-3 och II-4. Förklara ditt resonemang. _(3p)_
 
-#v(2cm)
+#v(1cm)
 
 *c)* Kan en kvinna drabbas av denna sjukdom? Om ja, vilka genotyper måste hennes föräldrar ha? Om nej, förklara varför inte. _(2p)_
 
-#v(1.5cm)
+#v(0.8cm)
 
 *d) Begreppsfåga:* Vad är skillnaden mellan genotyp och fenotyp? Ge ett exempel från vardagen. _(1p)_
 
-#v(1.5cm)
+#v(0.8cm)
+
+#pagebreak()
+
+// Blank page for Fall 2
 
 #pagebreak()
 
@@ -319,66 +326,149 @@ Paret II-3 och II-4 har fått sitt första barn (III-1) som är friskt. Båda f�
 
 *a)* Analysera stamträdet och bestäm vilket nedärvningsmönster sjukdomen följer. Motivera ditt svar. _(3p)_
 
-#v(1.5cm)
+#v(0.8cm)
 
 *b)* Bestäm genotyperna för individ II-3 och II-4. Förklara ditt resonemang. _(4p)_
 
-#v(2cm)
+#v(1cm)
 
 *c)* Beräkna sannolikheten att parets nästa barn (III-2) kommer att drabbas av sjukdomen. Förklara ditt svar. _(3p)_
 
-#v(2cm)
+#v(1cm)
 
 *d) Begreppsfåga:* Förklara skillnaden mellan homozygot och heterozygot. Ge exempel från detta stamträd. _(1p)_
 
-#v(1.5cm)
+#v(0.8cm)
 
 #pagebreak()
 
-= Bedömningsmatris
+// Blank page for Fall 3
 
-#table(
-  columns: (1.5fr, 3fr, 3fr, 3fr),
-  align: (left, left, left, left),
-  stroke: 0.5pt,
-  [*Kriterium*], [*E (godkänt)*], [*C (väl godkänt)*], [*A (mycket väl godkänt)*],
+#pagebreak()
 
-  [*Identifiera nedärvningsmönster*\ (8p)],
-  [Identifierar korrekt mönster för minst 2 av 3 stamträd med enkel motivering.],
-  [Identifierar korrekt mönster för alla 3 stamträd med utvecklad motivering och flera observationer.],
-  [Identifierar korrekt mönster för alla 3 stamträd med välutvecklad motivering, flera observationer och resonemang om alternativa tolkningar.],
+= Bedömningsmall och facit
 
-  [*Bestämma genotyper*\ (11p)],
-  [Bestämmer korrekt genotyp för majoriteten av individerna i minst 2 fall. Enkla förklaringar.],
-  [Bestämmer korrekt genotyp för alla eller nästan alla individer i alla fall. Utvecklade förklaringar för resonemang.],
-  [Bestämmer korrekt genotyp för alla individer i alla fall. Välutvecklade förklaringar med tydligt logiskt resonemang.],
+== Fall 1: Familjen Andersson (11 poäng)
 
-  [*Sannolikhetsberäkningar*\ (8p)],
-  [Använder korsningsschema korrekt i minst 2 fall. Räknar ut sannolikheter med mindre fel.],
-  [Använder korsningsschema korrekt i alla fall. Räknar ut sannolikheter korrekt med tydliga beräkningar.],
-  [Använder korsningsschema korrekt i alla fall. Räknar ut sannolikheter korrekt med mycket tydliga och välstrukturerade beräkningar.],
+*a) Nedärvningsmönster (3p)*
 
-  [*Begrepp och förklaringar*\ (3p)],
-  [Förklarar minst 2 av 3 begrepp korrekt med enkla definitioner.],
-  [Förklarar alla 3 begrepp korrekt med utvecklade definitioner och exempel.],
-  [Förklarar alla 3 begrepp korrekt med välutvecklade definitioner, tydliga exempel och kopplingar till stamträden.],
-)
+**Svar:** Autosomalt recessiv nedärvning
 
-#v(1em)
+**Motivering (minst 3 observationer):**
+- Sjukdomen hoppar över generationer (I och II friska, III drabbad) _(1p)_
+- Två friska föräldrar (II-3 och II-4) får ett drabbat barn (III-1) _(1p)_
+- Drabbad kvinna (III-1) visar att det inte är X-bundet _(1p)_
+
+*b) Genotyper (4p)*
+
+**Genotyper:**
+- I-1: Aa eller AA
+- I-2: Aa eller AA
+- II-1: AA eller Aa
+- II-2: AA eller Aa
+- II-3: **Aa** (måste vara anlagsbärare) _(1p)_
+- II-4: **Aa** (måste vara anlagsbärare) _(1p)_
+- III-1: **aa** (drabbad) _(1p)_
+- III-2: AA eller Aa
+
+**Resonemang (minst 2 individer):** _(1p)_
+- III-1 är aa eftersom hen är drabbad
+- II-3 och II-4 måste båda vara Aa eftersom de är friska men har drabbat barn
+
+*c) Sannolikhetsberäkning (3p)*
+
+**Korsningsschema:** Aa × Aa _(1p)_
+
+| ♀/♂ | A | a |
+|-----|---|---|
+| A   | AA| Aa|
+| a   | Aa| aa|
+
+**Svar:** 25% eller 1/4 sannolikhet att barnet blir drabbat _(2p)_
+
+*d) Begreppsfråga (1p)*
+
+**Anlagsbärare:** En individ som är heterozygot för en recessiv allel (Aa) och därför är frisk men kan föra sjukdomen vidare. Exempel: II-3 och II-4 är anlagsbärare.
+
+---
+
+== Fall 2: Familjen Bergström (8 poäng)
+
+*a) Nedärvningsmönster (2p)*
+
+**Svar:** X-bunden recessiv nedärvning
+
+**Motivering:**
+- Endast män drabbas (II-1, III-1)
+- Friska föräldrar får drabbade söner
+- Modern måste vara anlagsbärare
+
+*b) Genotyper (3p)*
+
+**Genotyper:**
+- II-3: X^F X^f (anlagsbärare) _(1.5p)_
+- II-4: X^F Y (frisk) _(1.5p)_
+
+**Resonemang:** Modern måste ha en sjuk allel (X^f) för att sonen III-1 ska vara drabbad (X^f Y).
+
+*c) Kan kvinna drabbas? (2p)*
+
+**Svar:** Ja, men det är mycket sällsynt _(1p)_
+
+**Genotyper föräldrar:** Modern måste vara X^f X^f och fadern måste vara X^f Y (drabbad) _(1p)_
+
+*d) Begreppsfråga (1p)*
+
+**Genotyp:** Arvsanlag/genetisk sammansättning (t.ex. Aa, X^F X^f)
+**Fenotyp:** Hur egenskapen uttrycks/syns (t.ex. frisk, drabbad, blå ögon)
+**Exempel:** Genotyp Aa kan ge fenotyp "frisk" om A är dominant.
+
+---
+
+== Fall 3: Familjen Carlsson (11 poäng)
+
+*a) Nedärvningsmönster (3p)*
+
+**Svar:** Autosomalt dominant nedärvning
+
+**Motivering:**
+- Sjukdomen förekommer i varje generation (I, II, III)
+- Drabbad förälder (I-1) har drabbade barn (II-1, II-2)
+- Både män och kvinnor drabbas
+
+*b) Genotyper (4p)*
+
+**Genotyper:**
+- II-3: **aa** (frisk, homozygot recessiv) _(2p)_
+- II-4: **aa** (frisk, homozygot recessiv) _(2p)_
+
+**Resonemang:** Eftersom II-3 är frisk trots att hen har drabbade syskon, måste hen ha två friska alleler (aa). Vid dominant nedärvning kan man inte vara anlagsbärare och frisk samtidigt.
+
+*c) Sannolikhetsberäkning (3p)*
+
+**Korsningsschema:** aa × aa _(1p)_
+
+| ♀/♂ | a | a |
+|-----|---|---|
+| a   | aa| aa|
+| a   | aa| aa|
+
+**Svar:** 0% sannolikhet - barnet kan inte drabbas _(2p)_
+
+**Förklaring:** Båda föräldrarna är aa och kan bara ge friska alleler.
+
+*d) Begreppsfråga (1p)*
+
+**Homozygot:** Två lika alleler (AA eller aa). Exempel: II-3 och II-4 är aa.
+**Heterozygot:** Två olika alleler (Aa). Exempel: I-1 är Aa (drabbad men har friska barn).
+
+---
+
+== Poängfördelning
 
 *Totalt: 30 poäng*
 
-#table(
-  columns: (1fr, 1fr),
-  stroke: 0.5pt,
-  [*Betyg*], [*Poäng*],
-  [E], [15-20 poäng],
-  [C], [21-25 poäng],
-  [A], [26-30 poäng],
-)
-
-#v(2em)
-
-#align(center)[
-  #text(size: 14pt, weight: "bold")[Lycka till!]
-]
+**Betygsgränser:**
+- E: 15-20 poäng (50-67%)
+- C: 21-25 poäng (70-83%)
+- A: 26-30 poäng (87-100%)
